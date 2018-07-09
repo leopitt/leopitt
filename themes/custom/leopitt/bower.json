@@ -1,0 +1,21 @@
+{
+  "name": "leopitt",
+  "description": "",
+  "main": "bower.json",
+  "authors": [
+    "Leo Pitt"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/leopitt/leopitt",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

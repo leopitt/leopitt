@@ -1,0 +1,12 @@
+# leopitt.libraries.yml
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      assets/css/styles.css: {}
+
+
+bootstrap-scripts:
+  version: 1.x
+  js:
+    bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js: {}

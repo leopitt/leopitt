@@ -1,0 +1,10 @@
+name: Leo Pitt
+type: theme
+description: 'Theme for Leo Pitt site.'
+core: 8.x
+libraries:
+  - leopitt/global-styling
+base theme: stable
+regions:
+  content_head: Content head
+  content: Content
