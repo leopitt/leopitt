@@ -1,1 +1,16 @@
-body{background-color:red}
+/**
+ * @file
+ * Styles.
+ */
+/**
+ * @file
+ * Variables etc.
+ */
+/**
+ * @file
+ * Base.
+ */
+body {
+  background-color: black;
+  color: white;
+  font-family: "museo-sans", sans-serif; }
