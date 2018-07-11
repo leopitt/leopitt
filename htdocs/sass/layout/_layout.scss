@@ -1,0 +1,18 @@
+/**
+ * @file
+ * Layout.
+ */
+
+.layout-toggle {
+  position: absolute;
+  top: $layout-gutter-width/2;
+  right: $layout-gutter-width/2;
+}
+
+.layout-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

@@ -3,6 +3,8 @@
  * Variables etc.
  */
 
+$layout-gutter-width: 50px;
+
 $color-blue-dark: #090423;
 $color-pink: #bd1857;
 
@@ -11,3 +13,20 @@ $text-color: white;
 
 $font-family-serif: 'Shrikhand', cursive;
 $font-family-sans-serif: 'museo-sans', sans-serif;
+
+$font-size-base: 18px;
+$font-size-1: 3.94rem; //77px
+$font-size-2: 2.66rem; // 48px
+$font-size-3: 1.33rem; // 24px
+$font-size-4: 1.11rem; // 20px
+$font-size-5: 1rem; // 18px
+$font-size-6: .77rem; // 14px
+
+$font-size-h1: $font-size-1; // 71px
+$font-size-h2: $font-size-3; // 24px
+$font-size-h3: $font-size-4; // 20px
+$font-size-h4: $font-size-5; // 18px
+$font-size-h5: $font-size-6; // 14px
+
+$z-index-nav-toggle: 11;
+$z-index-nav-main-visible: 10;

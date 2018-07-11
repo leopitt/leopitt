@@ -1,0 +1,35 @@
+/**
+ * @file
+ * Nav toggle button.
+ */
+
+%button-reset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+button.nav-toggle {
+  @extend %button-reset;
+  display: block;
+  background-color: white;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  font-size: 0;
+  z-index: $z-index-nav-toggle;
+
+  .label {
+    display: none;
+  }
+
+  .bar {
+    display: block;
+    width: 28px;
+    height: 6px;
+    background-color: $color-pink;
+    border-radius: 3.5px;
+    margin: 3px 0 3px (64px-28px)/2;
+  }
+}

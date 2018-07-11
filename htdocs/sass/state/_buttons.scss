@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Buttons.
+ */
+
+button.nav-toggle {
+  &:focus {
+    outline: 0;
+  }
+}

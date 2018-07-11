@@ -1,0 +1,21 @@
+/**
+ * @file
+ * List styles.
+ */
+
+%list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type:  none;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+%list-inline {
+  li {
+    display: inline-block;
+  }
+}

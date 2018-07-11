@@ -1,0 +1,22 @@
+/**
+ * @file
+ * Nav.
+ */
+.nav-main {
+  display: none;
+
+  a {
+    text-shadow: 4px 4px black;
+    transition: text-shadow .25s ease-in-out, transform .25s ease-in-out;
+  }
+
+  a:hover {
+    text-shadow: 6px 6px black;
+    transform: translate(-2px, -2px);
+  }
+
+  &.visible {
+    display: block;
+    z-index: $z-index-nav-main-visible;
+  }
+}
