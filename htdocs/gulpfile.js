@@ -6,7 +6,7 @@ var sassLint = require('gulp-sass-lint');
 var runSequence = require('run-sequence');
 
 /**
- * 
+ *
  */
 gulp.task('default', function(done) {
   runSequence('lint', 'sass', 'cssnano', function() {
@@ -26,7 +26,7 @@ gulp.task('sass', function () {
     }))
     .pipe(gulp.dest('./assets/css'));
 });
- 
+
 /**
  * Watch SASS.
  */

@@ -16,3 +16,12 @@
   bottom: 0;
   left: 0;
 }
+
+.layout-front-content {
+  @include zen-grid-container();
+
+  .layout-content {
+    text-align: center;
+    @include zen-grid-item(10, 8);
+  }
+}

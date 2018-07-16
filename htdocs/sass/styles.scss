@@ -3,7 +3,9 @@
  * Styles.
  */
 
+@import '../bower_components/zen-grids/sass/zen-grids';
 @import 'settings/settings';
+@import 'settings/zen-grids';
 @import 'base/base';
 @import 'layout/layout';
 @import 'theme/list';
