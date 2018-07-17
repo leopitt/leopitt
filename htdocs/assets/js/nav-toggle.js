@@ -27,11 +27,13 @@
         $('.nav-main').toggleClass('visible');
         $(this).toggleClass('active');
         animateToggleIn();
+        animateMaskIn();
       }
       else {
         $('.nav-main').removeClass('visible');
         $(this).removeClass('active');
         animateToggleOut();
+        animateMaskOut();
       }
     });
 
