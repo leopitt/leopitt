@@ -27,7 +27,7 @@
       TweenMax.set('.nav-main', {webkitClipPath:'polygon(' + maskEnd[0] + '% ' + maskEnd[1] + '%, ' + maskEnd[2] + '% ' + maskEnd[3] + '%, ' + maskEnd[4] + '% ' + maskEnd[5] + '%, ' + maskEnd[6] + '% ' + maskEnd[7] + '%)'});
     };
     maskStart.ease = Power2.easeOut;
-    TweenLite.to(maskEnd, .5, maskStart);
+    TweenLite.to(maskEnd, .25, maskStart);
   }
 
   function animateMaskOut() {
@@ -37,7 +37,7 @@
       TweenMax.set('.nav-main', {webkitClipPath:'polygon(' + maskStart[0] + '% ' + maskStart[1] + '%, ' + maskStart[2] + '% ' + maskStart[3] + '%, ' + maskStart[4] + '% ' + maskStart[5] + '%, ' + maskStart[6] + '% ' + maskStart[7] + '%)'});
     };
     maskEnd.ease = Power4.easeOut;;
-    TweenLite.to(maskStart, 1, maskEnd);
+    TweenLite.to(maskStart, .25, maskEnd);
   }
 
   $(document).ready(function () {

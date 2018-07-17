@@ -20,11 +20,24 @@
 
 .layout-front-content {
   @include zen-grid-container();
+  margin-top: 180px;
 
   .layout-content {
     @include zen-grid-item(12, 7);
     text-align: center;
-    margin-top: 180px;
+  }
+}
+
+.layout-secondary-content {
+  @include zen-grid-container();
+  margin-top: 180px;
+
+  .layout-content-header {
+    @include zen-grid-item(11, 3);
+  }
+
+  .layout-content {
+    @include zen-grid-item(10, 13);
   }
 }
 

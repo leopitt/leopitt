@@ -74,3 +74,23 @@ a {
     }
   }
 }
+
+figure {
+  max-width: 100%;
+  margin: $layout-vpad-small $layout-hpad-base $layout-vpad-base -75%;
+  float: left;
+
+  img {
+    max-width: 100%;
+  }
+
+  figcaption {
+    font-size: $font-size-6;
+  }
+}
+
+li {
+  font-size: $font-size-5;
+  margin: $layout-vpad-xsmall 0;
+}
+
