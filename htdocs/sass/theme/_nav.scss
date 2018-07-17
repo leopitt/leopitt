@@ -62,6 +62,7 @@
 .nav-social {
   ul {
     @extend %list-inline;
+    display: inline-block;
 
     li {
       margin: 0 12px;

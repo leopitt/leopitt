@@ -34,5 +34,9 @@ $font-size-h3: $font-size-4; // 20px
 $font-size-h4: $font-size-5; // 18px
 $font-size-h5: $font-size-6; // 14px
 
-$z-index-nav-toggle: 11;
-$z-index-nav-main-visible: 10;
+$z-index-ui: 10;
+$z-index-bg: -1;
+
+$toggle-bar-width: 29px;
+$toggle-bar-border-radius: 3.5px;
+$toggle-bar-border-width: 7px;

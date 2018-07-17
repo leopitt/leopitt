@@ -22,9 +22,9 @@
   @include zen-grid-container();
 
   .layout-content {
+    @include zen-grid-item(12, 7);
     text-align: center;
     margin-top: 180px;
-    @include zen-grid-item(12, 7);
   }
 }
 
@@ -33,8 +33,13 @@
   bottom: $layout-gutter-width/2;
   left: $layout-gutter-width/2;
   right: $layout-gutter-width/2;
+  pointer-events: none;
 }
 
 .layout-ui {
-  z-index: $z-index-nav-toggle;
+  z-index: $z-index-ui;
+}
+
+.layout-bg {
+  z-index: $z-index-bg;
 }
