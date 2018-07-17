@@ -6,12 +6,12 @@
 .nav {
   ul {
     @extend %list-reset;
+    pointer-events: all;
   }
 }
 
 .nav-main {
   background-color: $color-pink;
-  position: absolute;
 
   ul {
     position: absolute;
@@ -34,10 +34,9 @@
 .nav-page {
   ul {
     @extend %list-inline;
-    font-size: 0;
 
     li {
-      margin: 0 (45px/2);
+      margin: 0 22px;
 
       a {
         font-family: $font-family-serif;
@@ -47,6 +46,32 @@
           bottom: 0;
           height: 4px;
         }
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.nav-social {
+  ul {
+    @extend %list-inline;
+
+    li {
+      margin: 0 12px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
       }
     }
   }

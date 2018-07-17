@@ -1,0 +1,30 @@
+/**
+ * @file
+ * Article styles.
+ */
+
+.article-list {
+  margin: $layout-vpad-large ($layout-gutter-width/2) 0;
+
+  > header {
+    margin: 0 0 $layout-vpad-base;
+  }
+
+  > footer {
+    margin: $layout-vpad-base 0 0;
+
+    a {
+      font-size: $font-size-h4;
+    }
+  }
+
+  article {
+    margin-bottom: $layout-vpad-base;
+  }
+}
+
+article {
+  .meta {
+    font-size: $font-size-h5;
+  }
+}

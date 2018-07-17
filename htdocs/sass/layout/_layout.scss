@@ -4,17 +4,18 @@
  */
 
 .layout-toggle {
-  position: absolute;
+  position: fixed;
   top: $layout-gutter-width/2;
   right: $layout-gutter-width/2;
 }
 
 .layout-cover {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  pointer-events: none;
 }
 
 .layout-front-content {
@@ -22,6 +23,18 @@
 
   .layout-content {
     text-align: center;
-    @include zen-grid-item(10, 8);
+    margin-top: 180px;
+    @include zen-grid-item(12, 7);
   }
+}
+
+.layout-footer {
+  position: fixed;
+  bottom: $layout-gutter-width/2;
+  left: $layout-gutter-width/2;
+  right: $layout-gutter-width/2;
+}
+
+.layout-ui {
+  z-index: $z-index-nav-toggle;
 }

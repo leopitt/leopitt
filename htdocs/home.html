@@ -16,7 +16,7 @@
   </head>
   <body class="front">
     <header>
-      <nav class="layout-cover nav nav-main">
+      <nav class="layout-cover layout-ui nav nav-main">
         <ul>
           <li><a href="#">Blog</a></li>
           <li><a href="#">About</a></li>
@@ -26,36 +26,52 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <button class="layout-toggle nav-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="label">Toggle navigation</span></button>
+      <button class="layout-toggle layout-ui nav-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="label">Toggle navigation</span></button>
     </header>
     <div class="page page-wrapper layout-front-content">
       <div class="content layout-content">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+        <h1>Lorem ipsum dolor sit amet, consecte&shy;tur adipiscing elit.</h1>
         <nav class="nav nav-page">
           <ul>
             <li><a href="#">Blog</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Partners</a></li>
             <li><a href="#">Clients</a></li>
-            <li><a href="#">Tools</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <section>
+        <section class="article-list">
+          <header>
+            <h2>Latest Posts</h2>
+          </header>
           <article>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+            <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></h3>
             <p>Nunc feugiat vel dolor ut tristique. Nulla sagittis sem sed suscipit semper. Mauris non ligula in elit semper porttitor quis sit amet neque. Phasellus lorem orci, sollicitudin quis tortor et, viverra tempus felis.</p>
-            <p>Monday, 9th July 2018 | 5 comments</p>
+            <p class="meta">Monday, 9th July 2018 | 5 comments</p>
           </article>
           <article>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+            <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></h3>
             <p>Nunc feugiat vel dolor ut tristique. Nulla sagittis sem sed suscipit semper. Mauris non ligula in elit semper porttitor quis sit amet neque. Phasellus lorem orci, sollicitudin quis tortor et, viverra tempus felis.</p>
-            <p>Monday, 9th July 2018 | 5 comments</p>
+            <p class="meta">Monday, 9th July 2018 | 5 comments</p>
           </article>
-          <footer><a href="#">Read more...</a></footer>
+          <footer><a href="#">Read More&hellip;</a></footer>
         </section>
       </div>
     </div>
+    <footer class="layout-footer layout-ui">
+      <nav class="nav nav-social">
+        <ul>
+          <li><a href="#" class="icon icon-github">Github</a></li>
+          <li><a href="#" class="icon icon-twitter">Twitter</a></li>
+          <li><a href="#" class="icon icon-linkedin">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <svg class="layout-cover" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+      <polygon class="bg-shadow" points="0,0 230,0 440,1920 0,1920" />
+      <polygon class="bg-shadow" points="0,1200 1920,1200 1920,940 0,1166" />
+      <polygon class="bg-highlight" points="0,0 190,0 400,1920 0,1920" />
+    </svg>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/nav-toggle.js"></script>
   </body>

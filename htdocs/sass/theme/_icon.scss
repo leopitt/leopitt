@@ -1,0 +1,32 @@
+/**
+ * @file
+ * Icons.
+ */
+
+%icon {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+
+  &::after {
+    content: none;
+  }
+}
+
+.icon-github {
+  @extend %icon;
+  background-image: url($assets-path + '/bitmap/github.png');
+}
+
+.icon-twitter {
+  @extend %icon;
+  background-image: url($assets-path + '/bitmap/twitter.png');
+}
+
+.icon-linkedin {
+  @extend %icon;
+  background-image: url($assets-path + '/bitmap/linkedin.png');
+}

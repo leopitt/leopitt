@@ -3,7 +3,13 @@
  * Variables etc.
  */
 
-$layout-gutter-width: 50px;
+$assets-path: '..';
+
+$layout-gutter-width: 118px;
+
+$layout-vpad-large: 80px;
+$layout-vpad-base: 40px;
+$layout-vpad-small: ($layout-gutter-width * .5);
 
 $color-blue-dark: #090423;
 $color-pink: #bd1857;

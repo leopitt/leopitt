@@ -13,7 +13,8 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: $body-bg-color;
   color: $text-color;
-  margin: 0;
+  max-width: 1700px;
+  margin: 0 auto;
   min-height: 100%;
   line-height: 1.2;
 }
@@ -24,12 +25,38 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-family-serif;
 }
 
 h1 {
+  font-family: $font-family-serif;
   font-size: $font-size-h1;
   text-shadow: 4px 4px $color-pink;
+  margin-top: 0;
+}
+
+h2 {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-h2;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-h3;
+  font-weight: normal;
+
+  > a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
 }
 
 a {
