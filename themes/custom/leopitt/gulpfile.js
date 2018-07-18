@@ -1,16 +1,12 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var cssnano = require('gulp-cssnano');
-var runSequence = require('run-sequence');
-var sassLint = require('gulp-sass-lint');
-var concat = require('gulp-concat');
-var rename = require('gulp-rename');
-var uglify = require('gulp-uglify');
-
 const autoprefixer = require('gulp-autoprefixer');
+var gulp = require('gulp');
+var cssnano = require('gulp-cssnano');
+var sass = require('gulp-sass');
+var sassLint = require('gulp-sass-lint');
+var runSequence = require('run-sequence');
 
 /**
- * Default task.
+ *
  */
 gulp.task('default', function(done) {
   runSequence('lint', 'sass', 'cssnano', function() {
@@ -19,21 +15,21 @@ gulp.task('default', function(done) {
 });
 
 /**
- * Sass.
+ * Compile SASS.
  */
-
-/* Default sass task. */
 gulp.task('sass', function () {
   return gulp.src('sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
-      browsers: ['> 5%'],
+      browsers: ['> 1%'],
       cascade: false
     }))
     .pipe(gulp.dest('./assets/css'));
 });
 
-/* Watch. */
+/**
+ * Watch SASS.
+ */
 gulp.task('sass:watch', function () {
   gulp.watch('sass/**/*.scss', ['sass']);
 });

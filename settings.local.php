@@ -13,3 +13,10 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/leopitt.co.uk/files/config_2NKT5vPjA5_Nl_kpledicwKiVOLjkTJa_VRZj-69ViKNzIF6X6CltQk5rApBPB1ZNkEytlgt8w/sync';
+
+$settings['trusted_host_patterns'] = array(
+  '^docksal$',
+  '^.+\.leopitt\.co\.uk$',
+  '^leopitt\.co\.uk$',
+  '^.+\.docksal$',
+);

@@ -5,6 +5,12 @@ global-styling:
     theme:
       assets/css/styles.css: {}
 
+global-fonts:
+  version: 1.x
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Shrikhand: { type: external, minified: true }
+      https://use.typekit.net/mfy1ltd.css: { type: external, minified: true }
 
 bootstrap-scripts:
   version: 1.x

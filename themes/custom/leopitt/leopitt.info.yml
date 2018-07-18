@@ -3,6 +3,7 @@ type: theme
 description: 'Theme for Leo Pitt site.'
 core: 8.x
 libraries:
+  - leopitt/global-fonts
   - leopitt/global-styling
 base theme: stable
 regions:

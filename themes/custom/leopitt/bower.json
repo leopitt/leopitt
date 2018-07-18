@@ -16,6 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "^3.3.7"
+    "zen-grids": "^2.0.2",
+    "gsap": "^2.0.1",
+    "font-awesome-sass": "^5.0.13"
   }
 }

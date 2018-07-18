@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Nav.
+ */
+.nav-main {
+  a {
+    text-shadow: 4px 4px black;
+    transition: text-shadow .25s ease-in-out, transform .25s ease-in-out;
+
+    &:hover,
+    &.active {
+      text-shadow: 6px 6px black;
+      transform: translate(-2px, -2px);
+    }
+  }
+}
