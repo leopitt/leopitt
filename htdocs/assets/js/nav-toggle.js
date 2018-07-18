@@ -21,23 +21,23 @@
   }
 
   function animateMaskIn() {
-    var maskStart = [0,0,110,0,200,100,0,100];
-    var maskEnd = [0,0,9.89,0,16.51,100,0,100];
-    maskStart.onUpdate = function() {
-      TweenMax.set('.nav-main', {webkitClipPath:'polygon(' + maskEnd[0] + '% ' + maskEnd[1] + '%, ' + maskEnd[2] + '% ' + maskEnd[3] + '%, ' + maskEnd[4] + '% ' + maskEnd[5] + '%, ' + maskEnd[6] + '% ' + maskEnd[7] + '%)'});
-    };
-    maskStart.ease = Power2.easeOut;
-    TweenLite.to(maskEnd, .25, maskStart);
-  }
-
-  function animateMaskOut() {
-    var maskStart = [0,0,110,0,200,100,0,100];
-    var maskEnd = [0,0,9.89,0,16.51,100,0,100];
+    var maskStart = [0,0,9.89,0,16.51,100,0,100];
+    var maskEnd = [0,0,110,0,116,100,0,100];
     maskEnd.onUpdate = function() {
       TweenMax.set('.nav-main', {webkitClipPath:'polygon(' + maskStart[0] + '% ' + maskStart[1] + '%, ' + maskStart[2] + '% ' + maskStart[3] + '%, ' + maskStart[4] + '% ' + maskStart[5] + '%, ' + maskStart[6] + '% ' + maskStart[7] + '%)'});
     };
-    maskEnd.ease = Power4.easeOut;;
+    maskEnd.ease = Power2.easeOut;
     TweenLite.to(maskStart, .25, maskEnd);
+  }
+
+  function animateMaskOut() {
+    var maskStart = [0,0,9.89,0,16.51,100,0,100];
+    var maskEnd = [0,0,110,0,116,100,0,100];
+    maskStart.onUpdate = function() {
+      TweenMax.set('.nav-main', {webkitClipPath:'polygon(' + maskEnd[0] + '% ' + maskEnd[1] + '%, ' + maskEnd[2] + '% ' + maskEnd[3] + '%, ' + maskEnd[4] + '% ' + maskEnd[5] + '%, ' + maskEnd[6] + '% ' + maskEnd[7] + '%)'});
+    };
+    maskStart.ease = Elastic.easeOut;;
+    TweenLite.to(maskEnd, .75, maskStart);
   }
 
   $(document).ready(function () {

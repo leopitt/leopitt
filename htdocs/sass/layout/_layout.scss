@@ -53,6 +53,10 @@
   z-index: $z-index-ui;
 }
 
+.layout-ui-bg {
+  z-index: ($z-index-ui - 1);
+}
+
 .layout-bg {
   z-index: $z-index-bg;
 }
