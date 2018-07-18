@@ -10,6 +10,40 @@
   }
 }
 
+.nav-breadcrumb {
+  ul {
+    @extend %list-inline;
+
+    > li {
+      vertical-align: baseline;
+      font-size: .77rem;
+      margin-left: 10px;
+
+      a {
+        &::after {
+          content: none;
+        }
+      }
+
+      &::before {
+        content: '>';
+        margin-right: 10px;
+      }
+
+      &:first-child {
+        a {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+
+        &::before {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
 .nav-main {
   clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
   background-color: $color-pink;

@@ -3,22 +3,14 @@
  * Nav.
  */
 .nav-main {
-  //transition: clip-path .25s ease;
-
   a {
     text-shadow: 4px 4px black;
     transition: text-shadow .25s ease-in-out, transform .25s ease-in-out;
-  }
 
-  a:hover {
-    text-shadow: 6px 6px black;
-    transform: translate(-2px, -2px);
+    &:hover,
+    &.active {
+      text-shadow: 6px 6px black;
+      transform: translate(-2px, -2px);
+    }
   }
-
-  /*
-  &.visible {
-    clip-path: polygon(0% 0%, 110% 0%, 200% 100%, 0% 100%);
-    transition: clip-path .25s ease;
-  }
-  */
 }

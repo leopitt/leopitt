@@ -41,6 +41,12 @@
   }
 }
 
+.layout-brand {
+  position: fixed;
+  top: $layout-gutter-width/2;
+  left: $layout-gutter-width/2;
+}
+
 .layout-footer {
   position: fixed;
   bottom: $layout-gutter-width/2;
@@ -49,11 +55,15 @@
   pointer-events: none;
 }
 
+.layout-ui-top {
+  z-index: $z-index-ui + 1;
+}
+
 .layout-ui {
   z-index: $z-index-ui;
 }
 
-.layout-ui-bg {
+.layout-ui-bottom {
   z-index: ($z-index-ui - 1);
 }
 
