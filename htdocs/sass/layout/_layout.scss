@@ -20,7 +20,7 @@
 
 .layout-front-content {
   @include zen-grid-container();
-  margin-top: 180px;
+  padding-top: 180px;
 
   .layout-content {
     @include zen-grid-item(12, 7);
