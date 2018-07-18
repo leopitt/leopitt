@@ -18,6 +18,11 @@
   pointer-events: none;
 }
 
+.layout-page {
+  max-width: $page-max-width;
+  margin: 0 auto;
+}
+
 .layout-front-content {
   @include zen-grid-container();
   padding-top: 180px;
@@ -30,14 +35,15 @@
 
 .layout-secondary-content {
   @include zen-grid-container();
-  margin-top: 180px;
+  padding-top: 180px;
 
-  .layout-content-header {
-    @include zen-grid-item(11, 3);
+  .layout-content-first {
+    @include zen-grid-item(12, 1);
+    text-align: right;
   }
 
-  .layout-content {
-    @include zen-grid-item(10, 13);
+  .layout-content-second {
+    @include zen-grid-item(12, 13);
   }
 }
 

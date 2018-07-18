@@ -26,5 +26,23 @@
 article {
   .meta {
     font-size: $font-size-h5;
+
+    p {
+      margin: 5px 0;
+    }
+
+    a {
+      font-weight: bold;
+
+      &:after {
+        content: none;
+      }
+    }
+  }
+
+  .content {
+    p:first-child {
+      margin-top: 10px;
+    }
   }
 }

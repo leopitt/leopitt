@@ -13,10 +13,9 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: $body-bg-color;
   color: $text-color;
-  max-width: 1700px;
-  margin: 0 auto;
   min-height: 100%;
   line-height: 1.2;
+  margin: 0;
 }
 
 h1 {
@@ -111,3 +110,46 @@ blockquote {
   }
 }
 
+fieldset {
+  margin: $layout-vpad-small 0;
+  padding: 0;
+  border: 0;
+}
+
+input,
+textarea,
+button {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  color: $color-pink;
+  background-color: white;
+  border: 0;
+}
+
+input,
+textarea {
+  padding: $layout-vpad-xsmall;
+  box-shadow: 4px 4px $color-pink;
+}
+
+input {
+  &[type="text"],
+  &[type="email"],
+  &[type="tel"] {
+    width: 50%;
+  }
+
+  &[type="url"] {
+    width: 75%;
+  }
+}
+
+textarea {
+  width: 100%;
+}
+
+address {
+  font-style: normal;
+  margin: 0;
+  font-weight: bold;
+}

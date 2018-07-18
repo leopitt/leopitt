@@ -23,10 +23,9 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #090423;
   color: white;
-  max-width: 1700px;
-  margin: 0 auto;
   min-height: 100%;
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin: 0; }
 
 h1 {
   font-family: "Shrikhand", cursive;
@@ -91,14 +90,47 @@ blockquote {
   blockquote > footer::before {
     content: '\2014 \00A0'; }
 
+fieldset {
+  margin: 25px 0;
+  padding: 0;
+  border: 0; }
+
+input,
+textarea,
+button {
+  font-family: "museo-sans", sans-serif;
+  font-size: 18px;
+  color: #bd1857;
+  background-color: white;
+  border: 0; }
+
+input,
+textarea {
+  padding: 10px;
+  box-shadow: 4px 4px #bd1857; }
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  width: 50%; }
+
+input[type="url"] {
+  width: 75%; }
+
+textarea {
+  width: 100%; }
+
+address {
+  font-style: normal;
+  margin: 0;
+  font-weight: bold; }
+
 /**
  * @file
  * Layout.
  */
 .layout-toggle {
   position: fixed;
-  top: 59px;
-  right: 59px; }
+  top: 50px;
+  right: 50px; }
 
 .layout-cover {
   position: fixed;
@@ -107,6 +139,10 @@ blockquote {
   bottom: 0;
   left: 0;
   pointer-events: none; }
+
+.layout-page {
+  max-width: 1438px;
+  margin: 0 auto; }
 
 .layout-front-content {
   padding-top: 180px; }
@@ -122,13 +158,13 @@ blockquote {
     width: 50%;
     margin-left: 25%;
     margin-right: -100%;
-    padding-left: 59px;
-    padding-right: 59px;
+    padding-left: 50px;
+    padding-right: 50px;
     box-sizing: border-box;
     text-align: center; }
 
 .layout-secondary-content {
-  margin-top: 180px; }
+  padding-top: 180px; }
   .layout-secondary-content:before {
     content: "";
     display: table; }
@@ -136,33 +172,34 @@ blockquote {
     content: "";
     display: table;
     clear: both; }
-  .layout-secondary-content .layout-content-header {
+  .layout-secondary-content .layout-content-first {
     float: left;
-    width: 45.83333%;
-    margin-left: 8.33333%;
+    width: 50%;
+    margin-left: 0%;
     margin-right: -100%;
-    padding-left: 59px;
-    padding-right: 59px;
-    box-sizing: border-box; }
-  .layout-secondary-content .layout-content {
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    text-align: right; }
+  .layout-secondary-content .layout-content-second {
     float: left;
-    width: 41.66667%;
+    width: 50%;
     margin-left: 50%;
     margin-right: -100%;
-    padding-left: 59px;
-    padding-right: 59px;
+    padding-left: 50px;
+    padding-right: 50px;
     box-sizing: border-box; }
 
 .layout-brand {
   position: fixed;
-  top: 59px;
-  left: 59px; }
+  top: 50px;
+  left: 50px; }
 
 .layout-footer {
   position: fixed;
-  bottom: 59px;
-  left: 59px;
-  right: 59px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
   pointer-events: none; }
 
 .layout-ui-top {
@@ -188,6 +225,9 @@ blockquote {
 .lead {
   font-size: 1.33rem; }
 
+.hidden {
+  display: none; }
+
 /**
  * @file
  * Heading.
@@ -210,7 +250,7 @@ h1.secondary {
  * Article styles.
  */
 .article-list {
-  margin: 80px 59px; }
+  margin: 80px 50px; }
   .article-list > header {
     margin: 0 0 40px; }
   .article-list > footer {
@@ -222,6 +262,15 @@ h1.secondary {
 
 article .meta {
   font-size: 0.77rem; }
+  article .meta p {
+    margin: 5px 0; }
+  article .meta a {
+    font-weight: bold; }
+    article .meta a:after {
+      content: none; }
+
+article .content p:first-child {
+  margin-top: 10px; }
 
 /**
  * @file
@@ -317,17 +366,7 @@ button.nav-toggle {
   width: 68px;
   height: 68px;
   border-radius: 50%;
-  font-size: 0;
-  /*
-  .bar {
-    display: block;
-    width: 32px;
-    height: 7px;
-    background-color: $color-pink;
-    border-radius: 3.5px;
-    margin: 3px 0 3px (64px-28px)/2;
-  }
-  */ }
+  font-size: 0; }
   button.nav-toggle .label {
     display: none; }
   button.nav-toggle .bars {
@@ -367,6 +406,14 @@ button.nav-toggle {
         display: block;
         left: 0;
         bottom: -22px; }
+
+button.default {
+  background-color: #bd1857;
+  color: white;
+  outline: none;
+  border: 0;
+  padding: 25px;
+  box-shadow: 4px 4px white; }
 
 /**
  * @file
@@ -415,3 +462,9 @@ button.nav-toggle {
     outline: 0; }
   button.nav-toggle:hover {
     transform: scale(1); }
+
+button.default {
+  transition: color .25s ease-in-out, background-color .25s ease-in-out; }
+  button.default:hover {
+    color: black;
+    background-color: white; }
