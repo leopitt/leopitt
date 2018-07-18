@@ -230,8 +230,8 @@ article .meta {
   pointer-events: all; }
 
 .nav-main {
-  -webkit-clip-path: url("#nav-clip");
-  clip-path: url("#nav-clip");
+  -webkit-clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
   background-color: #bd1857; }
   .nav-main ul {
     position: absolute;

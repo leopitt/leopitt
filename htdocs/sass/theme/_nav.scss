@@ -11,7 +11,7 @@
 }
 
 .nav-main {
-  clip-path: url('#nav-clip');//polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
   background-color: $color-pink;
 
   ul {
