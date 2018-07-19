@@ -1,7 +1,7 @@
 {
   "name": "leopitt",
   "description": "",
-  "main": "bower.json",
+  "main": "package.json",
   "authors": [
     "Leo Pitt"
   ],
