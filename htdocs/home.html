@@ -41,9 +41,9 @@
         <span class="label">Toggle navigation</span></button>
     </header>
 
-    <div class="page page-wrapper layout-front-content">
+    <div class="page page-wrapper layout-front-content" id="app">
       <div class="content layout-content">
-        <h1>Lorem ipsum dolor sit amet, consecte&shy;tur adipiscing elit.</h1>
+        <h1>{{ homeTitle }}</h1>
         <nav class="nav nav-page">
           <ul>
             <li><a href="#">Blog</a></li>
@@ -57,15 +57,10 @@
           <header>
             <h2>Latest Posts</h2>
           </header>
-          <article>
-            <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></h3>
-            <p>Nunc feugiat vel dolor ut tristique. Nulla sagittis sem sed suscipit semper. Mauris non ligula in elit semper porttitor quis sit amet neque. Phasellus lorem orci, sollicitudin quis tortor et, viverra tempus felis.</p>
-            <p class="meta">Monday, 9th July 2018 | 5 comments</p>
-          </article>
-          <article>
-            <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></h3>
-            <p>Nunc feugiat vel dolor ut tristique. Nulla sagittis sem sed suscipit semper. Mauris non ligula in elit semper porttitor quis sit amet neque. Phasellus lorem orci, sollicitudin quis tortor et, viverra tempus felis.</p>
-            <p class="meta">Monday, 9th July 2018 | 5 comments</p>
+          <article v-for="post in posts">
+            <h3><a href="#">{{ post.title }}</a></h3>
+            <p>{{ post.teaser }}</p>
+            <p class="meta">{{ post.date }} | {{ post.numComments}} comments</p>
           </article>
           <footer><a href="#">Read More&hellip;</a></footer>
         </section>
@@ -88,8 +83,10 @@
       <!--<polygon class="bg-highlight" points="0,0 9.89,0 16.51,100 0,100" /> -->
     </svg>
 
+    <script src="node_modules/vue/dist/vue.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="assets/js/app.js"></script>
     <script src="assets/js/nav-toggle.js"></script>
   </body>
 </html>
