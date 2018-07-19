@@ -58,9 +58,9 @@
             <h2>Latest Posts</h2>
           </header>
           <article v-for="post in posts">
-            <h3><a href="#">{{ post.title }}</a></h3>
-            <p>{{ post.teaser }}</p>
-            <p class="meta">{{ post.date }} | {{ post.numComments}} comments</p>
+            <h3><a href="#">{{ post.title[0].value }}</a></h3>
+            <p>{{ post.field_teaser[0].value }}</p>
+            <p class="meta">{{ post.created[0].value | formatDate }}</p>
           </article>
           <footer><a href="#">Read More&hellip;</a></footer>
         </section>
@@ -84,6 +84,8 @@
     </svg>
 
     <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+    <script src="node_modules/moment/moment.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script src="assets/js/app.js"></script>

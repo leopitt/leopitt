@@ -25,7 +25,9 @@
     "gulp-sass": "^4.0.1",
     "gulp-sass-lint": "^1.4.0",
     "gulp-uglify": "^3.0.0",
+    "moment": "^2.22.2",
     "run-sequence": "^2.2.1",
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "vue-resource": "^1.5.1"
   }
 }
