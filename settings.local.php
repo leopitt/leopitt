@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Enable local development services.
+ */
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
 
 $databases['default']['default'] = array (
   'database' => 'default',

@@ -15,17 +15,17 @@
  * Base.
  */
 html {
+  height: 100%;
   font-size: 18px;
-  font-family: "museo-sans", sans-serif;
-  height: 100%; }
+  font-family: "museo-sans", sans-serif; }
 
 body {
-  -webkit-font-smoothing: antialiased;
   background-color: #090423;
-  color: white;
   min-height: 100%;
   line-height: 1.2;
-  margin: 0; }
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  color: white; }
 
 h1 {
   font-family: "Shrikhand", cursive;
@@ -228,12 +228,25 @@ address {
 .hidden {
   display: none; }
 
+.root {
+  position: relative; }
+
 /**
  * @file
  * Heading.
  */
 h1.secondary {
   font-size: 3.33rem; }
+
+/**
+ * @file
+ * Brand.scss
+ */
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: -2px; }
 
 /**
  * @file
@@ -276,17 +289,18 @@ article .content p:first-child {
  * @file
  * List styles.
  */
-.nav ul {
+.nav ul,
+.nav ol {
   margin: 0;
   padding: 0;
   list-style-type: none; }
-  .nav ul li {
+  .nav ul li, .nav ol li {
     margin: 0;
     padding: 0; }
 
-.nav-breadcrumb ul, .nav-page ul, .nav-social ul {
+.nav-breadcrumb ol, .nav-page ul, .nav-social ul {
   font-size: 0; }
-  .nav-breadcrumb ul li, .nav-page ul li, .nav-social ul li {
+  .nav-breadcrumb ol li, .nav-page ul li, .nav-social ul li {
     font-size: 1rem;
     display: inline-block; }
 
@@ -294,23 +308,21 @@ article .content p:first-child {
  * @file
  * Navs.
  */
-.nav ul {
+.nav ul,
+.nav ol {
   pointer-events: all; }
 
-.nav-breadcrumb ul > li {
-  vertical-align: baseline;
-  font-size: .77rem;
-  margin-left: 10px; }
-  .nav-breadcrumb ul > li a::after {
-    content: none; }
-  .nav-breadcrumb ul > li::before {
-    content: '>';
-    margin-right: 10px; }
-  .nav-breadcrumb ul > li:first-child a {
-    font-size: 1.5rem;
-    font-weight: bold; }
-  .nav-breadcrumb ul > li:first-child::before {
-    content: none; }
+.nav-breadcrumb {
+  display: inline-block; }
+  .nav-breadcrumb ol > li {
+    vertical-align: baseline;
+    font-size: .77rem;
+    margin-left: 10px; }
+    .nav-breadcrumb ol > li a::after {
+      content: none; }
+    .nav-breadcrumb ol > li::before {
+      content: '>';
+      margin-right: 10px; }
 
 .nav-main {
   -webkit-clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);

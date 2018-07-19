@@ -1,0 +1,12 @@
+article_teaser:
+  label: 'Article teaser'
+  category: 'Custom Layouts'
+  template: templates/layout/custom/article-teaser
+  default_region: main
+  regions:
+    head:
+      label: Head
+    main:
+      label: Main content
+    meta:
+      label: Meta

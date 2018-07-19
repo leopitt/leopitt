@@ -4,14 +4,17 @@
  */
 
 .nav {
-  ul {
+  ul,
+  ol {
     @extend %list-reset;
     pointer-events: all;
   }
 }
 
 .nav-breadcrumb {
-  ul {
+  display: inline-block;
+
+  ol {
     @extend %list-inline;
 
     > li {
@@ -28,17 +31,6 @@
       &::before {
         content: '>';
         margin-right: 10px;
-      }
-
-      &:first-child {
-        a {
-          font-size: 1.5rem;
-          font-weight: bold;
-        }
-
-        &::before {
-          content: none;
-        }
       }
     }
   }
