@@ -10,7 +10,7 @@ var runSequence = require('run-sequence');
  *
  */
 gulp.task('default', function(done) {
-  runSequence('lint', 'sass', 'cssnano', function() {
+  runSequence('lint', 'sass', function() {
     done();
   });
 });
