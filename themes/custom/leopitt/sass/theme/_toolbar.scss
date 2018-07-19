@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Toolbar menu.
+ */
+
+.toolbar-menu li {
+  margin: 0;
+
+  a {
+    font-size: 0.8125rem;
+
+    &::after {
+      content: none;
+    }
+  }
+}

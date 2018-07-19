@@ -27,15 +27,35 @@ article {
   .meta {
     font-size: $font-size-h5;
 
-    p {
+    p,
+    .field {
       margin: 5px 0;
+
+      div {
+        display: inline;
+      }
     }
 
-    a {
+    a,
+    .field__item {
       font-weight: bold;
 
       &::after {
         content: none;
+      }
+    }
+
+    .field--name-field-tags {
+      .field__item {
+
+        &::after {
+          content: ',';
+          margin-left: -2px;
+        }
+
+        &:last-child::after {
+          content: none;
+        }
       }
     }
   }

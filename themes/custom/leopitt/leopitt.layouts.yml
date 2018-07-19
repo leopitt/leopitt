@@ -10,3 +10,13 @@ article_teaser:
       label: Main content
     meta:
       label: Meta
+article_default:
+  label: 'Article default'
+  category: 'Custom Layouts'
+  template: templates/layout/custom/article-default
+  default_region: main
+  regions:
+    meta:
+      label: Meta
+    main:
+      label: Main content

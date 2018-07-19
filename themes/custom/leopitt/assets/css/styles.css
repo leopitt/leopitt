@@ -275,12 +275,23 @@ h1.secondary {
 
 article .meta {
   font-size: 0.77rem; }
-  article .meta p {
+  article .meta p,
+  article .meta .field {
     margin: 5px 0; }
-  article .meta a {
+    article .meta p div,
+    article .meta .field div {
+      display: inline; }
+  article .meta a,
+  article .meta .field__item {
     font-weight: bold; }
-    article .meta a::after {
+    article .meta a::after,
+    article .meta .field__item::after {
       content: none; }
+  article .meta .field--name-field-tags .field__item::after {
+    content: ',';
+    margin-left: -2px; }
+  article .meta .field--name-field-tags .field__item:last-child::after {
+    content: none; }
 
 article .content p:first-child {
   margin-top: 10px; }
@@ -449,6 +460,17 @@ button.default {
 
 .icon-linkedin {
   background-image: url("../bitmap/linkedin.png"); }
+
+/**
+ * @file
+ * Toolbar menu.
+ */
+.toolbar-menu li {
+  margin: 0; }
+  .toolbar-menu li a {
+    font-size: 0.8125rem; }
+    .toolbar-menu li a::after {
+      content: none; }
 
 /**
  * @file

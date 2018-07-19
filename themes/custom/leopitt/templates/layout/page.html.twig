@@ -65,10 +65,15 @@
 
   {% block main %}
   <div class="page page-wrapper layout-secondary-content">
-    <div class="content layout-content">
-      {{ page.content_head }}
-      {{ page.content }}
-    </div>
+    <article>
+      <div class="content layout-content-first">
+        {{ page.content_head }}
+      </div>
+
+      <div class="content layout-content-second">
+        {{ page.content }}
+      </div>
+    </article>
   </div>
   {% endblock %}
 
