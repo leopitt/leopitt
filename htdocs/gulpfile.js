@@ -1,5 +1,6 @@
 const autoprefixer = require('gulp-autoprefixer');
 var gulp = require('gulp');
+var livereload = require('gulp-livereload')
 var cssnano = require('gulp-cssnano');
 var sass = require('gulp-sass');
 var sassLint = require('gulp-sass-lint');
@@ -32,6 +33,19 @@ gulp.task('sass', function () {
  */
 gulp.task('sass:watch', function () {
   gulp.watch('sass/**/*.scss', ['sass']);
+});
+
+/**
+ * Generic watch.
+ */
+gulp.task('watch', function () {
+  livereload.listen();
+
+  gulp.watch('sass/**/*.scss', ['sass']);
+
+  gulp.watch(['assets/css/styles.css', 'assets/js/*.js', '*.html'], function (files){
+      livereload.changed(files)
+  });
 });
 
 /**
