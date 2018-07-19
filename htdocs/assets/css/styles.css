@@ -237,6 +237,16 @@ h1.secondary {
 
 /**
  * @file
+ * Brand.scss
+ */
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: -2px; }
+
+/**
+ * @file
  * Bg style.
  */
 .bg-highlight {
@@ -297,20 +307,17 @@ article .content p:first-child {
 .nav ul {
   pointer-events: all; }
 
-.nav-breadcrumb ul > li {
-  vertical-align: baseline;
-  font-size: .77rem;
-  margin-left: 10px; }
-  .nav-breadcrumb ul > li a::after {
-    content: none; }
-  .nav-breadcrumb ul > li::before {
-    content: '>';
-    margin-right: 10px; }
-  .nav-breadcrumb ul > li:first-child a {
-    font-size: 1.5rem;
-    font-weight: bold; }
-  .nav-breadcrumb ul > li:first-child::before {
-    content: none; }
+.nav-breadcrumb {
+  display: inline-block; }
+  .nav-breadcrumb ul > li {
+    vertical-align: baseline;
+    font-size: .77rem;
+    margin-left: 10px; }
+    .nav-breadcrumb ul > li a::after {
+      content: none; }
+    .nav-breadcrumb ul > li::before {
+      content: '>';
+      margin-right: 10px; }
 
 .nav-main {
   -webkit-clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
