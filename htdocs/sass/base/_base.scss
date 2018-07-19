@@ -133,13 +133,13 @@ textarea {
 }
 
 input {
-  &[type="text"],
-  &[type="email"],
-  &[type="tel"] {
+  &[type='text'],
+  &[type='email'],
+  &[type='tel'] {
     width: 50%;
   }
 
-  &[type="url"] {
+  &[type='url'] {
     width: 75%;
   }
 }
