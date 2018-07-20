@@ -20,8 +20,9 @@ button.nav-toggle {
   }
 }
 
-button.default {
+%btn-default {
   transition: color .25s ease-in-out, background-color .25s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     color: black;

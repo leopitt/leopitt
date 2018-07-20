@@ -17,28 +17,6 @@
 
     .field {
       margin: 5px 0;
-
-      &.field-label-inline .field-label {
-        display: inline;
-      }
-    }
-
-    .field-name-field-tags {
-      .field-item {
-        &::after {
-          content: ',';
-        }
-
-        &:last-child::after {
-          content: none;
-        }
-      }
-    }
-  }
-
-  &-main {
-    p:first-child {
-      margin-top: 10px;
     }
   }
 }

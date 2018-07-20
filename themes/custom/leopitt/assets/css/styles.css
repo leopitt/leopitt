@@ -127,6 +127,9 @@ address {
  * @file
  * Layout.
  */
+.layout-container {
+  position: relative; }
+
 .layout-toggle {
   position: fixed;
   top: 50px;
@@ -228,9 +231,6 @@ address {
 .hidden {
   display: none; }
 
-.root {
-  position: relative; }
-
 /**
  * @file
  * Heading.
@@ -331,15 +331,6 @@ h1.secondary {
       content: none; }
   .page-preface .field {
     margin: 5px 0; }
-    .page-preface .field.field-label-inline .field-label {
-      display: inline; }
-  .page-preface .field-name-field-tags .field-item::after {
-    content: ','; }
-  .page-preface .field-name-field-tags .field-item:last-child::after {
-    content: none; }
-
-.page-main p:first-child {
-  margin-top: 10px; }
 
 /**
  * @file
@@ -475,6 +466,7 @@ button.nav-toggle {
         left: 0;
         bottom: -22px; }
 
+.btn-default,
 button.default {
   background-color: #bd1857;
   color: white;
@@ -510,12 +502,37 @@ button.default {
  * @file
  * Toolbar menu.
  */
-.toolbar-menu li {
+.toolbar-bar li {
   margin: 0; }
-  .toolbar-menu li a {
-    font-size: .8125rem; }
-    .toolbar-menu li a::after {
-      content: none; }
+
+.toolbar-bar a {
+  font-size: .8125rem; }
+  .toolbar-bar a::after {
+    content: none; }
+
+/**
+ * @field
+ * Field.
+ */
+.field-label-inline .field-label,
+.field-label-inline .field-items,
+.field-label-inline .field-item {
+  display: inline; }
+
+.field-name-field-tags.field-label-inline .field-item::after {
+  content: ','; }
+
+.field-name-field-tags.field-label-inline .field-item:last-child::after {
+  content: none; }
+
+/**
+ * @file
+ * Forms.
+ */
+.form-item {
+  margin: 25px 0;
+  padding: 0;
+  border: 0; }
 
 /**
  * @file
@@ -542,8 +559,11 @@ button.nav-toggle {
   button.nav-toggle:hover {
     transform: scale(1); }
 
+.btn-default,
 button.default {
-  transition: color .25s ease-in-out, background-color .25s ease-in-out; }
+  transition: color .25s ease-in-out, background-color .25s ease-in-out;
+  cursor: pointer; }
+  .btn-default:hover,
   button.default:hover {
     color: black;
     background-color: white; }

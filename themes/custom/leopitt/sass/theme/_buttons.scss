@@ -71,11 +71,16 @@ button.nav-toggle {
   }
 }
 
-button.default {
+%btn-default {
   background-color: $color-pink;
   color: white;
   outline: none;
   border: 0;
   padding: $layout-vpad-small;
   box-shadow: 4px 4px white;
+}
+
+.btn-default,
+button.default {
+  @extend %btn-default;
 }

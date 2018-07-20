@@ -3,6 +3,10 @@
  * Layout.
  */
 
+.layout-container {
+  position: relative;
+}
+
 .layout-toggle {
   position: fixed;
   top: $layout-gutter-width/2;

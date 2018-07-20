@@ -1,0 +1,24 @@
+/**
+ * @field
+ * Field.
+ */
+
+.field-label-inline {
+  .field-label,
+  .field-items,
+  .field-item {
+    display: inline;
+  }
+}
+
+.field-name-field-tags.field-label-inline {
+  .field-item {
+    &::after {
+      content: ',';
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+  }
+}
