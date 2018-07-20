@@ -17,16 +17,21 @@
       font-size: $font-size-h4;
     }
   }
-
-  article {
-    margin-bottom: $layout-vpad-base;
-  }
 }
 
-article {
-  .meta {
+.article-teaser {
+  margin-bottom: $layout-vpad-base;
+
+  &-header,
+  &-main,
+  &-footer {
+    margin: $layout-vpad-small 0;
+  }
+
+  &-footer {
     font-size: $font-size-h5;
 
+    /*
     p,
     .field {
       margin: 5px 0;
@@ -58,11 +63,15 @@ article {
         }
       }
     }
+    */
   }
+
+  /*
 
   .content {
     p:first-child {
       margin-top: 10px;
     }
   }
+  */
 }

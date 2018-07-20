@@ -1,0 +1,44 @@
+/**
+ * @file
+ * Page styles.
+ */
+
+.page {
+  &-preface {
+    font-size: $font-size-h5;
+
+    a {
+      font-weight: bold;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    .field {
+      margin: 5px 0;
+
+      &.field-label-inline .field-label {
+        display: inline;
+      }
+    }
+
+    .field-name-field-tags {
+      .field-item {
+        &::after {
+          content: ',';
+        }
+
+        &:last-child::after {
+          content: none;
+        }
+      }
+    }
+  }
+
+  &-main {
+    p:first-child {
+      margin-top: 10px;
+    }
+  }
+}

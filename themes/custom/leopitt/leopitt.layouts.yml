@@ -1,15 +1,3 @@
-article_teaser:
-  label: 'Article teaser'
-  category: 'Custom Layouts'
-  template: templates/layout/custom/article-teaser
-  default_region: main
-  regions:
-    head:
-      label: Head
-    main:
-      label: Main content
-    meta:
-      label: Meta
 article_default:
   label: 'Article default'
   category: 'Custom Layouts'
@@ -20,3 +8,30 @@ article_default:
       label: Meta
     main:
       label: Main content
+page_columns_2:
+  label: '2 Column page'
+  category: 'Custom Layouts'
+  template: templates/layout/custom/page-columns-2
+  default_region: main
+  regions:
+    title:
+      label: Title
+    preface:
+      label: Content preface
+    main:
+      label: Main content
+    secondary:
+      label: Secondary content
+article_teaser:
+  label: 'Article teaser'
+  category: 'Custom Layouts'
+  template: templates/layout/custom/article-teaser
+  default_region: main
+  default_region: main
+  regions:
+    head:
+      label: Header
+    main:
+      label: Main content
+    meta:
+      label: Footer

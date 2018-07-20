@@ -64,17 +64,7 @@
   {% endblock %}
 
   {% block main %}
-  <div class="page page-wrapper layout-secondary-content">
-    <article>
-      <div class="content layout-content-first">
-        {{ page.content_head }}
-      </div>
-
-      <div class="content layout-content-second">
-        {{ page.content }}
-      </div>
-    </article>
-  </div>
+    {{ page.content }}
   {% endblock %}
 
   {% block footer %}

@@ -4,10 +4,14 @@
  * Article teaser template.
  */
 #}
-<article>
-  {{ content.head }}
-  {{ content.main }}
-  <div class="meta">
+<div class="article-teaser">
+  <div class="article-teaser-header">
+    {{ content.head }}
+  </div>
+  <div class="article-teaser-main">
+    {{ content.main }}
+  </div>
+  <div class="article-teaser-footer">
     {{ content.meta }}
   </div>
-</article>
+</div >
