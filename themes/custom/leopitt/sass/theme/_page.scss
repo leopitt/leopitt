@@ -7,14 +7,6 @@
   &-preface {
     font-size: $font-size-h5;
 
-    a {
-      font-weight: bold;
-
-      &::after {
-        content: none;
-      }
-    }
-
     .field {
       margin: 5px 0;
     }

@@ -385,10 +385,6 @@ h1.secondary {
  */
 .page-preface {
   font-size: 0.77rem; }
-  .page-preface a {
-    font-weight: bold; }
-    .page-preface a::after {
-      content: none; }
   .page-preface .field {
     margin: 5px 0; }
 
