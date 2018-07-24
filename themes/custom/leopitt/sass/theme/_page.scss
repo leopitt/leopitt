@@ -4,24 +4,41 @@
  */
 
 .page {
-  &-header {
-    &::after {
-      content: '';
-      display: block;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 100px;
-      background: linear-gradient(rgba(red($color-blue-dark), green($color-blue-dark), blue($color-blue-dark), .8) 40%, rgba(red($color-blue-dark), green($color-blue-dark), blue($color-blue-dark), 0) 100%);
-    }
-  }
-
   &-preface {
     font-size: $font-size-h5;
 
     .field {
       margin: 5px 0;
+    }
+  }
+
+  &-header,
+  &-footer {
+    &::after {
+      content: '';
+      display: block;
+      position: fixed;
+    }
+  }
+
+  &-header {
+    &::after {
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: linear-gradient(rgba(red($color-blue-dark), green($color-blue-dark), blue($color-blue-dark), .6) 40%, rgba(red($color-blue-dark), green($color-blue-dark), blue($color-blue-dark), 0) 100%);
+    }
+  }
+
+  &-footer {
+    &::after {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 70px;
+      background: linear-gradient(rgba(red($color-blue-dark), green($color-blue-dark), blue($color-blue-dark), 0) 0%, rgba(red($color-blue-dark), green($color-blue-dark), blue($color-blue-dark), .2) 40%);
+      z-index: -1;
     }
   }
 }

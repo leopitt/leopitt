@@ -31,15 +31,13 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: $layout-gutter-width-sm/2 $layout-gutter-width-sm/2;
-  text-align: center;
+  padding: $layout-gutter-width-sm/4 $layout-gutter-width-sm/2;
   pointer-events: none;
 }
 
 @include breakpoint-min($screen-md-min) {
   .layout-footer {
     padding: $layout-gutter-width-md/2;
-    text-align: left;
   }
 }
 
