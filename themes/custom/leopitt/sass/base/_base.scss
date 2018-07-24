@@ -5,14 +5,20 @@
 
 html {
   height: 100%;
-  font-size: $font-size-base;
+  font-size: $font-size-small;
   font-family: $font-family-sans-serif;
+}
+
+@include breakpoint-min($screen-md-min) {
+  html {
+    font-size: $font-size-base;
+  }
 }
 
 body {
   background-color: $body-bg-color;
   min-height: 100%;
-  line-height: 1.2;
+  line-height: $body-line-height;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   color: $text-color;
@@ -20,12 +26,12 @@ body {
 
 h1 {
   font-family: $font-family-serif;
-  font-size: $font-size-h2;
+  font-size: 1.5rem;
   text-shadow: 4px 4px $color-pink;
   margin-top: 0;
 }
 
-@include breakpoint-min($screen-sm) {
+@include breakpoint-min($screen-md-min) {
   h1 {
     font-family: $font-family-serif;
     font-size: $font-size-h1;
@@ -108,14 +114,23 @@ li {
 
 blockquote {
   margin: $layout-vpad-small 0;
-  padding: 0 $layout-hpad-base;
+  padding: 0 $layout-hpad-small;
   border-left: 5px solid white;
-  font-size: $font-size-6;
+  font-size: $font-size-5;
 
   > footer {
     &::before {
       content: '\2014 \00A0';
     }
+  }
+}
+
+@include breakpoint-min($screen-md-min) {
+  blockquote {
+    margin: $layout-vpad-small 0;
+    padding: 0 $layout-hpad-base;
+    border-left: 5px solid white;
+    font-size: $font-size-6;
   }
 }
 

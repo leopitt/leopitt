@@ -3,10 +3,17 @@
  * Bg style.
  */
 
-.bg-highlight {
-  fill: $color-pink;
+.bg-shadow.bg-left {
+  display: none;
 }
 
-.bg-shadow {
-  fill: black;
+@include breakpoint-min($screen-md-min) {
+  .bg-highlight {
+    fill: $color-pink;
+  }
+
+  .bg-shadow {
+    fill: black;
+    display: inline;
+  }
 }

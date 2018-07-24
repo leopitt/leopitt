@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Responsive utility classes.
+ */
+
+.hidden-xs {
+  display: none;
+
+  @include breakpoint-min($screen-md-min) {
+    display: block;
+  }
+}

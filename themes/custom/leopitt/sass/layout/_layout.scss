@@ -4,7 +4,13 @@
  */
 
 .layout-outer-wrapper {
-  padding-top: 180px;
+  padding-top: 100px;
+}
+
+@include breakpoint-min($screen-md-min) {
+  .layout-outer-wrapper {
+    padding-top: 180px;
+  }
 }
 
 .layout-brand {
@@ -13,7 +19,7 @@
   left: $layout-gutter-width-sm/2;
 }
 
-@include breakpoint-min($screen-sm) {
+@include breakpoint-min($screen-md-min) {
   .layout-brand {
     top: $layout-gutter-width-md/2;
     left: $layout-gutter-width-md/2;
@@ -22,18 +28,17 @@
 
 .layout-footer {
   position: fixed;
-  bottom: $layout-gutter-width-sm/2;
-  left: $layout-gutter-width-sm/2;
-  right: $layout-gutter-width-sm/2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: $layout-gutter-width-sm/2 $layout-gutter-width-sm/2;
   text-align: center;
   pointer-events: none;
 }
 
-@include breakpoint-min($screen-sm) {
+@include breakpoint-min($screen-md-min) {
   .layout-footer {
-    bottom: $layout-gutter-width-md/2;
-    left: $layout-gutter-width-md/2;
-    right: $layout-gutter-width-md/2;
+    padding: $layout-gutter-width-md/2;
     text-align: left;
   }
 }
@@ -60,7 +65,7 @@
   right: $layout-gutter-width-sm/2;
 }
 
-@include breakpoint-min($screen-sm) {
+@include breakpoint-min($screen-md-min) {
   .layout-toggle {
     position: fixed;
     top: $layout-gutter-width-md/2;
@@ -84,20 +89,21 @@
 }
 
 .layout-col-single {
-  @include zen-grid-item(24, 1);
+  @include zen-grid-item(20, 3);
 }
 
-@include breakpoint-min($screen-sm) {
+@include breakpoint-min($screen-md-min) {
   .layout-col-single {
     @include zen-grid-item(12, 7);
   }
 }
 
 .layout-col-double {
-  @include zen-grid-item(24, 1);
+  @include zen-grid-item(20, 3);
+  clear: left;
 }
 
-@include breakpoint-min($screen-sm) {
+@include breakpoint-min($screen-md-min) {
   .layout-col-double {
     &:nth-child(2n+1) {
       @include zen-grid-item(12, 1);

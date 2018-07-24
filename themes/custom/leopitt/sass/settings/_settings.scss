@@ -7,7 +7,7 @@ $assets-path: '..';
 
 $page-max-width: 1438px;
 
-$screen-sm: 640px;
+$screen-md-min: 640px;
 
 $layout-gutter-width-sm: 50px;
 $layout-gutter-width-md: 100px;
@@ -27,11 +27,13 @@ $color-pink: #bd1857;
 
 $body-bg-color: $color-blue-dark;
 $text-color: white;
+$body-line-height: 1.2;
 
 $font-family-serif: 'Shrikhand', cursive;
 $font-family-sans-serif: 'museo-sans', sans-serif;
 
 $font-size-base: 18px;
+$font-size-small: 14px;
 $font-size-1: 3.94rem; // 77px
 $font-size-1-5: 3.33rem; // 60px
 $font-size-2: 2.66rem; // 48px
@@ -49,13 +51,12 @@ $font-size-h5: $font-size-6; // 14px
 $z-index-ui: 10;
 $z-index-bg: -1;
 
-$nav-toggle-diameter-sm: 34px;
+$nav-toggle-diameter-sm: 35px;
 $nav-toggle-diameter-md: 68px;
-$nav-toggle-diameter: 68px;
 
-$toggle-bar-width-sm: 29px;
-$toggle-bar-border-radius-sm: 3.5px;
-$toggle-bar-border-width-sm: 7px;
+$toggle-bar-width-sm: 16px;
+$toggle-bar-border-radius-sm: 2px;
+$toggle-bar-border-width-sm: 4px;
 
 $toggle-bar-width-md: 29px;
 $toggle-bar-border-radius-md: 3.5px;

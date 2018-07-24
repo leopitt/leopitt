@@ -37,7 +37,7 @@
 }
 
 .nav-main {
-  clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
   background-color: $color-pink;
 
   ul {
@@ -58,29 +58,44 @@
   }
 }
 
+@include breakpoint-min($screen-md-min) {
+  .nav-main {
+    clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
+  }
+}
+
 .nav-page {
   ul {
-    @extend %list-inline;
 
     li {
-      margin: 0 22px;
+      margin: 0 10px;
 
       a {
         font-family: $font-family-serif;
-        font-size: $font-size-h2;
+        font-size: $font-size-h4;
 
         &::after {
           bottom: 0;
           height: 4px;
         }
       }
+    }
+  }
+}
 
-      &:first-child {
-        margin-left: 0;
-      }
+@include breakpoint-min($screen-md-min) {
+  .nav-page {
+    ul {
+      font-size: 0;
 
-      &:last-child {
-        margin-right: 0;
+      li {
+        margin: 0 22px;
+        font-size: 1rem;
+        display: inline-block;
+
+        a {
+          font-size: $font-size-h2;
+        }
       }
     }
   }

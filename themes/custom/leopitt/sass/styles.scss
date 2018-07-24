@@ -4,11 +4,15 @@
  */
 
 @import '../bower_components/zen-grids/sass/zen-grids';
-@import 'mixins';
 
 /* Settings. */
 @import 'settings/settings';
 @import 'settings/zen-grids';
+
+/* Mixins. */
+@import 'mixins/layout';
+@import 'mixins/responsive';
+@import 'mixins/nav-toggle';
 
 /* Base. */
 @import 'base/base';

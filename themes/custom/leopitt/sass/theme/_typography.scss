@@ -4,7 +4,13 @@
  */
 
 .lead {
-  font-size: $font-size-3;
+  font-size: 1.1rem;
+}
+
+@include breakpoint-min($screen-md-min) {
+  .lead {
+    font-size: $font-size-3;
+  }
 }
 
 .text-center {
@@ -17,4 +23,10 @@
 
 .text-right {
   text-align: right;
+}
+
+.text-right-md {
+  @include breakpoint-min($screen-md-min) {
+    text-align: right;
+  }
 }

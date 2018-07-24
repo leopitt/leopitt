@@ -4,6 +4,19 @@
  */
 
 .page {
+  &-header {
+    &::after {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: linear-gradient(rgba(red($color-blue-dark), green($color-blue-dark), blue($color-blue-dark), .8) 40%, rgba(red($color-blue-dark), green($color-blue-dark), blue($color-blue-dark), 0) 100%);
+    }
+  }
+
   &-preface {
     font-size: $font-size-h5;
 

@@ -5,61 +5,9 @@
 
 .nav-toggle {
   @extend %button-reset;
-  display: block;
-  background-color: white;
-  width: $nav-toggle-diameter;
-  height: $nav-toggle-diameter;
-  border-radius: 50%;
-  font-size: 0;
+  @include nav-toggle($nav-toggle-diameter-sm, $toggle-bar-width-sm, $toggle-bar-border-width-sm, $toggle-bar-border-radius-sm);
 
-  .label {
-    display: none;
-  }
-
-  .bars {
-    border-radius: $toggle-bar-border-radius;
-    width: $toggle-bar-width-md;
-    height: $toggle-bar-width-md;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    z-index: 1; // Avoid chrome no border-radius clipping on transition bug
-
-    span.bar {
-      width: $toggle-bar-width-md;
-      height: $toggle-bar-width-md;
-      box-sizing: border-box;
-
-      &:nth-child(1) {
-        border: $toggle-bar-border-width-md solid $color-pink;
-        border-radius: $toggle-bar-border-radius-md;
-        position: absolute;
-        display: block;
-        left: 0;
-        top: -($toggle-bar-width-md - $toggle-bar-border-width-md);
-      }
-
-      &:nth-child(2) {
-        border-radius: $toggle-bar-border-radius-md;
-        height: $toggle-bar-border-width-md;
-        width: $toggle-bar-width-md;
-        left: 0;
-        top: ($toggle-bar-width-md / 2) - ($toggle-bar-border-width-md / 2);
-        position: absolute;
-        background:  $color-pink;
-        box-sizing: content-box;
-      }
-
-      &:nth-child(3) {
-        width: $toggle-bar-width-md;
-        height: $toggle-bar-width-md;
-        border: $toggle-bar-border-width-md solid $color-pink;
-        border-radius: 3px;
-        position: absolute;
-        display: block;
-        left: 0;
-        bottom: -($toggle-bar-width-md - $toggle-bar-border-width-md);
-      }
-    }
+  @include breakpoint-min($screen-md-min) {
+    @include nav-toggle($nav-toggle-diameter-md, $toggle-bar-width-md, $toggle-bar-border-width-md, $toggle-bar-border-radius-md);
   }
 }
