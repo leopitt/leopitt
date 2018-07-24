@@ -3,66 +3,39 @@
  * Layout.
  */
 
-.layout-container {
-  @include zen-grid-container();
-  max-width: $page-max-width;
-  margin: 0 auto;
-}
-
-.layout-toggle {
-  position: fixed;
-  top: $layout-gutter-width/2;
-  right: $layout-gutter-width/2;
-}
-
-.layout-cover {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-.layout-preface {
-  @include zen-grid-item(12, 7);
-  text-align: center;
-}
-
-.layout-container-front {
+.layout-outer-wrapper {
   padding-top: 180px;
-
-  .layout-content {
-    @include zen-grid-item(12, 7);
-    text-align: center;
-  }
-}
-
-.layout-container-secondary {
-  padding-top: 180px;
-
-  .layout-content-first {
-    @include zen-grid-item(12, 1);
-    text-align: right;
-  }
-
-  .layout-content-second {
-    @include zen-grid-item(12, 13);
-  }
 }
 
 .layout-brand {
   position: fixed;
-  top: $layout-gutter-width/2;
-  left: $layout-gutter-width/2;
+  top: $layout-gutter-width-sm/2;
+  left: $layout-gutter-width-sm/2;
+}
+
+@include breakpoint-min($screen-sm) {
+  .layout-brand {
+    top: $layout-gutter-width-md/2;
+    left: $layout-gutter-width-md/2;
+  }
 }
 
 .layout-footer {
   position: fixed;
-  bottom: $layout-gutter-width/2;
-  left: $layout-gutter-width/2;
-  right: $layout-gutter-width/2;
+  bottom: $layout-gutter-width-sm/2;
+  left: $layout-gutter-width-sm/2;
+  right: $layout-gutter-width-sm/2;
+  text-align: center;
   pointer-events: none;
+}
+
+@include breakpoint-min($screen-sm) {
+  .layout-footer {
+    bottom: $layout-gutter-width-md/2;
+    left: $layout-gutter-width-md/2;
+    right: $layout-gutter-width-md/2;
+    text-align: left;
+  }
 }
 
 .layout-ui-top {
@@ -79,4 +52,59 @@
 
 .layout-bg {
   z-index: $z-index-bg;
+}
+
+.layout-toggle {
+  position: fixed;
+  top: $layout-gutter-width-sm/2;
+  right: $layout-gutter-width-sm/2;
+}
+
+@include breakpoint-min($screen-sm) {
+  .layout-toggle {
+    position: fixed;
+    top: $layout-gutter-width-md/2;
+    right: $layout-gutter-width-md/2;
+  }
+}
+
+.layout-cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.layout-container {
+  @include zen-grid-container();
+  max-width: $page-max-width;
+  margin: 0 auto;
+}
+
+.layout-col-single {
+  @include zen-grid-item(24, 1);
+}
+
+@include breakpoint-min($screen-sm) {
+  .layout-col-single {
+    @include zen-grid-item(12, 7);
+  }
+}
+
+.layout-col-double {
+  @include zen-grid-item(24, 1);
+}
+
+@include breakpoint-min($screen-sm) {
+  .layout-col-double {
+    &:nth-child(2n+1) {
+      @include zen-grid-item(12, 1);
+    }
+
+    &:nth-child(2n+2) {
+      @include zen-grid-item(12, 13);
+    }
+  }
 }

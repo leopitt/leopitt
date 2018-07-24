@@ -5,21 +5,19 @@
  */
 #}
 
-<div class="page layout-container layout-container-secondary">
-  <div class="content layout-content-first">
+<div class="page layout-container layout-outer-wrapper">
+  <div class="layout-col-single text-center">
     <div class="page-title">
       {{ content.title }}
     </div>
-    <div class="page-secondary">
-      {{ content.secondary }}
-    </div>
-  </div>
-  <div class="content layout-content-second">
     <div class="page-preface">
       {{ content.preface }}
     </div>
     <div class="page-main">
       {{ content.main }}
+    </div>
+    <div class="page-secondary">
+      {{ content.secondary }}
     </div>
   </div>
 </div>

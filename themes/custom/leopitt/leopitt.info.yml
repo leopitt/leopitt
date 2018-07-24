@@ -12,6 +12,6 @@ regions:
   brand: Brand
   header: Header
   preface: Preface
-  content_front: Content (front page only)
   content: Content
+  postscript: Postscript
   footer: Footer

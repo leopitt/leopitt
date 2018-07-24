@@ -43,10 +43,10 @@
  * @see html.html.twig
  */
 #}
-<div>
+<div class="root-container">
 
   {% block header %}
-  <header>
+  <header class="page-header">
     <div class="layout-brand layout-ui-top">
       <a href="/" class="brand">Leo Pitt</a>
       {{ page.brand }}
@@ -62,22 +62,36 @@
   </header>
   {% endblock %}
 
+  {% block preface %}
   {% if page.preface %}
-    {% block preface %}
-      <div class="layout-container">
-        <div class="layout-preface">
-          {{ page.preface }}
-        </div>
+    <div class="page-preface layout-container">
+      <div class="layout-col-single text-center">
+        {{ page.preface }}
       </div>
-    {% endblock %}
+    </div>
   {% endif %}
+  {% endblock %}
 
   {% block main %}
+  {% if page.content %}
+  <div class="page-main">
     {{ page.content }}
+  </div>
+  {% endif %}
+  {% endblock %}
+
+  {% block postscript %}
+  {% if page.postscript %}
+  <div class="page-postscript layout-container">
+    <div class="layout-col-single text-center">
+      {{ page.postscript }}
+    </div>
+  </div>
+  {% endif %}
   {% endblock %}
 
   {% block footer %}
-  <footer class="layout-footer layout-ui">
+  <footer class="page-footer layout-footer layout-ui">
     {{ page.footer }}
   </footer>
 

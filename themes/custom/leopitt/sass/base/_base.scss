@@ -20,9 +20,18 @@ body {
 
 h1 {
   font-family: $font-family-serif;
-  font-size: $font-size-h1;
+  font-size: $font-size-h2;
   text-shadow: 4px 4px $color-pink;
   margin-top: 0;
+}
+
+@include breakpoint-min($screen-sm) {
+  h1 {
+    font-family: $font-family-serif;
+    font-size: $font-size-h1;
+    text-shadow: 4px 4px $color-pink;
+    margin-top: 0;
+  }
 }
 
 h2 {

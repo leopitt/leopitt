@@ -4,7 +4,7 @@
  */
 
 .article-list {
-  margin: $layout-vpad-large ($layout-gutter-width/2);
+  margin: $layout-vpad-large 0;
 
   > header {
     margin: 0 0 $layout-vpad-base;
@@ -16,6 +16,12 @@
     a {
       font-size: $font-size-h4;
     }
+  }
+}
+
+@breakpoint-min($screen-sm) {
+  .article-list {
+    margin: $layout-vpad-large ($layout-gutter-width/2);
   }
 }
 

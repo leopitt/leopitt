@@ -4,16 +4,22 @@
  */
 
 @import '../bower_components/zen-grids/sass/zen-grids';
+@import 'mixins';
 
+/* Settings. */
 @import 'settings/settings';
 @import 'settings/zen-grids';
 
+/* Base. */
 @import 'base/base';
 
+/* Layout. */
 @import 'layout/layout';
 
+/* Theme. */
 @import 'theme/figure';
 @import 'theme/misc';
+@import 'theme/typography';
 @import 'theme/heading';
 @import 'theme/brand';
 @import 'theme/bg';
@@ -28,6 +34,7 @@
 @import 'theme/field';
 @import 'theme/form';
 
+/* State. */
 @import 'state/nav';
 @import 'state/nav-toggle';
 @import 'state/buttons';

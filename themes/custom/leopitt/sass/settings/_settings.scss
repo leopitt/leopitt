@@ -7,7 +7,11 @@ $assets-path: '..';
 
 $page-max-width: 1438px;
 
-$layout-gutter-width: 100px;
+$screen-sm: 640px;
+
+$layout-gutter-width-sm: 50px;
+$layout-gutter-width-md: 100px;
+$layout-gutter-width: $layout-gutter-width-sm;
 
 $layout-vpad-large: 80px;
 $layout-vpad-base: 40px;

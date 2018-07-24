@@ -4,12 +4,20 @@
  */
 /**
  * @file
+ * Mixins.scss
+ */
+/* Set styles for inclusion only above a screen size. */
+/* Set styles for inclusion only below a screen size. */
+/* Settings. */
+/**
+ * @file
  * Variables etc.
  */
 /**
  * @file
  * Zen Grids.
  */
+/* Base. */
 /**
  * @file
  * Base.
@@ -29,9 +37,16 @@ body {
 
 h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 3.94rem;
+  font-size: 1.33rem;
   text-shadow: 4px 4px #bd1857;
   margin-top: 0; }
+
+@media screen and (min-width: 640px) {
+  h1 {
+    font-family: "Shrikhand", cursive;
+    font-size: 3.94rem;
+    text-shadow: 4px 4px #bd1857;
+    margin-top: 0; } }
 
 h2 {
   font-family: "museo-sans", sans-serif;
@@ -123,87 +138,38 @@ address {
   margin: 0;
   font-weight: bold; }
 
+/* Layout. */
 /**
  * @file
  * Layout.
  */
-.layout-container {
-  max-width: 1438px;
-  margin: 0 auto; }
-  .layout-container:before {
-    content: "";
-    display: table; }
-  .layout-container:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.layout-toggle {
-  position: fixed;
-  top: 50px;
-  right: 50px; }
-
-.layout-cover {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  pointer-events: none; }
-
-.layout-preface {
-  float: left;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: -100%;
-  padding-left: 50px;
-  padding-right: 50px;
-  box-sizing: border-box;
-  text-align: center; }
-
-.layout-container-front {
+.layout-outer-wrapper {
   padding-top: 180px; }
-  .layout-container-front .layout-content {
-    float: left;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: -100%;
-    padding-left: 50px;
-    padding-right: 50px;
-    box-sizing: border-box;
-    text-align: center; }
-
-.layout-container-secondary {
-  padding-top: 180px; }
-  .layout-container-secondary .layout-content-first {
-    float: left;
-    width: 50%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 50px;
-    padding-right: 50px;
-    box-sizing: border-box;
-    text-align: right; }
-  .layout-container-secondary .layout-content-second {
-    float: left;
-    width: 50%;
-    margin-left: 50%;
-    margin-right: -100%;
-    padding-left: 50px;
-    padding-right: 50px;
-    box-sizing: border-box; }
 
 .layout-brand {
   position: fixed;
-  top: 50px;
-  left: 50px; }
+  top: 25px;
+  left: 25px; }
+
+@media screen and (min-width: 640px) {
+  .layout-brand {
+    top: 50px;
+    left: 50px; } }
 
 .layout-footer {
   position: fixed;
-  bottom: 50px;
-  left: 50px;
-  right: 50px;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  text-align: center;
   pointer-events: none; }
+
+@media screen and (min-width: 640px) {
+  .layout-footer {
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    text-align: left; } }
 
 .layout-ui-top {
   z-index: 11; }
@@ -217,6 +183,83 @@ address {
 .layout-bg {
   z-index: -1; }
 
+.layout-toggle {
+  position: fixed;
+  top: 25px;
+  right: 25px; }
+
+@media screen and (min-width: 640px) {
+  .layout-toggle {
+    position: fixed;
+    top: 50px;
+    right: 50px; } }
+
+.layout-cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none; }
+
+.layout-container {
+  max-width: 1438px;
+  margin: 0 auto; }
+  .layout-container:before {
+    content: "";
+    display: table; }
+  .layout-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.layout-col-single {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box; }
+
+@media screen and (min-width: 640px) {
+  .layout-col-single {
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: -100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box; } }
+
+.layout-col-double {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box; }
+
+@media screen and (min-width: 640px) {
+  .layout-col-double:nth-child(2n+1) {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box; }
+  .layout-col-double:nth-child(2n+2) {
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box; } }
+
+/* Theme. */
 /**
  * @file
  * Figure.
@@ -225,11 +268,24 @@ address {
  * @file
  * Lead.
  */
+.hidden {
+  display: none; }
+
+/**
+ * @file
+ * Typography.
+ */
 .lead {
   font-size: 1.33rem; }
 
-.hidden {
-  display: none; }
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
 
 /**
  * @file
@@ -263,13 +319,17 @@ h1.secondary {
  * Article styles.
  */
 .article-list {
-  margin: 80px 50px; }
+  margin: 80px 0; }
   .article-list > header {
     margin: 0 0 40px; }
   .article-list > footer {
     margin: 40px 0 0; }
     .article-list > footer a {
       font-size: 1rem; }
+
+@breakpoint-min ($screen-sm) {
+  .article-list {
+    margin: 80px 25px; } }
 
 .article-teaser {
   margin-bottom: 40px;
@@ -553,6 +613,7 @@ h1.secondary {
   padding: 0;
   border: 0; }
 
+/* State. */
 /**
  * @file
  * Nav.
