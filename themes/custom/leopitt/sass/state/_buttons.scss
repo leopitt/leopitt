@@ -3,27 +3,16 @@
  * Buttons.
  */
 
-button.nav-toggle {
-  transition: transform .25s ease;
-  transform: scale(.94117647058824);
-
-  .bar {
-    transition: transform .5s ease;
-  }
-
-  &:focus {
-    outline: 0;
-  }
+%btn {
+  transition: color .25s ease-in-out, background-color .25s ease-in-out;
 
   &:hover {
-    transform: scale(1);
+    color: black;
+    background-color: $color-pink;
   }
 }
 
-%btn-default {
-  transition: color .25s ease-in-out, background-color .25s ease-in-out;
-  cursor: pointer;
-
+%btn-inverse {
   &:hover {
     color: black;
     background-color: white;

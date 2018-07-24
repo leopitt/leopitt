@@ -8,79 +8,39 @@
   margin: 0;
   border: 0;
   cursor: pointer;
+  outline: none;
 }
 
-button.nav-toggle {
+%btn {
   @extend %button-reset;
-  display: block;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  color: $color-pink;
   background-color: white;
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-  font-size: 0;
-
-  .label {
-    display: none;
-  }
-
-  .bars {
-    border-radius: $toggle-bar-border-radius;
-    width: $toggle-bar-width;
-    height: $toggle-bar-width;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    z-index: 1; // Avoid chrome no border-radius clipping on transition bug
-
-    span.bar {
-      width: $toggle-bar-width;
-      height: $toggle-bar-width;
-      box-sizing: border-box;
-
-      &:nth-child(1) {
-        border: $toggle-bar-border-width solid $color-pink;
-        border-radius: $toggle-bar-border-radius;
-        position: absolute;
-        display: block;
-        left: 0;
-        top: -($toggle-bar-width - $toggle-bar-border-width);
-      }
-
-      &:nth-child(2) {
-        border-radius: $toggle-bar-border-radius;
-        height: $toggle-bar-border-width;
-        width: $toggle-bar-width;
-        left: 0;
-        top: ($toggle-bar-width / 2) - ($toggle-bar-border-width / 2);
-        position: absolute;
-        background:  $color-pink;
-        box-sizing: content-box;
-      }
-
-      &:nth-child(3) {
-        width: $toggle-bar-width;
-        height: $toggle-bar-width;
-        border: $toggle-bar-border-width solid $color-pink;
-        border-radius: 3px;
-        position: absolute;
-        display: block;
-        left: 0;
-        bottom: -($toggle-bar-width - $toggle-bar-border-width);
-      }
-    }
-  }
+  border: 0;
+  padding: $layout-vpad-xsmall;
+  margin: 0 $layout-vpad-xsmall $layout-vpad-xsmall 0;
+  box-shadow: 4px 4px $color-pink;
 }
 
-%btn-default {
+%btn-inverse {
   background-color: $color-pink;
   color: white;
-  outline: none;
-  border: 0;
-  padding: $layout-vpad-small;
   box-shadow: 4px 4px white;
 }
 
-.btn-default,
-button.default {
-  @extend %btn-default;
+%btn-lg {
+  padding: $layout-vpad-small;
+}
+
+.btn {
+  @extend %btn;
+}
+
+.btn-inverse {
+  @extend %btn-inverse;
+}
+
+.btn-lg {
+  @extend %btn-lg;
 }

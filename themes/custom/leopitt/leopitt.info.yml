@@ -11,6 +11,7 @@ libraries:
 regions:
   brand: Brand
   header: Header
-  content_head: Content head
+  preface: Preface
+  content_front: Content (front page only)
   content: Content
   footer: Footer

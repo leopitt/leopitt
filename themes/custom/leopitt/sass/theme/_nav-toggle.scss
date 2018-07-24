@@ -1,0 +1,65 @@
+/**
+ * @file
+ * Nav-toggle styles.
+ */
+
+.nav-toggle {
+  @extend %button-reset;
+  display: block;
+  background-color: white;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  font-size: 0;
+
+  .label {
+    display: none;
+  }
+
+  .bars {
+    border-radius: $toggle-bar-border-radius;
+    width: $toggle-bar-width;
+    height: $toggle-bar-width;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    z-index: 1; // Avoid chrome no border-radius clipping on transition bug
+
+    span.bar {
+      width: $toggle-bar-width;
+      height: $toggle-bar-width;
+      box-sizing: border-box;
+
+      &:nth-child(1) {
+        border: $toggle-bar-border-width solid $color-pink;
+        border-radius: $toggle-bar-border-radius;
+        position: absolute;
+        display: block;
+        left: 0;
+        top: -($toggle-bar-width - $toggle-bar-border-width);
+      }
+
+      &:nth-child(2) {
+        border-radius: $toggle-bar-border-radius;
+        height: $toggle-bar-border-width;
+        width: $toggle-bar-width;
+        left: 0;
+        top: ($toggle-bar-width / 2) - ($toggle-bar-border-width / 2);
+        position: absolute;
+        background:  $color-pink;
+        box-sizing: content-box;
+      }
+
+      &:nth-child(3) {
+        width: $toggle-bar-width;
+        height: $toggle-bar-width;
+        border: $toggle-bar-border-width solid $color-pink;
+        border-radius: 3px;
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: -($toggle-bar-width - $toggle-bar-border-width);
+      }
+    }
+  }
+}

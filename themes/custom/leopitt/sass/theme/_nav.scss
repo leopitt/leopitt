@@ -104,3 +104,20 @@
     }
   }
 }
+
+.nav-local-tasks {
+  ul {
+    @extend %list-inline;
+    display: inline-block;
+
+    > li {
+      > a {
+        @extend %btn;
+
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}

@@ -43,7 +43,7 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
+<div>
 
   {% block header %}
   <header>
@@ -61,6 +61,16 @@
       <span class="label">Toggle navigation</span></button>
   </header>
   {% endblock %}
+
+  {% if page.preface %}
+    {% block preface %}
+      <div class="layout-container">
+        <div class="layout-preface">
+          {{ page.preface }}
+        </div>
+      </div>
+    {% endblock %}
+  {% endif %}
 
   {% block main %}
     {{ page.content }}

@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Nav-toggle states.
+ */
+
+.nav-toggle {
+  transition: transform .25s ease;
+  transform: scale(.94117647058824);
+
+  .bar {
+    transition: transform .5s ease;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    transform: scale(1);
+  }
+}

@@ -4,7 +4,9 @@
  */
 
 .layout-container {
-  position: relative;
+  @include zen-grid-container();
+  max-width: $page-max-width;
+  margin: 0 auto;
 }
 
 .layout-toggle {
@@ -22,13 +24,12 @@
   pointer-events: none;
 }
 
-.layout-page {
-  max-width: $page-max-width;
-  margin: 0 auto;
+.layout-preface {
+  @include zen-grid-item(12, 7);
+  text-align: center;
 }
 
-.layout-front-content {
-  @include zen-grid-container();
+.layout-container-front {
   padding-top: 180px;
 
   .layout-content {
@@ -37,8 +38,7 @@
   }
 }
 
-.layout-secondary-content {
-  @include zen-grid-container();
+.layout-container-secondary {
   padding-top: 180px;
 
   .layout-content-first {

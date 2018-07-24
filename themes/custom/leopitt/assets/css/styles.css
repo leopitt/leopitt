@@ -128,7 +128,15 @@ address {
  * Layout.
  */
 .layout-container {
-  position: relative; }
+  max-width: 1438px;
+  margin: 0 auto; }
+  .layout-container:before {
+    content: "";
+    display: table; }
+  .layout-container:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .layout-toggle {
   position: fixed;
@@ -143,20 +151,19 @@ address {
   left: 0;
   pointer-events: none; }
 
-.layout-page {
-  max-width: 1438px;
-  margin: 0 auto; }
+.layout-preface {
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: -100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  text-align: center; }
 
-.layout-front-content {
+.layout-container-front {
   padding-top: 180px; }
-  .layout-front-content:before {
-    content: "";
-    display: table; }
-  .layout-front-content:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .layout-front-content .layout-content {
+  .layout-container-front .layout-content {
     float: left;
     width: 50%;
     margin-left: 25%;
@@ -166,16 +173,9 @@ address {
     box-sizing: border-box;
     text-align: center; }
 
-.layout-secondary-content {
+.layout-container-secondary {
   padding-top: 180px; }
-  .layout-secondary-content:before {
-    content: "";
-    display: table; }
-  .layout-secondary-content:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .layout-secondary-content .layout-content-first {
+  .layout-container-secondary .layout-content-first {
     float: left;
     width: 50%;
     margin-left: 0%;
@@ -184,7 +184,7 @@ address {
     padding-right: 50px;
     box-sizing: border-box;
     text-align: right; }
-  .layout-secondary-content .layout-content-second {
+  .layout-container-secondary .layout-content-second {
     float: left;
     width: 50%;
     margin-left: 50%;
@@ -345,9 +345,9 @@ h1.secondary {
     margin: 0;
     padding: 0; }
 
-.nav-breadcrumb ol, .nav-page ul, .nav-social ul {
+.nav-breadcrumb ol, .nav-page ul, .nav-social ul, .nav-local-tasks ul {
   font-size: 0; }
-  .nav-breadcrumb ol li, .nav-page ul li, .nav-social ul li {
+  .nav-breadcrumb ol li, .nav-page ul li, .nav-social ul li, .nav-local-tasks ul li {
     font-size: 1rem;
     display: inline-block; }
 
@@ -409,26 +409,54 @@ h1.secondary {
     .nav-social ul li:last-child {
       margin-right: 0; }
 
+.nav-local-tasks ul {
+  display: inline-block; }
+  .nav-local-tasks ul > li > a::after {
+    content: none; }
+
 /**
  * @file
  * Nav toggle button.
  */
-button.nav-toggle {
+.nav-local-tasks ul > li > a, .btn, .nav-toggle {
   padding: 0;
   margin: 0;
   border: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
-button.nav-toggle {
+.nav-local-tasks ul > li > a, .btn {
+  font-family: "museo-sans", sans-serif;
+  font-size: 18px;
+  color: #bd1857;
+  background-color: white;
+  border: 0;
+  padding: 10px;
+  margin: 0 10px 10px 0;
+  box-shadow: 4px 4px #bd1857; }
+
+.btn-inverse {
+  background-color: #bd1857;
+  color: white;
+  box-shadow: 4px 4px white; }
+
+.btn-lg {
+  padding: 25px; }
+
+/**
+ * @file
+ * Nav-toggle styles.
+ */
+.nav-toggle {
   display: block;
   background-color: white;
   width: 68px;
   height: 68px;
   border-radius: 50%;
   font-size: 0; }
-  button.nav-toggle .label {
+  .nav-toggle .label {
     display: none; }
-  button.nav-toggle .bars {
+  .nav-toggle .bars {
     border-radius: 3.5px;
     width: 29px;
     height: 29px;
@@ -436,18 +464,18 @@ button.nav-toggle {
     position: relative;
     display: inline-block;
     z-index: 1; }
-    button.nav-toggle .bars span.bar {
+    .nav-toggle .bars span.bar {
       width: 29px;
       height: 29px;
       box-sizing: border-box; }
-      button.nav-toggle .bars span.bar:nth-child(1) {
+      .nav-toggle .bars span.bar:nth-child(1) {
         border: 7px solid #bd1857;
         border-radius: 3.5px;
         position: absolute;
         display: block;
         left: 0;
         top: -22px; }
-      button.nav-toggle .bars span.bar:nth-child(2) {
+      .nav-toggle .bars span.bar:nth-child(2) {
         border-radius: 3.5px;
         height: 7px;
         width: 29px;
@@ -456,7 +484,7 @@ button.nav-toggle {
         position: absolute;
         background: #bd1857;
         box-sizing: content-box; }
-      button.nav-toggle .bars span.bar:nth-child(3) {
+      .nav-toggle .bars span.bar:nth-child(3) {
         width: 29px;
         height: 29px;
         border: 7px solid #bd1857;
@@ -465,15 +493,6 @@ button.nav-toggle {
         display: block;
         left: 0;
         bottom: -22px; }
-
-.btn-default,
-button.default {
-  background-color: #bd1857;
-  color: white;
-  outline: none;
-  border: 0;
-  padding: 25px;
-  box-shadow: 4px 4px white; }
 
 /**
  * @file
@@ -547,23 +566,28 @@ button.default {
 
 /**
  * @file
- * Buttons.
+ * Nav-toggle states.
  */
-button.nav-toggle {
+.nav-toggle {
   transition: transform .25s ease;
   transform: scale(0.94118); }
-  button.nav-toggle .bar {
+  .nav-toggle .bar {
     transition: transform .5s ease; }
-  button.nav-toggle:focus {
+  .nav-toggle:focus {
     outline: 0; }
-  button.nav-toggle:hover {
+  .nav-toggle:hover {
     transform: scale(1); }
 
-.btn-default,
-button.default {
-  transition: color .25s ease-in-out, background-color .25s ease-in-out;
-  cursor: pointer; }
-  .btn-default:hover,
-  button.default:hover {
+/**
+ * @file
+ * Buttons.
+ */
+.nav-local-tasks ul > li > a, .btn {
+  transition: color .25s ease-in-out, background-color .25s ease-in-out; }
+  .nav-local-tasks ul > li > a:hover, .btn:hover {
     color: black;
-    background-color: white; }
+    background-color: #bd1857; }
+
+.btn-inverse:hover {
+  color: black;
+  background-color: white; }
