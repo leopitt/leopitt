@@ -51,13 +51,13 @@ body {
   background-color: #090423;
   min-height: 100%;
   line-height: 1.2;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
   -webkit-font-smoothing: antialiased;
   color: white; }
 
 @media screen and (min-width: 640px) {
   body {
-    margin: 0 0 120px 0; } }
+    margin: 0 0 120px; } }
 
 h1 {
   font-family: "Shrikhand", cursive;
@@ -70,6 +70,10 @@ h1 {
     font-size: 2.66rem; } }
 
 @media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.66rem; } }
+
+@media screen and (min-width: 1920px) {
   h1 {
     font-size: 3.94rem; } }
 
@@ -117,8 +121,12 @@ figure {
 
 @media screen and (min-width: 1024px) {
   figure {
-    margin: 25px 50px 40px -75%;
+    margin: 25px 50px 40px -50%;
     float: left; } }
+
+@media screen and (min-width: 1920px) {
+  figure {
+    margin-left: -75%; } }
 
 p {
   margin: 25px 0; }
@@ -314,22 +322,44 @@ address {
     clear: left; } }
 
 @media screen and (min-width: 1024px) {
-  .layout-col-double:nth-child(2n+1) {
-    float: left;
-    width: 50%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 25px;
-    padding-right: 25px;
-    box-sizing: border-box; }
-  .layout-col-double:nth-child(2n+2) {
-    float: left;
-    width: 50%;
-    margin-left: 50%;
-    margin-right: -100%;
-    padding-left: 25px;
-    padding-right: 25px;
-    box-sizing: border-box; } }
+  .layout-col-double {
+    clear: none; }
+    .layout-col-double:nth-child(2n+1) {
+      float: left;
+      width: 37.5%;
+      margin-left: 12.5%;
+      margin-right: -100%;
+      padding-left: 25px;
+      padding-right: 25px;
+      box-sizing: border-box; }
+    .layout-col-double:nth-child(2n+2) {
+      float: left;
+      width: 37.5%;
+      margin-left: 50%;
+      margin-right: -100%;
+      padding-left: 25px;
+      padding-right: 25px;
+      box-sizing: border-box; } }
+
+@media screen and (min-width: 1920px) {
+  .layout-col-double {
+    clear: none; }
+    .layout-col-double:nth-child(2n+1) {
+      float: left;
+      width: 41.66667%;
+      margin-left: 8.33333%;
+      margin-right: -100%;
+      padding-left: 25px;
+      padding-right: 25px;
+      box-sizing: border-box; }
+    .layout-col-double:nth-child(2n+2) {
+      float: left;
+      width: 41.66667%;
+      margin-left: 50%;
+      margin-right: -100%;
+      padding-left: 25px;
+      padding-right: 25px;
+      box-sizing: border-box; } }
 
 /* Theme. */
 /**
@@ -348,14 +378,18 @@ address {
  * Typography.
  */
 .lead {
-  font-size: 1.1rem; }
+  font-size: 1.2rem; }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1920px) {
   .lead {
     font-size: 1.33rem; } }
 
 .text-center {
   text-align: center; }
+
+@media screen and (max-width: 1023px) {
+  .text-center-max-md {
+    text-align: center; } }
 
 .text-left {
   text-align: left; }
@@ -364,7 +398,7 @@ address {
   text-align: right; }
 
 @media screen and (min-width: 1024px) {
-  .text-right-md {
+  .text-right-min-md {
     text-align: right; } }
 
 .field-type-text-with-summary a {

@@ -134,12 +134,28 @@
 
 @include breakpoint-min($screen-md-min) {
   .layout-col-double {
+    clear: none;
+
     &:nth-child(2n+1) {
-      @include zen-grid-item(12, 1);
+      @include zen-grid-item(9, 4);
     }
 
     &:nth-child(2n+2) {
-      @include zen-grid-item(12, 13);
+      @include zen-grid-item(9, 13);
+    }
+  }
+}
+
+@include breakpoint-min($screen-lg-min) {
+  .layout-col-double {
+    clear: none;
+
+    &:nth-child(2n+1) {
+      @include zen-grid-item(10, 3);
+    }
+
+    &:nth-child(2n+2) {
+      @include zen-grid-item(10, 13);
     }
   }
 }
