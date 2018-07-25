@@ -10,7 +10,7 @@
   margin-right: -2px;
 }
 
-@include breakpoint-min($screen-md-min) {
+@include breakpoint-min($screen-sm-min) {
   .brand {
     font-size: 1.5rem;
   }

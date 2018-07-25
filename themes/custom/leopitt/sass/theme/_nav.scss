@@ -59,7 +59,7 @@
   }
 }
 
-@include breakpoint-min($screen-md-min) {
+@include breakpoint-min($screen-sm-min) {
   .nav-main {
     clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
   }
@@ -84,8 +84,10 @@
   }
 }
 
-@include breakpoint-min($screen-md-min) {
+@include breakpoint-min($screen-sm-min) {
   .nav-page {
+    margin: $layout-vpad-small 0;
+
     ul {
       font-size: 0;
 
@@ -121,7 +123,7 @@
   }
 }
 
-@include breakpoint-min($screen-md-min) {
+@include breakpoint-min($screen-sm-min) {
   .nav-social {
     ul {
       li {

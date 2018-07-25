@@ -7,7 +7,7 @@
   font-size: 1.1rem;
 }
 
-@include breakpoint-min($screen-md-min) {
+@include breakpoint-min($screen-sm-min) {
   .lead {
     font-size: $font-size-3;
   }
@@ -28,5 +28,21 @@
 .text-right-md {
   @include breakpoint-min($screen-md-min) {
     text-align: right;
+  }
+}
+
+.field-type-text-with-summary {
+  a {
+    display: inline;
+    text-decoration: underline;
+    text-decoration-color: $color-pink;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &::after {
+      content: none;
+    }
   }
 }

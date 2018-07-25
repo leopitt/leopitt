@@ -7,7 +7,7 @@
   display: none;
 }
 
-@include breakpoint-min($screen-md-min) {
+@include breakpoint-min($screen-sm-min) {
   .bg-highlight {
     fill: $color-pink;
   }

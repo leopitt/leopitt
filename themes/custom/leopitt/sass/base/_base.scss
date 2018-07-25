@@ -9,7 +9,7 @@ html {
   font-family: $font-family-sans-serif;
 }
 
-@include breakpoint-min($screen-md-min) {
+@include breakpoint-min($screen-sm-min) {
   html {
     font-size: $font-size-base;
   }
@@ -19,14 +19,14 @@ body {
   background-color: $body-bg-color;
   min-height: 100%;
   line-height: $body-line-height;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
   -webkit-font-smoothing: antialiased;
   color: $text-color;
 }
 
-@include breakpoint-min($screen-md-min) {
+@include breakpoint-min($screen-sm-min) {
   body {
-    margin: 0 0 120px 0;
+    margin: 0 0 120px;
   }
 }
 
@@ -37,12 +37,15 @@ h1 {
   margin-top: 0;
 }
 
+@include breakpoint-min($screen-sm-min) {
+  h1 {
+    font-size: $font-size-2;
+  }
+}
+
 @include breakpoint-min($screen-md-min) {
   h1 {
-    font-family: $font-family-serif;
     font-size: $font-size-h1;
-    text-shadow: 4px 4px $color-pink;
-    margin-top: 0;
   }
 }
 
@@ -97,8 +100,8 @@ a {
 
 figure {
   max-width: 100%;
-  margin: $layout-vpad-small $layout-hpad-base $layout-vpad-base -75%;
-  float: left;
+  float: none;
+  margin: $layout-vpad-small 0;
 
   img {
     max-width: 100%;
@@ -106,6 +109,13 @@ figure {
 
   figcaption {
     font-size: $font-size-6;
+  }
+}
+
+@include breakpoint-min($screen-md-min) {
+  figure {
+    margin: $layout-vpad-small $layout-hpad-base $layout-vpad-base -75%;
+    float: left;
   }
 }
 
@@ -131,7 +141,7 @@ blockquote {
   }
 }
 
-@include breakpoint-min($screen-md-min) {
+@include breakpoint-min($screen-sm-min) {
   blockquote {
     margin: $layout-vpad-small 0;
     padding: 0 $layout-hpad-base;

@@ -6,7 +6,7 @@
 .hidden-xs {
   display: none;
 
-  @include breakpoint-min($screen-md-min) {
+  @include breakpoint-min($screen-sm-min) {
     display: block;
   }
 }

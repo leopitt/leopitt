@@ -7,6 +7,12 @@
   padding-top: 100px;
 }
 
+@include breakpoint-min($screen-sm-min) {
+  .layout-outer-wrapper {
+    padding-top: 140px;
+  }
+}
+
 @include breakpoint-min($screen-md-min) {
   .layout-outer-wrapper {
     padding-top: 180px;
@@ -19,7 +25,7 @@
   left: $layout-gutter-width-sm/2;
 }
 
-@include breakpoint-min($screen-md-min) {
+@include breakpoint-min($screen-sm-min) {
   .layout-brand {
     top: $layout-gutter-width-md/2;
     left: $layout-gutter-width-md/2;
@@ -31,11 +37,11 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: $layout-gutter-width-sm/4 $layout-gutter-width-sm/2;
+  padding: $layout-vpad-xsmall $layout-gutter-width-sm/2;
   pointer-events: none;
 }
 
-@include breakpoint-min($screen-md-min) {
+@include breakpoint-min($screen-sm-min) {
   .layout-footer {
     padding: $layout-gutter-width-md/2;
   }
@@ -49,6 +55,12 @@
   z-index: $z-index-ui;
 }
 
+@include breakpoint-min($screen-sm-min) {
+  .layout-ui-md {
+    z-index: $z-index-ui;
+  }
+}
+
 .layout-ui-bottom {
   z-index: ($z-index-ui - 1);
 }
@@ -59,13 +71,19 @@
 
 .layout-toggle {
   position: fixed;
-  top: $layout-gutter-width-sm/2;
+  top: $layout-vpad-xsmall;
   right: $layout-gutter-width-sm/2;
+}
+
+@include breakpoint-min($screen-sm-min) {
+  .layout-toggle {
+    top: $layout-vpad-small;
+    right: $layout-gutter-width-md/2;
+  }
 }
 
 @include breakpoint-min($screen-md-min) {
   .layout-toggle {
-    position: fixed;
     top: $layout-gutter-width-md/2;
     right: $layout-gutter-width-md/2;
   }
@@ -90,6 +108,12 @@
   @include zen-grid-item(20, 3);
 }
 
+@include breakpoint-min($screen-sm-min) {
+  .layout-col-single {
+    @include zen-grid-item(18, 4);
+  }
+}
+
 @include breakpoint-min($screen-md-min) {
   .layout-col-single {
     @include zen-grid-item(12, 7);
@@ -99,6 +123,13 @@
 .layout-col-double {
   @include zen-grid-item(20, 3);
   clear: left;
+}
+
+@include breakpoint-min($screen-sm-min) {
+  .layout-col-double {
+    @include zen-grid-item(16, 5);
+    clear: left;
+  }
 }
 
 @include breakpoint-min($screen-md-min) {

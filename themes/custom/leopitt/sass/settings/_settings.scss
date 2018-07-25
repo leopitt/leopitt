@@ -7,16 +7,17 @@ $assets-path: '..';
 
 $page-max-width: 1438px;
 
-$screen-md-min: 640px;
+$screen-sm-min: 640px;
+$screen-md-min: 1024px;
 
 $layout-gutter-width-sm: 50px;
 $layout-gutter-width-md: 100px;
 $layout-gutter-width: $layout-gutter-width-sm;
 
-$layout-vpad-large: 80px;
+$layout-vpad-large: 60px;
 $layout-vpad-base: 40px;
 $layout-vpad-small: 25px;
-$layout-vpad-xsmall: 10px;
+$layout-vpad-xsmall: 15px;
 
 $layout-hpad-large: 80px;
 $layout-hpad-base: 50px;
