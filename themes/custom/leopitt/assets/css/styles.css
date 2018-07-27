@@ -323,23 +323,13 @@ address {
 
 @media screen and (min-width: 1024px) {
   .layout-col-double {
-    clear: none; }
-    .layout-col-double:nth-child(2n+1) {
-      float: left;
-      width: 37.5%;
-      margin-left: 12.5%;
-      margin-right: -100%;
-      padding-left: 25px;
-      padding-right: 25px;
-      box-sizing: border-box; }
-    .layout-col-double:nth-child(2n+2) {
-      float: left;
-      width: 37.5%;
-      margin-left: 50%;
-      margin-right: -100%;
-      padding-left: 25px;
-      padding-right: 25px;
-      box-sizing: border-box; } }
+    float: left;
+    width: 58.33333%;
+    margin-left: 20.83333%;
+    margin-right: -100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box; } }
 
 @media screen and (min-width: 1920px) {
   .layout-col-double {
@@ -391,6 +381,10 @@ address {
   .text-center-max-md {
     text-align: center; } }
 
+@media screen and (max-width: 1919px) {
+  .text-center-max-lg {
+    text-align: center; } }
+
 .text-left {
   text-align: left; }
 
@@ -399,6 +393,10 @@ address {
 
 @media screen and (min-width: 1024px) {
   .text-right-min-md {
+    text-align: right; } }
+
+@media screen and (min-width: 1920px) {
+  .text-right-min-lg {
     text-align: right; } }
 
 .field-type-text-with-summary a {

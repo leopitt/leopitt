@@ -23,6 +23,12 @@
   }
 }
 
+.text-center-max-lg {
+  @include breakpoint-max($screen-lg-min - 1) {
+    text-align: center;
+  }
+}
+
 .text-left {
   text-align: left;
 }
@@ -33,6 +39,12 @@
 
 .text-right-min-md {
   @include breakpoint-min($screen-md-min) {
+    text-align: right;
+  }
+}
+
+.text-right-min-lg {
+  @include breakpoint-min($screen-lg-min) {
     text-align: right;
   }
 }
