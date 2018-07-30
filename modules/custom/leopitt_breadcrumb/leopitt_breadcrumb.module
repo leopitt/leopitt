@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Contains leopitt_breadcrumb.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function leopitt_breadcrumb_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the leopitt_breadcrumb module.
+    case 'help.page.leopitt_breadcrumb':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Alter breadcrumbs') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function leopitt_breadcrumb_preprocess_breadcrumb(&$variables) {
+  foreach ($variables['breadcrumb'] as $key => $item) {
+    if ($item['url'] == '/') {
+      unset($variables['breadcrumb'][$key]);
+    }
+  }
+}

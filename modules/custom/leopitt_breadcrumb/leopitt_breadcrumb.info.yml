@@ -1,0 +1,5 @@
+name: 'Leopitt Breadrcrumbs'
+type: module
+description: 'Alter breadcrumbs'
+core: 8.x
+package: 'Custom'

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/leopitt_breadcrumb",
+  "type": "drupal-module",
+  "description": "Alter breadcrumbs",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/leopitt_breadcrumb",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/leopitt_breadcrumb",
+    "source": "http://cgit.drupalcode.org/leopitt_breadcrumb"
+  },
+  "require": { }
+}
