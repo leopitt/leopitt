@@ -21,7 +21,7 @@
 
 @include breakpoint-min($screen-sm-min) {
   .article-list {
-    margin: $layout-vpad-large ($layout-gutter-width/2);
+    margin: $layout-vpad-large 0;
 
     > header {
       margin: 0 0 $layout-vpad-base;
@@ -31,8 +31,6 @@
 
 @include breakpoint-min($screen-md-min) {
   .article-list {
-    margin: $layout-vpad-large ($layout-gutter-width/2);
-
     > header {
       margin: 0 0 $layout-vpad-base;
     }

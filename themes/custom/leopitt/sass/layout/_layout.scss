@@ -110,13 +110,13 @@
 
 @include breakpoint-min($screen-sm-min) {
   .layout-col-single {
-    @include zen-grid-item(18, 4);
+    @include zen-grid-item(16, 5);
   }
 }
 
 @include breakpoint-min($screen-md-min) {
   .layout-col-single {
-    @include zen-grid-item(12, 7);
+    @include zen-grid-item(14, 6);
   }
 }
 
@@ -132,12 +132,14 @@
   }
 }
 
+/*
 @include breakpoint-min($screen-md-min) {
   .layout-col-double {
     @include zen-grid-item(14, 6);
   }
 }
 
+/*
 @include breakpoint-min($screen-lg-min) {
   .layout-col-double {
     clear: none;
@@ -151,3 +153,4 @@
     }
   }
 }
+*/

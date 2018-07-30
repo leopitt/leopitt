@@ -69,23 +69,13 @@ h1 {
   h1 {
     font-size: 2.66rem; } }
 
-@media screen and (min-width: 1024px) {
-  h1 {
-    font-size: 2.66rem; } }
-
-@media screen and (min-width: 1920px) {
-  h1 {
-    font-size: 3.94rem; } }
-
 h2 {
   font-family: "museo-sans", sans-serif;
-  font-size: 1.33rem;
-  font-weight: normal; }
+  font-size: 1.33rem; }
 
 h3 {
   font-family: "museo-sans", sans-serif;
-  font-size: 1.11rem;
-  font-weight: normal; }
+  font-size: 1.11rem; }
   h3 > a {
     text-decoration: underline;
     text-decoration-skip-ink: none; }
@@ -283,8 +273,8 @@ address {
 @media screen and (min-width: 640px) {
   .layout-col-single {
     float: left;
-    width: 75%;
-    margin-left: 12.5%;
+    width: 66.66667%;
+    margin-left: 16.66667%;
     margin-right: -100%;
     padding-left: 25px;
     padding-right: 25px;
@@ -293,8 +283,8 @@ address {
 @media screen and (min-width: 1024px) {
   .layout-col-single {
     float: left;
-    width: 50%;
-    margin-left: 25%;
+    width: 58.33333%;
+    margin-left: 20.83333%;
     margin-right: -100%;
     padding-left: 25px;
     padding-right: 25px;
@@ -321,36 +311,28 @@ address {
     box-sizing: border-box;
     clear: left; } }
 
-@media screen and (min-width: 1024px) {
+/*
+@include breakpoint-min($screen-md-min) {
   .layout-col-double {
-    float: left;
-    width: 58.33333%;
-    margin-left: 20.83333%;
-    margin-right: -100%;
-    padding-left: 25px;
-    padding-right: 25px;
-    box-sizing: border-box; } }
+    @include zen-grid-item(14, 6);
+  }
+}
 
-@media screen and (min-width: 1920px) {
+/*
+@include breakpoint-min($screen-lg-min) {
   .layout-col-double {
-    clear: none; }
-    .layout-col-double:nth-child(2n+1) {
-      float: left;
-      width: 41.66667%;
-      margin-left: 8.33333%;
-      margin-right: -100%;
-      padding-left: 25px;
-      padding-right: 25px;
-      box-sizing: border-box; }
-    .layout-col-double:nth-child(2n+2) {
-      float: left;
-      width: 41.66667%;
-      margin-left: 50%;
-      margin-right: -100%;
-      padding-left: 25px;
-      padding-right: 25px;
-      box-sizing: border-box; } }
+    clear: none;
 
+    &:nth-child(2n+1) {
+      @include zen-grid-item(10, 3);
+    }
+
+    &:nth-child(2n+2) {
+      @include zen-grid-item(10, 13);
+    }
+  }
+}
+*/
 /* Theme. */
 /**
  * @file
@@ -459,15 +441,13 @@ h1.secondary {
 
 @media screen and (min-width: 640px) {
   .article-list {
-    margin: 60px 25px; }
+    margin: 60px 0; }
     .article-list > header {
       margin: 0 0 40px; } }
 
 @media screen and (min-width: 1024px) {
-  .article-list {
-    margin: 60px 25px; }
-    .article-list > header {
-      margin: 0 0 40px; } }
+  .article-list > header {
+    margin: 0 0 40px; } }
 
 .article-teaser {
   margin-bottom: 40px; }
@@ -582,6 +562,10 @@ h1.secondary {
     .nav-page ul li a::after {
       bottom: 0;
       height: 4px; }
+  .nav-page ul li:first-child {
+    margin-left: 0; }
+  .nav-page ul li:last-child {
+    margin-right: 0; }
 
 @media screen and (min-width: 640px) {
   .nav-page {
