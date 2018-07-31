@@ -64,7 +64,7 @@
 
   {% block preface %}
   {% if page.preface %}
-    <div class="page-preface layout-container columns text-center">
+    <div class="page-preface container columns text-center">
       <div class="column">
         {{ page.preface }}
       </div>
@@ -82,8 +82,8 @@
 
   {% block postscript %}
   {% if page.postscript %}
-  <div class="page-postscript layout-container columns">
-    <div class="column is-6 is-offset-3">
+  <div class="page-postscript container columns is-centered is-mobile">
+    <div class="column is-two-thirds-mobile is-two-thirds-tablet is-half-desktop">
       {{ page.postscript }}
     </div>
   </div>

@@ -10,11 +10,13 @@
   Drupal.behaviors.navToggle = {
     attach: function (context, settings) {
 
+      var breakpointMin = 1024;
+
       function animateToggleIn() {
         // Reset positions
         TweenMax.set('.bar:nth-child(2)', {scaleX: 1});
         // Animate
-        if ($(window).width() < 640) {
+        if ($(window).width() < breakpointMin) {
           TweenMax.to('.bar:nth-child(1)', .125, {y: 3, rotation: '+=45', ease:Power1.easeOut});
           TweenMax.to('.bar:nth-child(2)', .125, {scaleX: 0.20689655172414, ease:Power1.easeOut});
           TweenMax.to('.bar:nth-child(3)', .125, {y: -3, rotation: '+=45', ease:Power1.easeOut});
@@ -33,7 +35,7 @@
       }
 
       function animateMaskIn() {
-        if ($(window).width() < 640) {
+        if ($(window).width() < breakpointMin) {
           var maskStart = [0,0,2,0,2,100,0,100];
           var maskEnd = [0,0,100,0,100,100,0,100];
         }
@@ -49,7 +51,7 @@
       }
 
       function animateMaskOut() {
-        if ($(window).width() < 640) {
+        if ($(window).width() < breakpointMin) {
           var maskStart = [0,0,2,0,2,100,0,100];
           var maskEnd = [0,0,100,0,100,100,0,100];
         }

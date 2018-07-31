@@ -37,37 +37,46 @@
 %}
 <div{{ attributes.addClass(classes) }}>
 
-  <div class="page layout-container layout-outer-wrapper columns">
+  <div class="page container layout-outer-wrapper">
 
     {{ title_prefix }}
     {{ title }}
     {{ title_suffix }}
 
     {% if header %}
-      <header class="column is-8 is-offset-2 text-center lead">
+    <div class="columns is-mobile is-centered">
+      <header class="column is-two-thirds text-center lead">
         {{ header }}
       </header>
+    </div>
     {% endif %}
-
-    <div class="column is-6 is-offset-3 text-center">
-      {{ exposed }}
-      {{ attachment_before }}
-      {{ rows }}
-      {{ empty }}
-      {{ pager }}
-      {{ attachment_after }}
-      {{ more }}
+    <div class="columns is-mobile is-centered">
+      <div class="column is-two-thirds-mobile is-two-thirds-tablet is-half-desktop text-center">
+        {{ exposed }}
+        {{ attachment_before }}
+        {{ rows }}
+        {{ empty }}
+        {{ pager }}
+        {{ attachment_after }}
+        {{ more }}
+      </div>
     </div>
 
     {% if footer %}
-      <footer class="column is-6 is-offset-3 text-center">
-        {{ footer }}
-      </footer>
+      <div class="columns is-mobile is-centered">
+        <footer class="column is-two-thirds-mobile is-two-thirds-tablet is-half-desktop text-center">
+          {{ footer }}
+        </footer>
+      </div>
     {% endif %}
 
-    <div class="column is-8 is-offset-2 text-center">
-      {{ feed_icons }}
+    {% if feed_icons %}
+    <div class="columns is-mobile is-centered">
+      <div class="column is-two-thirds text-center">
+        {{ feed_icons }}
+      </div>
     </div>
+    {% endif %}
 
   </div>
 

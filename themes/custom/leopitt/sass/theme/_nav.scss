@@ -59,7 +59,7 @@
   }
 }
 
-@include breakpoint-min($screen-sm-min) {
+@include desktop {
   .nav-main {
     clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
   }

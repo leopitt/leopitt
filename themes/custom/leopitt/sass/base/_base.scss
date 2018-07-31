@@ -17,11 +17,13 @@ body {
   -webkit-font-smoothing: antialiased;
   color: $text-color;
   font-size: $size-7;
-}
 
-@include breakpoint-min($screen-sm-min) {
-  body {
+  @include tablet {
     margin: 0 0 120px;
+  }
+
+  @include fullhd {
+    font-size: $size-6;
   }
 }
 
@@ -31,18 +33,30 @@ h1 {
   text-shadow: 4px 4px $color-pink;
   margin-top: 0;
   font-weight: normal;
+
+  @include tablet {
+    font-size: $size-3;
+  }
+
+  @include fullhd {
+    font-size: $size-1;
+  }
 }
 
 h2 {
   font-family: $font-family-sans-serif;
   font-size: $size-5;
   font-weight: normal;
+
+  @include fullhd {
+    font-size: $size-4;
+  }
 }
 
 // sass-lint:disable no-misspelled-properties
 h3 {
   font-family: $font-family-sans-serif;
-  font-size: $size-6;
+  font-size: $size-4;
 
   > a {
     text-decoration: underline;
@@ -55,6 +69,10 @@ h3 {
     &::after {
       content: none;
     }
+  }
+
+  @include fullhd {
+    font-size: $size-5;
   }
 }
 
@@ -115,6 +133,10 @@ p {
 li {
   font-size: $size-7;
   margin: $layout-vpad-small 0;
+
+  @include fullhd {
+    font-size: $size-6;
+  }
 }
 
 blockquote {
@@ -128,10 +150,8 @@ blockquote {
       content: '\2014 \00A0';
     }
   }
-}
 
-@include breakpoint-min($screen-sm-min) {
-  blockquote {
+  @include desktop {
     margin: $layout-vpad-small 0;
     padding: 0 $layout-hpad-base;
     border-left: 5px solid white;

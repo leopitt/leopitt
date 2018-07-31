@@ -5,19 +5,25 @@
  */
 #}
 
-<div class="page layout-container layout-outer-wrapper columns text-center">
-  <div class="column is-6 is-offset-3">
+<div class="page container layout-outer-wrapper columns is-mobile is-centered text-center">
+  <div class="column is-two-thirds-mobile is-two-thirds-tablet is-half-desktop">
     <div class="page-title">
       {{ content.title }}
     </div>
+    {% if content.preface %}
     <div class="page-preface">
       {{ content.preface }}
     </div>
+    {% endif %}
+    {% if content.main %}
     <div class="page-main">
       {{ content.main }}
     </div>
+    {% endif %}
+    {% if content.secondary %}
     <div class="page-secondary">
       {{ content.secondary }}
     </div>
+    {% endif %}
   </div>
 </div>
