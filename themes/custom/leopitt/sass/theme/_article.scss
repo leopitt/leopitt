@@ -4,21 +4,24 @@
  */
 
 .article-list {
-  margin: $layout-vpad-base 0;
-
   > header {
     margin: 0 0 $layout-vpad-small;
+
+    :first-child {
+      margin-top: 0;
+    }
   }
 
   > footer {
     margin: $layout-vpad-base 0 0;
 
     a {
-      font-size: $size-4;
+      font-size: $size-7;
     }
   }
 }
 
+/*
 @include breakpoint-min($screen-sm-min) {
   .article-list {
     margin: 0 0 $layout-vpad-base;
@@ -36,6 +39,7 @@
     }
   }
 }
+*/
 
 .article-teaser {
   margin-bottom: $layout-vpad-base;
@@ -53,7 +57,7 @@
   }
 
   &-footer {
-    font-size: $size-5;
+    font-size: $size-7;
   }
 }
 

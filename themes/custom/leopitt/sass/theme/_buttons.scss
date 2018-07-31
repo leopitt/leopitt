@@ -14,7 +14,7 @@
 %btn {
   @extend %button-reset;
   font-family: $font-family-sans-serif;
-  font-size: $font-size-base;
+  font-size: $size-7;
   color: $color-pink;
   background-color: white;
   border: 0;
@@ -30,7 +30,7 @@
 }
 
 %btn-lg {
-  padding: $layout-vpad-small;
+  padding: $layout-vpad-xsmall;
 }
 
 .btn {

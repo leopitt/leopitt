@@ -5,12 +5,14 @@
 
 .page {
   &-preface {
-    font-size: $size-5;
+    font-size: $size-7;
 
     .field {
       margin: 5px 0;
     }
   }
+
+  /*
 
   &-header,
   &-footer {
@@ -41,6 +43,7 @@
       z-index: -1;
     }
   }
+  */
 }
 
 @include breakpoint-min($screen-sm-min) {
