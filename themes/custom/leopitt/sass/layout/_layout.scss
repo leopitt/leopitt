@@ -3,6 +3,38 @@
  * Layout.
  */
 
+/* Global layout "styles". */
+.layout-cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* Global elements. */
+.layout-brand {
+  position: fixed;
+  top: $layout-gutter-width/2;
+  left: $layout-gutter-width/2;
+}
+
+.layout-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: $layout-vpad-xsmall $layout-gutter-width/2;
+  pointer-events: none;
+}
+
+.layout-toggle {
+  position: fixed;
+  top: $layout-vpad-xsmall;
+  right: $layout-gutter-width/2;
+}
+
 .layout-outer-wrapper {
   padding-top: 100px;
 }
@@ -19,34 +51,7 @@
   }
 }
 
-.layout-brand {
-  position: fixed;
-  top: $layout-gutter-width-sm/2;
-  left: $layout-gutter-width-sm/2;
-}
-
-@include breakpoint-min($screen-sm-min) {
-  .layout-brand {
-    top: $layout-gutter-width-md/2;
-    left: $layout-gutter-width-md/2;
-  }
-}
-
-.layout-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: $layout-vpad-xsmall $layout-gutter-width-sm/2;
-  pointer-events: none;
-}
-
-@include breakpoint-min($screen-sm-min) {
-  .layout-footer {
-    padding: $layout-gutter-width-md/2;
-  }
-}
-
+/* Z-index setters. */
 .layout-ui-top {
   z-index: $z-index-ui + 1;
 }
@@ -69,88 +74,20 @@
   z-index: $z-index-bg;
 }
 
-.layout-toggle {
-  position: fixed;
-  top: $layout-vpad-xsmall;
-  right: $layout-gutter-width-sm/2;
-}
-
-@include breakpoint-min($screen-sm-min) {
-  .layout-toggle {
-    top: $layout-vpad-small;
-    right: $layout-gutter-width-md/2;
-  }
-}
-
-@include breakpoint-min($screen-md-min) {
-  .layout-toggle {
-    top: $layout-gutter-width-md/2;
-    right: $layout-gutter-width-md/2;
-  }
-}
-
-.layout-cover {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  pointer-events: none;
-}
-
+/* Grid. */
 .layout-container {
-  @include zen-grid-container();
   max-width: $page-max-width;
   margin: 0 auto;
 }
 
-.layout-col-single {
-  @include zen-grid-item(20, 3);
-}
-
-@include breakpoint-min($screen-sm-min) {
-  .layout-col-single {
-    @include zen-grid-item(16, 5);
-  }
-}
-
-@include breakpoint-min($screen-md-min) {
-  .layout-col-single {
-    @include zen-grid-item(14, 6);
-  }
-}
-
-.layout-col-double {
-  @include zen-grid-item(20, 3);
-  clear: left;
-}
-
-@include breakpoint-min($screen-sm-min) {
-  .layout-col-double {
-    @include zen-grid-item(16, 5);
+.layout-cols-1 {
+  > .layout-col {
     clear: left;
   }
 }
 
-/*
-@include breakpoint-min($screen-md-min) {
-  .layout-col-double {
-    @include zen-grid-item(14, 6);
+.layout-cols-2 {
+  > .layout-col {
+    clear: left;
   }
 }
-
-/*
-@include breakpoint-min($screen-lg-min) {
-  .layout-col-double {
-    clear: none;
-
-    &:nth-child(2n+1) {
-      @include zen-grid-item(10, 3);
-    }
-
-    &:nth-child(2n+2) {
-      @include zen-grid-item(10, 13);
-    }
-  }
-}
-*/

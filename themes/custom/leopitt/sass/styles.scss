@@ -3,11 +3,13 @@
  * Styles.
  */
 
-@import '../bower_components/zen-grids/sass/zen-grids';
-
 /* Settings. */
 @import 'settings/settings';
-@import 'settings/zen-grids';
+@import 'settings/bulma';
+
+/* Bulma */
+@import '../node_modules/bulma/sass/utilities/all';
+@import '../node_modules/bulma/sass/grid/all';
 
 /* Mixins. */
 @import 'mixins/layout';

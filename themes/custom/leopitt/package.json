@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/leopitt/leopitt#readme",
   "dependencies": {
+    "bulma": "^0.7.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-concat": "^2.6.1",

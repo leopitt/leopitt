@@ -38,45 +38,45 @@
 <div{{ attributes.addClass(classes) }}>
 
   <div class="page layout-container layout-outer-wrapper">
-    <div class="layout-col-single text-center">
-      <div class="page-title">
-        {{ title_prefix }}
-        <h1>{{ 'Blog'|t }}</h1>
-        {{ title_suffix }}
-      </div>
-      <div class="page-preface">
-        {{ content.preface }}
-      </div>
-      <div class="page-main">
 
-        {% if header %}
-          <header>
-            {{ header }}
-          </header>
-        {% endif %}
+    {{ title_prefix }}
+    {{ title }}
+    {{ title_suffix }}
 
+    {% if header %}
+      <div class="columns">
+        <header class="column is-8 is-offset-2 text-center lead">
+          {{ header }}
+        </header>
+      </div>
+    {% endif %}
+
+    <div class="columns">
+      <div class="column is-6 is-offset-3 text-center">
         {{ exposed }}
         {{ attachment_before }}
-
         {{ rows }}
         {{ empty }}
         {{ pager }}
-
         {{ attachment_after }}
         {{ more }}
-
-        {% if footer %}
-          <footer>
-            {{ footer }}
-          </footer>
-        {% endif %}
-
-        {{ feed_icons }}
-      </div>
-      <div class="page-secondary">
-        {{ content.secondary }}
       </div>
     </div>
+
+    {% if footer %}
+      <div class="columns">
+        <footer class="column is-6 is-offset-3 text-center">
+          {{ footer }}
+        </footer>
+      </div>
+    {% endif %}
+
+    <div class="columns">
+      <div class="column is-8 is-offset-2 text-center">
+        {{ feed_icons }}
+      </div>
+    </div>
+
   </div>
 
 </div>

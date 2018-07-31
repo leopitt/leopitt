@@ -14,14 +14,14 @@
     margin: $layout-vpad-base 0 0;
 
     a {
-      font-size: $font-size-h4;
+      font-size: $size-4;
     }
   }
 }
 
 @include breakpoint-min($screen-sm-min) {
   .article-list {
-    margin: $layout-vpad-large 0;
+    margin: 0 0 $layout-vpad-base;
 
     > header {
       margin: 0 0 $layout-vpad-base;
@@ -46,8 +46,14 @@
     margin: $layout-vpad-xsmall 0;
   }
 
+  &-header {
+    a {
+      font-weight: normal;
+    }
+  }
+
   &-footer {
-    font-size: $font-size-h5;
+    font-size: $size-5;
   }
 }
 
