@@ -1,0 +1,18 @@
+/**
+ * @file
+ * Page states.
+ */
+
+.page {
+  &-nav-wrapper {
+    a {
+      pointer-events: none;
+    }
+
+    &.visible {
+      a {
+        pointer-events: all;
+      }
+    }
+  }
+}

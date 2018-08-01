@@ -168,6 +168,7 @@ fieldset {
 input,
 textarea,
 button {
+  -webkit-appearance: none;
   font-family: $font-family-sans-serif;
   font-size: $size-7;
   color: $color-pink;

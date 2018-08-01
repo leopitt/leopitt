@@ -11,6 +11,8 @@
     attach: function (context, settings) {
 
       var breakpointMin = 1024;
+      var navToggleSelector = '.nav-toggle';
+      var maskElementSelector = '.page-nav-wrapper';
 
       function animateToggleIn() {
         // Reset positions
@@ -44,7 +46,7 @@
           var maskEnd = [0,0,110,0,116,100,0,100];
         }
         maskEnd.onUpdate = function() {
-          TweenMax.set('.nav-main', {webkitClipPath:'polygon(' + maskStart[0] + '% ' + maskStart[1] + '%, ' + maskStart[2] + '% ' + maskStart[3] + '%, ' + maskStart[4] + '% ' + maskStart[5] + '%, ' + maskStart[6] + '% ' + maskStart[7] + '%)'});
+          TweenMax.set(maskElementSelector, {webkitClipPath:'polygon(' + maskStart[0] + '% ' + maskStart[1] + '%, ' + maskStart[2] + '% ' + maskStart[3] + '%, ' + maskStart[4] + '% ' + maskStart[5] + '%, ' + maskStart[6] + '% ' + maskStart[7] + '%)'});
         };
         maskEnd.ease = Power2.easeOut;
         TweenLite.to(maskStart, .25, maskEnd);
@@ -60,21 +62,21 @@
           var maskEnd = [0,0,110,0,116,100,0,100];
         }
         maskStart.onUpdate = function() {
-          TweenMax.set('.nav-main', {webkitClipPath:'polygon(' + maskEnd[0] + '% ' + maskEnd[1] + '%, ' + maskEnd[2] + '% ' + maskEnd[3] + '%, ' + maskEnd[4] + '% ' + maskEnd[5] + '%, ' + maskEnd[6] + '% ' + maskEnd[7] + '%)'});
+          TweenMax.set(maskElementSelector, {webkitClipPath:'polygon(' + maskEnd[0] + '% ' + maskEnd[1] + '%, ' + maskEnd[2] + '% ' + maskEnd[3] + '%, ' + maskEnd[4] + '% ' + maskEnd[5] + '%, ' + maskEnd[6] + '% ' + maskEnd[7] + '%)'});
         };
         maskStart.ease = Elastic.easeOut;;
         TweenLite.to(maskEnd, .75, maskStart);
       }
 
-      $('.nav-toggle', context).bind('click', function() {
+      $(navToggleSelector, context).bind('click', function() {
         if (!$(this).hasClass('active')) {
-          $('.nav-main', context).toggleClass('visible');
+          $(maskElementSelector, context).toggleClass('visible');
           $(this).toggleClass('active');
           animateToggleIn();
           animateMaskIn();
         }
         else {
-          $('.nav-main', context).removeClass('visible');
+          $(maskElementSelector, context).removeClass('visible');
           $(this).removeClass('active');
           animateToggleOut();
           animateMaskOut();

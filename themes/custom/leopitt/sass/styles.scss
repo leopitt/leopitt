@@ -9,6 +9,7 @@
 
 /* Bulma */
 @import '../node_modules/bulma/sass/utilities/all';
+@import '../node_modules/bulma/sass/base/helpers';
 @import '../node_modules/bulma/sass/grid/all';
 @import '../node_modules/bulma/sass/elements/container';
 
@@ -44,4 +45,5 @@
 /* State. */
 @import 'state/nav';
 @import 'state/nav-toggle';
+@import 'state/page';
 @import 'state/buttons';

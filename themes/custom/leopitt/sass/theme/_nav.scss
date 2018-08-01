@@ -37,31 +37,27 @@
 }
 
 .nav-main {
-  clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
-  background-color: $color-pink;
-
   ul {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     text-align: center;
-    transform: translate(-50%, -50%);
 
     li {
       line-height: 1.2;
-      margin: $layout-vpad-xsmall 0;
+      margin: $layout-vpad-xxsmall 0;
 
       a {
-        font-size: $size-2;
+        font-size: $size-4;
         font-family: $font-family-serif;
       }
     }
   }
-}
 
-@include desktop {
-  .nav-main {
-    clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
+  @include tablet {
+    ul li {
+      margin: $layout-vpad-xsmall 0;
+      a {
+        font-size: $size-2;
+      }
+    }
   }
 }
 
@@ -114,7 +110,8 @@
 }
 
 .nav-social {
-  display: none;
+  text-align: center;
+  margin: $layout-vpad-small 0 0;
 
   ul {
     @extend %list-inline;
@@ -132,11 +129,10 @@
       }
     }
   }
-}
 
-@include tablet {
-  .nav-social {
-    display: block;
+  @include tablet {
+    text-align: left;
+    margin: 0;
 
     ul {
       li {
