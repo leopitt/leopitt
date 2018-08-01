@@ -16,8 +16,14 @@
 /* Global elements. */
 .layout-brand {
   position: fixed;
-  top: $layout-gutter-width/2;
+  top: 20px;
   left: $layout-gutter-width/2;
+}
+
+@include tablet {
+  .layout-brand {
+    top: $layout-gutter-width/2;
+  }
 }
 
 .layout-footer {
@@ -33,10 +39,6 @@
   position: fixed;
   top: $layout-vpad-xsmall;
   right: $layout-gutter-width/2;
-}
-
-.layout-outer-wrapper {
-  //padding-top: 100px;
 }
 
 @include breakpoint-min($screen-sm-min) {

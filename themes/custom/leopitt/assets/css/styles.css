@@ -1021,7 +1021,7 @@ h2 {
 
 h3 {
   font-family: "museo-sans", sans-serif;
-  font-size: 1.5rem; }
+  font-size: 1rem; }
   h3 > a {
     text-decoration: underline;
     text-decoration-skip-ink: none; }
@@ -1142,8 +1142,12 @@ address {
 /* Global elements. */
 .layout-brand {
   position: fixed;
-  top: 27.5px;
+  top: 20px;
   left: 27.5px; }
+
+@media screen and (min-width: 768px), print {
+  .layout-brand {
+    top: 27.5px; } }
 
 .layout-footer {
   position: fixed;
@@ -1263,12 +1267,12 @@ h1.secondary {
  * Brand.scss
  */
 .brand {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
   display: inline-block;
   margin-right: -2px; }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px), print {
   .brand {
     font-size: 1.5rem; } }
 
@@ -1466,18 +1470,22 @@ h1.secondary {
         .nav-page ul li a {
           font-size: 2.5rem; } }
 
-.nav-social ul {
-  display: inline-block; }
-  .nav-social ul li {
-    margin: 0 6px; }
-    .nav-social ul li:first-child {
-      margin-left: 0; }
-    .nav-social ul li:last-child {
-      margin-right: 0; }
+.nav-social {
+  display: none; }
+  .nav-social ul {
+    display: inline-block; }
+    .nav-social ul li {
+      margin: 0 6px; }
+      .nav-social ul li:first-child {
+        margin-left: 0; }
+      .nav-social ul li:last-child {
+        margin-right: 0; }
 
-@media screen and (min-width: 640px) {
-  .nav-social ul li {
-    margin: 0 12px; } }
+@media screen and (min-width: 768px), print {
+  .nav-social {
+    display: block; }
+    .nav-social ul li {
+      margin: 0 12px; } }
 
 .nav-local-tasks ul {
   display: inline-block; }

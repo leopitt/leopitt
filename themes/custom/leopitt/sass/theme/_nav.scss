@@ -114,6 +114,8 @@
 }
 
 .nav-social {
+  display: none;
+
   ul {
     @extend %list-inline;
     display: inline-block;
@@ -132,8 +134,10 @@
   }
 }
 
-@include breakpoint-min($screen-sm-min) {
+@include tablet {
   .nav-social {
+    display: block;
+
     ul {
       li {
         margin: 0 12px;
