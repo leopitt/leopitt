@@ -78,22 +78,30 @@
   {% endif %}
   {% endblock %}
 
-  {% block main %}
-  {% if page.content %}
-  <div class="page-main container">
-    {{ page.content }}
-  </div>
-  {% endif %}
-  {% endblock %}
+  {% block content %}
+  <div class="page-content layout-page-wrapper level level-content-wrapper">
+    <div class="layout-page-inner">
 
-  {% block postscript %}
-  {% if page.postscript %}
-  <div class="page-postscript container columns is-centered">
-    <div class="column is-two-thirds-tablet is-half-desktop">
-      {{ page.postscript }}
+      {% block main %}
+      {% if page.content %}
+      <div class="page-main container">
+        {{ page.content }}
+      </div>
+      {% endif %}
+      {% endblock %}
+
+      {% block postscript %}
+      {% if page.postscript %}
+      <div class="page-postscript container columns is-centered">
+        <div class="column is-two-thirds-tablet is-half-desktop">
+          {{ page.postscript }}
+        </div>
+      </div>
+      {% endif %}
+      {% endblock %}
+
     </div>
   </div>
-  {% endif %}
   {% endblock %}
 
   {% block footer %}

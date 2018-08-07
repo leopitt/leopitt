@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Levels.
+ */
+
+.level {
+  &-content-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 !important;
+  }
+}

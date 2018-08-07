@@ -14,10 +14,10 @@
 }
 
 .layout-fix-middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Global elements. */
@@ -48,15 +48,19 @@
   right: $layout-gutter-width/2;
 }
 
-@include breakpoint-min($screen-sm-min) {
-  .layout-outer-wrapper {
-    padding-top: 140px;
-  }
-}
+.layout-page-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
 
-@include breakpoint-min($screen-md-min) {
-  .layout-outer-wrapper {
-    padding-top: 180px;
+  > .layout-page-inner {
+    padding: 45px 0;
+
+    @include tablet {
+      padding: 95px 0;
+    }
   }
 }
 

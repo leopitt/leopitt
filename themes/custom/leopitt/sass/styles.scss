@@ -12,6 +12,7 @@
 @import '../node_modules/bulma/sass/base/helpers';
 @import '../node_modules/bulma/sass/grid/all';
 @import '../node_modules/bulma/sass/elements/container';
+@import '../node_modules/bulma/sass/components/level';
 
 /* Mixins. */
 @import 'mixins/layout';
@@ -41,6 +42,7 @@
 @import 'theme/toolbar';
 @import 'theme/field';
 @import 'theme/form';
+@import 'theme/level';
 
 /* State. */
 @import 'state/nav';
