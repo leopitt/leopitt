@@ -1,0 +1,22 @@
+uuid: 37b8e72f-717f-4d83-ae40-6d27b5be26c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - leopitt
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: leopitt_content
+theme: leopitt
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

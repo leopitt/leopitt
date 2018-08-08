@@ -1,0 +1,28 @@
+uuid: 6fce658a-2381-40c4-b967-606ac7611f75
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social
+  module:
+    - block_class
+    - system
+  theme:
+    - leopitt
+third_party_settings:
+  block_class:
+    classes: is-hidden-tablet
+id: social_2
+theme: leopitt
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:social'
+settings:
+  id: 'system_menu_block:social'
+  label: Social
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

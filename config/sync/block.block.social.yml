@@ -1,0 +1,28 @@
+uuid: 86b588ba-3015-43ca-8a31-0d8299bca3d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social
+  module:
+    - block_class
+    - system
+  theme:
+    - leopitt
+third_party_settings:
+  block_class:
+    classes: is-hidden-mobile
+id: social
+theme: leopitt
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:social'
+settings:
+  id: 'system_menu_block:social'
+  label: Social
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

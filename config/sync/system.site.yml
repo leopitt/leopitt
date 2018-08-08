@@ -1,0 +1,14 @@
+uuid: 40b4b5c7-597b-4a03-a593-47eeab6a64ca
+name: 'Leo Pitt'
+mail: hello@leopitt.co.uk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/3
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
