@@ -1999,7 +1999,11 @@ address {
   top: 0;
   left: 0;
   right: 0;
-  min-height: 100vh; }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
   .layout-page-wrapper > .layout-page-inner {
     padding: 45px 0; }
     @media screen and (min-width: 768px), print {
@@ -2178,9 +2182,6 @@ h1.secondary {
  */
 .page-title {
   text-align: center; }
-  @media screen and (min-width: 768px), print {
-    .page-title {
-      text-align: left; } }
 
 .page-preface {
   text-align: center;
@@ -2189,8 +2190,7 @@ h1.secondary {
     margin: 5px 0; }
   @media screen and (min-width: 768px), print {
     .page-preface {
-      font-size: 0.75rem;
-      text-align: left; } }
+      font-size: 0.75rem; } }
 
 .page-nav-wrapper {
   -webkit-clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
@@ -2200,10 +2200,6 @@ h1.secondary {
     .page-nav-wrapper {
       -webkit-clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
       clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%); } }
-
-@media screen and (min-width: 768px), print {
-  .is-front .page-title {
-    text-align: center; } }
 
 /**
  * @file
@@ -2258,6 +2254,12 @@ h1.secondary {
     margin: 15px 0; }
     .nav-main ul li a {
       font-size: 2.5rem; } }
+
+@media screen and (min-width: 1024px) {
+  .nav-main ul li {
+    margin: 15px 0; }
+    .nav-main ul li a {
+      font-size: 3rem; } }
 
 .nav-page ul {
   text-align: center; }
@@ -2515,15 +2517,6 @@ h1.secondary {
   margin: 25px 0;
   padding: 0;
   border: 0; }
-
-/**
- * @file
- * Levels.
- */
-.level-content-wrapper {
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 !important; }
 
 /* State. */
 /**

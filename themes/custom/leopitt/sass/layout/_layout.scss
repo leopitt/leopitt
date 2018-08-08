@@ -54,6 +54,10 @@
   left: 0;
   right: 0;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
   > .layout-page-inner {
     padding: 45px 0;

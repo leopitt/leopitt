@@ -59,6 +59,15 @@
       }
     }
   }
+
+  @include desktop {
+    ul li {
+      margin: $layout-vpad-xsmall 0;
+      a {
+        font-size: $size-1;
+      }
+    }
+  }
 }
 
 .nav-page {

@@ -6,10 +6,6 @@
 .page {
   &-title {
     text-align: center;
-
-    @include tablet {
-      text-align: left;
-    }
   }
 
   &-preface {
@@ -22,7 +18,6 @@
 
     @include tablet {
       font-size: $size-7;
-      text-align: left;
     }
   }
 
@@ -32,14 +27,6 @@
 
     @include desktop {
       clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
-    }
-  }
-}
-
-.is-front .page {
-  &-title {
-    @include tablet {
-      text-align: center;
     }
   }
 }

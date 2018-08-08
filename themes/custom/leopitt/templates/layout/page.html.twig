@@ -68,19 +68,19 @@
   </header>
   {% endblock %}
 
-  {% block preface %}
-  {% if page.preface %}
-    <div class="page-preface container columns text-center">
-      <div class="column">
-        {{ page.preface }}
-      </div>
-    </div>
-  {% endif %}
-  {% endblock %}
-
   {% block content %}
-  <div class="page-content layout-page-wrapper level level-content-wrapper">
+  <div class="layout-page-wrapper">
     <div class="layout-page-inner">
+
+    {% block preface %}
+    {% if page.preface %}
+      <div class="page-preface container columns text-center">
+        <div class="column">
+          {{ page.preface }}
+        </div>
+      </div>
+    {% endif %}
+    {% endblock %}
 
       {% block main %}
       {% if page.content %}
