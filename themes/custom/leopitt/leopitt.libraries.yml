@@ -15,7 +15,9 @@ global-fonts:
 global-scripts:
   version: 1.x
   js:
+    assets/js/modernizr/modernizr.js: {}
     assets/js/nav-toggle.js: {}
+    assets/js/ie-bullets.js: {}
   dependencies:
     - core/jquery
     - core/drupal

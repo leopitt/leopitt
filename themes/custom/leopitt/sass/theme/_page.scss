@@ -22,8 +22,15 @@
   }
 
   &-nav-wrapper {
-    clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
+    display: none;
     background-color: $color-pink;
+  }
+}
+
+html.cssmask {
+  .page-nav-wrapper {
+    display: block;
+    clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
 
     @include desktop {
       clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);

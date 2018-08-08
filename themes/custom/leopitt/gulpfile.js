@@ -5,12 +5,13 @@ var cssnano = require('gulp-cssnano');
 var sass = require('gulp-sass');
 var sassLint = require('gulp-sass-lint');
 var runSequence = require('run-sequence');
+var modernizr = require('gulp-modernizr');
 
 /**
- *
+ * Default.
  */
 gulp.task('default', function(done) {
-  runSequence('lint', 'sass', function() {
+  runSequence('lint', 'sass', 'modernizr', function() {
     done();
   });
 });
@@ -76,4 +77,25 @@ gulp.task('lint:sass-with-fail', function () {
     .pipe(sassLint({configFile: 'config/.sass-lint.yml'}))
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError());
+});
+
+/**
+ * Modernizr.
+ */
+gulp.task('modernizr', function() {
+  return gulp.src('assets/js/*.js')
+    .pipe(modernizr({
+      options: [
+        "setClasses",
+        "addTest",
+        "html5printshiv",
+        "testProp",
+        "fnBind"
+      ],
+      // Add capabilities to test in here ...
+      tests: [
+        "cssmask"
+      ]
+    }))
+    .pipe(gulp.dest('assets/js/modernizr/'))
 });

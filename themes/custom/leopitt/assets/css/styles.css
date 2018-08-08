@@ -2193,11 +2193,15 @@ h1.secondary {
       font-size: 0.75rem; } }
 
 .page-nav-wrapper {
-  -webkit-clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
+  display: none;
   background-color: #bd1857; }
+
+html.cssmask .page-nav-wrapper {
+  display: block;
+  -webkit-clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%); }
   @media screen and (min-width: 1024px) {
-    .page-nav-wrapper {
+    html.cssmask .page-nav-wrapper {
       -webkit-clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
       clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%); } }
 

@@ -37,35 +37,47 @@
       }
 
       function animateMaskIn() {
-        if ($(window).width() < breakpointMin) {
-          var maskStart = [0,0,2,0,2,100,0,100];
-          var maskEnd = [0,0,100,0,100,100,0,100];
+        /* Animate mask if the browser supports it. */
+        if ($('html').hasClass('cssmask')) {
+          if ($(window).width() < breakpointMin) {
+            var maskStart = [0,0,2,0,2,100,0,100];
+            var maskEnd = [0,0,100,0,100,100,0,100];
+          }
+          else {
+            var maskStart = [0,0,9.89,0,16.51,100,0,100];
+            var maskEnd = [0,0,110,0,116,100,0,100];
+          }
+          maskEnd.onUpdate = function() {
+            TweenMax.set(maskElementSelector, {webkitClipPath:'polygon(' + maskStart[0] + '% ' + maskStart[1] + '%, ' + maskStart[2] + '% ' + maskStart[3] + '%, ' + maskStart[4] + '% ' + maskStart[5] + '%, ' + maskStart[6] + '% ' + maskStart[7] + '%)'});
+          };
+          maskEnd.ease = Power2.easeOut;
+          TweenLite.to(maskStart, .25, maskEnd);
         }
         else {
-          var maskStart = [0,0,9.89,0,16.51,100,0,100];
-          var maskEnd = [0,0,110,0,116,100,0,100];
+          $(maskElementSelector).css('display', 'block');
         }
-        maskEnd.onUpdate = function() {
-          TweenMax.set(maskElementSelector, {webkitClipPath:'polygon(' + maskStart[0] + '% ' + maskStart[1] + '%, ' + maskStart[2] + '% ' + maskStart[3] + '%, ' + maskStart[4] + '% ' + maskStart[5] + '%, ' + maskStart[6] + '% ' + maskStart[7] + '%)'});
-        };
-        maskEnd.ease = Power2.easeOut;
-        TweenLite.to(maskStart, .25, maskEnd);
       }
 
       function animateMaskOut() {
-        if ($(window).width() < breakpointMin) {
-          var maskStart = [0,0,2,0,2,100,0,100];
-          var maskEnd = [0,0,100,0,100,100,0,100];
+        /* Animate mask if the browser supports it. */
+        if ($('html').hasClass('cssmask')) {
+          if ($(window).width() < breakpointMin) {
+            var maskStart = [0,0,2,0,2,100,0,100];
+            var maskEnd = [0,0,100,0,100,100,0,100];
+          }
+          else {
+            var maskStart = [0,0,9.89,0,16.51,100,0,100];
+            var maskEnd = [0,0,110,0,116,100,0,100];
+          }
+          maskStart.onUpdate = function() {
+            TweenMax.set(maskElementSelector, {webkitClipPath:'polygon(' + maskEnd[0] + '% ' + maskEnd[1] + '%, ' + maskEnd[2] + '% ' + maskEnd[3] + '%, ' + maskEnd[4] + '% ' + maskEnd[5] + '%, ' + maskEnd[6] + '% ' + maskEnd[7] + '%)'});
+          };
+          maskStart.ease = Elastic.easeOut;;
+          TweenLite.to(maskEnd, .75, maskStart);
         }
         else {
-          var maskStart = [0,0,9.89,0,16.51,100,0,100];
-          var maskEnd = [0,0,110,0,116,100,0,100];
+          $(maskElementSelector).css('display', 'none');
         }
-        maskStart.onUpdate = function() {
-          TweenMax.set(maskElementSelector, {webkitClipPath:'polygon(' + maskEnd[0] + '% ' + maskEnd[1] + '%, ' + maskEnd[2] + '% ' + maskEnd[3] + '%, ' + maskEnd[4] + '% ' + maskEnd[5] + '%, ' + maskEnd[6] + '% ' + maskEnd[7] + '%)'});
-        };
-        maskStart.ease = Elastic.easeOut;;
-        TweenLite.to(maskEnd, .75, maskStart);
       }
 
       $(navToggleSelector, context).bind('click', function() {

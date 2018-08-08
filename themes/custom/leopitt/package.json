@@ -27,5 +27,8 @@
     "gulp-sass-lint": "^1.4.0",
     "gulp-uglify": "^3.0.0",
     "run-sequence": "^2.2.1"
+  },
+  "devDependencies": {
+    "gulp-modernizr": "^3.0.0"
   }
 }
