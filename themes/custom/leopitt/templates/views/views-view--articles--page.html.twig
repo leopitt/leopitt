@@ -37,7 +37,7 @@
 %}
 <div{{ attributes.addClass(classes) }}>
 
-  <div class="page container layout-outer-wrapper">
+  <div class="page container">
 
     {{ title_prefix }}
     {{ title }}
@@ -46,14 +46,15 @@
     <h1 class="hidden">Blog</h1>
 
     {% if header %}
-    <div class="columns is-mobile is-centered">
-      <header class="column is-two-thirds text-center lead">
+    <div class="container columns is-centered text-center">
+      <header class="column is-two-thirds-tablet is-half-desktop lead">
         {{ header }}
       </header>
     </div>
     {% endif %}
-    <div class="columns is-mobile is-centered">
-      <div class="column is-two-thirds-mobile is-two-thirds-tablet is-half-desktop text-center">
+
+    <div class="container columns is-centered text-center">
+      <div class="column is-two-thirds-tablet is-half-desktop">
         {{ exposed }}
         {{ attachment_before }}
         {{ rows }}
@@ -65,16 +66,16 @@
     </div>
 
     {% if footer %}
-      <div class="columns is-mobile is-centered">
-        <footer class="column is-two-thirds-mobile is-two-thirds-tablet is-half-desktop text-center">
-          {{ footer }}
-        </footer>
-      </div>
+    <div class="container columns is-centered text-center">
+      <footer class="column is-two-thirds-tablet is-half-desktop">
+        {{ footer }}
+      </footer>
+    </div>
     {% endif %}
 
     {% if feed_icons %}
-    <div class="columns is-mobile is-centered">
-      <div class="column is-two-thirds text-center">
+    <div class="container columns is-centered text-center">
+      <div class="column is-two-thirds-tablet is-half-desktop">
         {{ feed_icons }}
       </div>
     </div>

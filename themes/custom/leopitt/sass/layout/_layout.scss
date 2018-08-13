@@ -22,13 +22,14 @@
 
 /* Global elements. */
 .layout-brand {
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: $layout-gutter-width/2;
 }
 
 @include tablet {
   .layout-brand {
+    position: fixed;
     top: $layout-gutter-width/2;
   }
 }
