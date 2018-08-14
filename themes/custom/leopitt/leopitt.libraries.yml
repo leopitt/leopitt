@@ -18,6 +18,7 @@ global-scripts:
     assets/js/modernizr/modernizr.js: {}
     assets/js/nav-toggle.js: {}
     assets/js/ie-bullets.js: {}
+    assets/js/nav-click.js: {}
   dependencies:
     - core/jquery
     - core/drupal

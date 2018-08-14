@@ -5,14 +5,10 @@
 
 .page {
   &-nav-wrapper {
-    a {
-      pointer-events: none;
-    }
+    pointer-events: none;
 
     &.visible {
-      a {
-        pointer-events: all;
-      }
+      pointer-events: all;
     }
   }
 }

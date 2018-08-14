@@ -1978,7 +1978,16 @@ pre {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  z-index: 10; }
+
+.layout-ripple-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9; }
 
 /* Global elements. */
 .layout-brand {
@@ -2475,6 +2484,29 @@ html.cssmask .page-nav-wrapper {
 
 /**
  * @file
+ * Ripple.
+ */
+@keyframes ripple {
+  from {
+    width: 10px;
+    height: 10px;
+    opacity: .3; }
+  to {
+    width: 300px;
+    height: 300px;
+    opacity: 0; } }
+
+.ripple {
+  transform: translate(-50%, -50%);
+  background-color: red;
+  border-radius: 50%;
+  display: block;
+  animation-name: ripple;
+  animation-duration: 2s;
+  animation-timing-function: ease-out; }
+
+/**
+ * @file
  * Toolbar menu.
  */
 .toolbar-bar li {
@@ -2590,8 +2622,7 @@ html.cssmask .page-nav-wrapper {
  * @file
  * Page states.
  */
-.page-nav-wrapper a {
+.page-nav-wrapper {
   pointer-events: none; }
-
-.page-nav-wrapper.visible a {
-  pointer-events: all; }
+  .page-nav-wrapper.visible {
+    pointer-events: all; }
