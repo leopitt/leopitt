@@ -129,11 +129,13 @@ figure {
 
 p {
   margin: $layout-vpad-small 0;
+  line-height: $paragraph-line-height;
 }
 
 li {
   font-size: $size-7;
   margin: $layout-vpad-small 0;
+  line-height: $paragraph-line-height;
 
   @include fullhd {
     font-size: $size-6;
