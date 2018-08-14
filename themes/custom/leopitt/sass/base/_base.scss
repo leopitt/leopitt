@@ -26,7 +26,7 @@ body {
 h1 {
   font-family: $font-family-serif;
   font-size: $size-4;
-  text-shadow: 4px 4px $color-pink;
+  text-shadow: $text-shadow-distance $text-shadow-distance $color-pink;
   margin-top: 0;
   font-weight: normal;
 

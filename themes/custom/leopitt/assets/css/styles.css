@@ -55,7 +55,7 @@
   font-size: 2rem !important; }
 
 .is-size-4 {
-  font-size: 1.35rem !important; }
+  font-size: 1.75rem !important; }
 
 .is-size-5 {
   font-size: 1.25rem !important; }
@@ -74,7 +74,7 @@
   .is-size-3-mobile {
     font-size: 2rem !important; }
   .is-size-4-mobile {
-    font-size: 1.35rem !important; }
+    font-size: 1.75rem !important; }
   .is-size-5-mobile {
     font-size: 1.25rem !important; }
   .is-size-6-mobile {
@@ -90,7 +90,7 @@
   .is-size-3-tablet {
     font-size: 2rem !important; }
   .is-size-4-tablet {
-    font-size: 1.35rem !important; }
+    font-size: 1.75rem !important; }
   .is-size-5-tablet {
     font-size: 1.25rem !important; }
   .is-size-6-tablet {
@@ -106,7 +106,7 @@
   .is-size-3-touch {
     font-size: 2rem !important; }
   .is-size-4-touch {
-    font-size: 1.35rem !important; }
+    font-size: 1.75rem !important; }
   .is-size-5-touch {
     font-size: 1.25rem !important; }
   .is-size-6-touch {
@@ -122,7 +122,7 @@
   .is-size-3-desktop {
     font-size: 2rem !important; }
   .is-size-4-desktop {
-    font-size: 1.35rem !important; }
+    font-size: 1.75rem !important; }
   .is-size-5-desktop {
     font-size: 1.25rem !important; }
   .is-size-6-desktop {
@@ -138,7 +138,7 @@
   .is-size-3-widescreen {
     font-size: 2rem !important; }
   .is-size-4-widescreen {
-    font-size: 1.35rem !important; }
+    font-size: 1.75rem !important; }
   .is-size-5-widescreen {
     font-size: 1.25rem !important; }
   .is-size-6-widescreen {
@@ -154,7 +154,7 @@
   .is-size-3-fullhd {
     font-size: 2rem !important; }
   .is-size-4-fullhd {
-    font-size: 1.35rem !important; }
+    font-size: 1.75rem !important; }
   .is-size-5-fullhd {
     font-size: 1.25rem !important; }
   .is-size-6-fullhd {
@@ -1825,8 +1825,8 @@ body {
 
 h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 1.35rem;
-  text-shadow: 4px 4px #bd1857;
+  font-size: 1.75rem;
+  text-shadow: 0.074em 0.074em #bd1857;
   margin-top: 0;
   font-weight: normal; }
   @media screen and (min-width: 768px), print {
@@ -1842,7 +1842,7 @@ h2 {
   font-weight: normal; }
   @media screen and (min-width: 1315px) {
     h2 {
-      font-size: 1.35rem; } }
+      font-size: 1.75rem; } }
 
 h3 {
   font-family: "museo-sans", sans-serif;
@@ -2097,7 +2097,7 @@ address {
 
 @media screen and (min-width: 768px), print {
   .brand {
-    font-size: 1.35rem; } }
+    font-size: 1.75rem; } }
 
 /**
  * @file
@@ -2251,7 +2251,7 @@ h1.secondary {
     line-height: 1.2;
     margin: 10px 0; }
     .nav-main ul li a {
-      font-size: 1.35rem;
+      font-size: 1.75rem;
       font-family: "Shrikhand", cursive; }
 
 @media screen and (min-width: 768px), print {
@@ -2272,7 +2272,7 @@ h1.secondary {
     margin: 0 10px; }
     .nav-page ul li a {
       font-family: "Shrikhand", cursive;
-      font-size: 1.35rem; }
+      font-size: 1.75rem; }
       .nav-page ul li a::after {
         bottom: 0;
         height: 4px; }
