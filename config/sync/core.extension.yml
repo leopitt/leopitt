@@ -32,6 +32,7 @@ module:
   layout_discovery: 0
   leopitt_breadcrumb: 0
   link: 0
+  media: 0
   menu_link_attributes: 0
   menu_ui: 0
   node: 0
