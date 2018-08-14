@@ -10,17 +10,17 @@
     <div class="page-title">
       {{ content.title }}
     </div>
-    {% if content.preface %}
+    {% if content.preface|render|striptags|trim %}
     <div class="page-preface">
       {{ content.preface }}
     </div>
     {% endif %}
-    {% if content.main %}
+    {% if content.main|render|striptags|trim %}
     <div class="page-main">
       {{ content.main }}
     </div>
     {% endif %}
-    {% if content.secondary %}
+    {% if content.secondary|render|striptags|trim %}
     <div class="page-secondary">
       {{ content.secondary }}
     </div>
