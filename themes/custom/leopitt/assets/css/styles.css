@@ -1929,7 +1929,8 @@ button {
   font-size: 0.75rem;
   color: #bd1857;
   background-color: white;
-  border: 0; }
+  border: 0;
+  border-radius: 0; }
 
 input,
 textarea {
@@ -1937,11 +1938,14 @@ textarea {
   box-shadow: 4px 4px #bd1857;
   box-sizing: border-box; }
 
-input[type='text'], input[type='email'], input[type='tel'] {
-  width: 50%; }
+input[type='text'], input[type='email'], input[type='tel'], input[type='url'] {
+  width: 100%; }
 
-input[type='url'] {
-  width: 75%; }
+@media screen and (min-width: 768px), print {
+  input[type='text'], input[type='email'], input[type='tel'] {
+    width: 50%; }
+  input[type='url'] {
+    width: 75%; } }
 
 textarea {
   width: 100%; }

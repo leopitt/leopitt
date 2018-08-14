@@ -170,6 +170,7 @@ button {
   color: $color-pink;
   background-color: white;
   border: 0;
+  border-radius: 0;
 }
 
 input,
@@ -182,12 +183,21 @@ textarea {
 input {
   &[type='text'],
   &[type='email'],
-  &[type='tel'] {
-    width: 50%;
+  &[type='tel'],
+  &[type='url'] {
+    width: 100%;
   }
 
-  &[type='url'] {
-    width: 75%;
+  @include tablet {
+    &[type='text'],
+    &[type='email'],
+    &[type='tel'] {
+      width: 50%;
+    }
+
+    &[type='url'] {
+      width: 75%;
+    }
   }
 }
 
