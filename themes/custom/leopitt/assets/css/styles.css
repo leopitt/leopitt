@@ -1839,7 +1839,11 @@ h1 {
 h2 {
   font-family: "museo-sans", sans-serif;
   font-size: 1.25rem;
-  font-weight: normal; }
+  font-weight: normal;
+  text-align: center; }
+  @media screen and (min-width: 768px), print {
+    h2 {
+      text-align: inherit; } }
   @media screen and (min-width: 1315px) {
     h2 {
       font-size: 1.75rem; } }

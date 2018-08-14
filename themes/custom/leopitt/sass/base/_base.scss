@@ -43,6 +43,11 @@ h2 {
   font-family: $font-family-sans-serif;
   font-size: $size-5;
   font-weight: normal;
+  text-align: center;
+
+  @include tablet {
+    text-align: inherit;
+  }
 
   @include fullhd {
     font-size: $size-4;
