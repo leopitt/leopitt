@@ -2267,6 +2267,8 @@ h1.secondary {
     .nav-main ul li a {
       font-size: 1.75rem;
       font-family: "Shrikhand", cursive; }
+      .nav-main ul li a::after {
+        content: none; }
 
 @media screen and (min-width: 768px), print {
   .nav-main ul li {
