@@ -1878,23 +1878,18 @@ a {
   a:hover::after {
     background-color: transparent; }
 
+img {
+  max-width: 100%; }
+
 figure {
   max-width: 100%;
   float: none;
-  margin: 25px 0; }
-  figure img {
-    max-width: 100%; }
+  margin: 45px 0; }
   figure figcaption {
-    font-size: 1rem; }
-
-@media screen and (min-width: 1024px) {
-  figure {
-    margin: 25px 50px 30px -50%;
-    float: left; } }
-
-@media screen and (min-width: 1920px) {
-  figure {
-    margin-left: -75%; } }
+    font-size: 0.65rem; }
+    @media screen and (min-width: 768px), print {
+      figure figcaption {
+        font-size: 0.75rem; } }
 
 p {
   margin: 25px 0; }
@@ -1958,6 +1953,10 @@ address {
   font-style: normal;
   margin: 0;
   font-weight: bold; }
+
+pre {
+  margin: 45px 0;
+  white-space: pre-wrap; }
 
 /* Layout. */
 /**
@@ -2442,7 +2441,7 @@ h1.secondary {
 
 .page-preface {
   text-align: center;
-  font-size: 0.7rem; }
+  font-size: 0.65rem; }
   .page-preface .field {
     margin: 5px 0; }
   @media screen and (min-width: 768px), print {
