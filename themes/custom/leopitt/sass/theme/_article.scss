@@ -21,26 +21,6 @@
   }
 }
 
-/*
-@include breakpoint-min($screen-sm-min) {
-  .article-list {
-    margin: 0 0 $layout-vpad-base;
-
-    > header {
-      margin: 0 0 $layout-vpad-base;
-    }
-  }
-}
-
-@include breakpoint-min($screen-md-min) {
-  .article-list {
-    > header {
-      margin: 0 0 $layout-vpad-base;
-    }
-  }
-}
-*/
-
 .article-teaser {
   margin-bottom: $layout-vpad-base;
 

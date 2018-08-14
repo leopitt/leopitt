@@ -2046,80 +2046,30 @@ address {
 /* Theme. */
 /**
  * @file
- * Figure.
+ * Article styles.
  */
-/**
- * @file
- * Lead.
- */
-.hidden {
-  display: none; }
+.article-list > header {
+  margin: 0 0 25px; }
+  .article-list > header :first-child {
+    margin-top: 0; }
 
-/**
- * @file
- * Typography.
- */
-.lead {
-  font-size: 1rem; }
-  @media screen and (min-width: 1315px) {
-    .lead {
-      font-size: 1.25rem; } }
+.article-list > footer {
+  margin: 30px 0 0; }
+  .article-list > footer a {
+    font-size: 0.75rem; }
 
-.text-center {
-  text-align: center; }
+.article-teaser {
+  margin-bottom: 30px; }
+  .article-teaser-header, .article-teaser-main, .article-teaser-footer {
+    margin: 15px 0; }
+  .article-teaser-header a {
+    font-weight: normal; }
+  .article-teaser-footer {
+    font-size: 0.75rem; }
 
-@media screen and (max-width: 1023px) {
-  .text-center-max-md {
-    text-align: center; } }
-
-@media screen and (max-width: 1919px) {
-  .text-center-max-lg {
-    text-align: center; } }
-
-.text-left {
-  text-align: left; }
-
-.text-right {
-  text-align: right; }
-
-@media screen and (min-width: 1024px) {
-  .text-right-min-md {
-    text-align: right; } }
-
-@media screen and (min-width: 1920px) {
-  .text-right-min-lg {
-    text-align: right; } }
-
-.field-type-text-with-summary a {
-  display: inline;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #bd1857;
-  text-decoration-color: #bd1857; }
-  .field-type-text-with-summary a:hover {
-    text-decoration: none; }
-  .field-type-text-with-summary a::after {
-    content: none; }
-
-/**
- * @file
- * Heading.
- */
-h1.secondary {
-  font-size: 3rem; }
-
-/**
- * @file
- * Brand.scss
- */
-.brand {
-  font-size: 1rem;
-  font-weight: bold;
-  display: inline-block;
-  margin-right: -2px; }
-
-@media screen and (min-width: 768px), print {
-  .brand {
-    font-size: 1.35rem; } }
+@breakpoint-min ($screen-sm-min) {
+  .article-teaser-header, .article-teaser-main, .article-teaser-footer {
+    margin: 25px 0; } }
 
 /**
  * @file
@@ -2137,78 +2087,117 @@ h1.secondary {
 
 /**
  * @file
- * Article styles.
+ * Brand.scss
  */
-.article-list > header {
-  margin: 0 0 25px; }
-  .article-list > header :first-child {
-    margin-top: 0; }
+.brand {
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: -2px; }
 
-.article-list > footer {
-  margin: 30px 0 0; }
-  .article-list > footer a {
-    font-size: 0.75rem; }
-
-/*
-@include breakpoint-min($screen-sm-min) {
-  .article-list {
-    margin: 0 0 $layout-vpad-base;
-
-    > header {
-      margin: 0 0 $layout-vpad-base;
-    }
-  }
-}
-
-@include breakpoint-min($screen-md-min) {
-  .article-list {
-    > header {
-      margin: 0 0 $layout-vpad-base;
-    }
-  }
-}
-*/
-.article-teaser {
-  margin-bottom: 30px; }
-  .article-teaser-header, .article-teaser-main, .article-teaser-footer {
-    margin: 15px 0; }
-  .article-teaser-header a {
-    font-weight: normal; }
-  .article-teaser-footer {
-    font-size: 0.75rem; }
-
-@breakpoint-min ($screen-sm-min) {
-  .article-teaser-header, .article-teaser-main, .article-teaser-footer {
-    margin: 25px 0; } }
+@media screen and (min-width: 768px), print {
+  .brand {
+    font-size: 1.35rem; } }
 
 /**
  * @file
- * Page styles.
+ * Nav toggle button.
  */
-.page-title {
-  text-align: center; }
+.btn, .nav-local-tasks ul > li > a, .nav-toggle {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  outline: none; }
 
-.page-preface {
-  text-align: center;
-  font-size: 0.7rem; }
-  .page-preface .field {
-    margin: 5px 0; }
-  @media screen and (min-width: 768px), print {
-    .page-preface {
-      font-size: 0.75rem; } }
+.btn, .nav-local-tasks ul > li > a {
+  font-family: "museo-sans", sans-serif;
+  font-size: 0.75rem;
+  color: #bd1857;
+  background-color: white;
+  border: 0;
+  padding: 15px;
+  margin: 0 15px 15px 0;
+  box-shadow: 4px 4px #bd1857; }
 
-.page-nav-wrapper {
-  display: none;
-  background-color: #bd1857; }
+.btn-inverse {
+  background-color: #bd1857;
+  color: white;
+  box-shadow: 4px 4px white; }
 
-html.cssmask .page-nav-wrapper {
-  display: block;
-  -webkit-clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%); }
-  @media screen and (min-width: 1024px) {
-    html.cssmask .page-nav-wrapper {
-      -webkit-clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
-      clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%); } }
+.btn-lg {
+  padding: 15px; }
+
+/**
+ * @file
+ * Columns.
+ */
+.columns:last-child {
+  margin-bottom: 27.5px; }
+
+/**
+ * @field
+ * Field.
+ */
+.field-label-inline .field-label,
+.field-label-inline .field-items,
+.field-label-inline .field-item {
+  display: inline; }
+
+.field-name-field-tags.field-label-inline .field-item::after {
+  content: ','; }
+
+.field-name-field-tags.field-label-inline .field-item:last-child::after {
+  content: none; }
+
+/**
+ * @file
+ * Figure.
+ */
+/**
+ * @file
+ * Forms.
+ */
+.form-item {
+  margin: 25px 0;
+  padding: 0;
+  border: 0; }
+
+/**
+ * @file
+ * Heading.
+ */
+h1.secondary {
+  font-size: 3rem; }
+
+/**
+ * @file
+ * Icons.
+ */
+.icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .icon::after {
+    content: none; }
+
+@media screen and (min-width: 640px) {
+  .icon {
+    width: 48px;
+    height: 48px; } }
+
+.icon-github {
+  background-image: url("../bitmap/github.png"); }
+
+.icon-twitter {
+  background-image: url("../bitmap/twitter.png"); }
+
+.icon-linkedin {
+  background-image: url("../bitmap/linkedin.png"); }
 
 /**
  * @file
@@ -2228,6 +2217,13 @@ html.cssmask .page-nav-wrapper {
   .nav-breadcrumb ol li, .nav-social ul li, .nav-local-tasks ul li, .nav-pagination ul li {
     font-size: 1rem;
     display: inline-block; }
+
+/**
+ * @file
+ * Lead.
+ */
+.hidden {
+  display: none; }
 
 /**
  * @file
@@ -2335,35 +2331,6 @@ html.cssmask .page-nav-wrapper {
 
 /**
  * @file
- * Nav toggle button.
- */
-.nav-local-tasks ul > li > a, .btn, .nav-toggle {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  cursor: pointer;
-  outline: none; }
-
-.nav-local-tasks ul > li > a, .btn {
-  font-family: "museo-sans", sans-serif;
-  font-size: 0.75rem;
-  color: #bd1857;
-  background-color: white;
-  border: 0;
-  padding: 15px;
-  margin: 0 15px 15px 0;
-  box-shadow: 4px 4px #bd1857; }
-
-.btn-inverse {
-  background-color: #bd1857;
-  color: white;
-  box-shadow: 4px 4px white; }
-
-.btn-lg {
-  padding: 15px; }
-
-/**
- * @file
  * Nav-toggle styles.
  */
 .nav-toggle {
@@ -2464,32 +2431,39 @@ html.cssmask .page-nav-wrapper {
 
 /**
  * @file
- * Icons.
+ * Page styles.
  */
-.icon {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  text-indent: -999em;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: contain; }
-  .icon::after {
-    content: none; }
+.page-title {
+  text-align: center; }
 
-@media screen and (min-width: 640px) {
-  .icon {
-    width: 48px;
-    height: 48px; } }
+.page-preface {
+  text-align: center;
+  font-size: 0.7rem; }
+  .page-preface .field {
+    margin: 5px 0; }
+  @media screen and (min-width: 768px), print {
+    .page-preface {
+      font-size: 0.75rem; } }
 
-.icon-github {
-  background-image: url("../bitmap/github.png"); }
+.page-nav-wrapper {
+  display: none;
+  background-color: #bd1857; }
 
-.icon-twitter {
-  background-image: url("../bitmap/twitter.png"); }
+html.cssmask .page-nav-wrapper {
+  display: block;
+  -webkit-clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%); }
+  @media screen and (min-width: 1024px) {
+    html.cssmask .page-nav-wrapper {
+      -webkit-clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
+      clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%); } }
 
-.icon-linkedin {
-  background-image: url("../bitmap/linkedin.png"); }
+/**
+ * @file
+ * Region.
+ */
+.region {
+  margin-bottom: -27.5px; }
 
 /**
  * @file
@@ -2504,30 +2478,65 @@ html.cssmask .page-nav-wrapper {
     content: none; }
 
 /**
- * @field
- * Field.
- */
-.field-label-inline .field-label,
-.field-label-inline .field-items,
-.field-label-inline .field-item {
-  display: inline; }
-
-.field-name-field-tags.field-label-inline .field-item::after {
-  content: ','; }
-
-.field-name-field-tags.field-label-inline .field-item:last-child::after {
-  content: none; }
-
-/**
  * @file
- * Forms.
+ * Typography.
  */
-.form-item {
-  margin: 25px 0;
-  padding: 0;
-  border: 0; }
+.lead {
+  font-size: 1rem; }
+  @media screen and (min-width: 1315px) {
+    .lead {
+      font-size: 1.25rem; } }
+
+.text-center {
+  text-align: center; }
+
+@media screen and (max-width: 1023px) {
+  .text-center-max-md {
+    text-align: center; } }
+
+@media screen and (max-width: 1919px) {
+  .text-center-max-lg {
+    text-align: center; } }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+@media screen and (min-width: 1024px) {
+  .text-right-min-md {
+    text-align: right; } }
+
+@media screen and (min-width: 1920px) {
+  .text-right-min-lg {
+    text-align: right; } }
+
+.field-type-text-with-summary a {
+  display: inline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #bd1857;
+  text-decoration-color: #bd1857; }
+  .field-type-text-with-summary a:hover {
+    text-decoration: none; }
+  .field-type-text-with-summary a::after {
+    content: none; }
 
 /* State. */
+/**
+ * @file
+ * Buttons.
+ */
+.btn, .nav-local-tasks ul > li > a {
+  transition: color .25s ease-in-out, background-color .25s ease-in-out; }
+  .btn:hover, .nav-local-tasks ul > li > a:hover {
+    color: black;
+    background-color: #bd1857; }
+
+.btn-inverse:hover {
+  color: black;
+  background-color: white; }
+
 /**
  * @file
  * Nav.
@@ -2562,17 +2571,3 @@ html.cssmask .page-nav-wrapper {
 
 .page-nav-wrapper.visible a {
   pointer-events: all; }
-
-/**
- * @file
- * Buttons.
- */
-.nav-local-tasks ul > li > a, .btn {
-  transition: color .25s ease-in-out, background-color .25s ease-in-out; }
-  .nav-local-tasks ul > li > a:hover, .btn:hover {
-    color: black;
-    background-color: #bd1857; }
-
-.btn-inverse:hover {
-  color: black;
-  background-color: white; }

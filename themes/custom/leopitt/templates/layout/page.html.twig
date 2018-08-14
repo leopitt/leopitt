@@ -46,7 +46,7 @@
 <div class="root-container">
 
   {% block header %}
-  <header class="page-header">
+  <header id="region-header">
     <div class="layout-brand layout-ui-top">
       <a href="/" class="brand">Leo Pitt</a>
       {{ page.brand }}
@@ -64,7 +64,8 @@
         <span class="bar"></span>
         <span class="bar"></span>
       </span>
-      <span class="label">Toggle navigation</span></button>
+      <span class="label">Toggle navigation</span>
+    </button>
   </header>
   {% endblock %}
 
@@ -74,7 +75,7 @@
 
     {% block preface %}
     {% if page.preface|render|striptags|trim %}
-      <div class="page-preface container columns text-center">
+      <div id="region-preface" class="region container columns text-center">
         <div class="column">
           {{ page.preface }}
         </div>
@@ -84,7 +85,7 @@
 
       {% block main %}
       {% if page.content|render|striptags|trim %}
-      <div class="page-main container">
+      <div id="region-main" class="region container">
         {{ page.content }}
       </div>
       {% endif %}
@@ -92,7 +93,7 @@
 
       {% block postscript %}
       {% if page.postscript|render|striptags|trim %}
-      <div class="page-postscript container columns is-centered">
+      <div id="region-postscript" class="region container columns is-centered">
         <div class="column is-two-thirds-tablet is-half-desktop">
           {{ page.postscript }}
         </div>
@@ -105,7 +106,7 @@
   {% endblock %}
 
   {% block footer %}
-  <footer class="page-footer layout-footer layout-ui-md">
+  <footer id="region-footer" class="layout-footer layout-ui-md">
   {% if page.footer|render|striptags|trim %}
     {{ page.footer }}
   {% endif %}
