@@ -7,6 +7,10 @@
     text-shadow: 4px 4px black;
     transition: text-shadow .25s ease-in-out, transform .25s ease-in-out;
 
+    &:hover {
+      color: mix($color-pink, white, 80%);
+    }
+
     &.is-active {
       text-shadow: 4px 4px rgba(0, 0, 0, .2);
     }

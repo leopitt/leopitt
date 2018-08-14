@@ -2567,6 +2567,8 @@ html.cssmask .page-nav-wrapper {
 .nav-main a {
   text-shadow: 4px 4px black;
   transition: text-shadow .25s ease-in-out, transform .25s ease-in-out; }
+  .nav-main a:hover {
+    color: #ca4679; }
   .nav-main a.is-active {
     text-shadow: 4px 4px rgba(0, 0, 0, 0.2); }
 
