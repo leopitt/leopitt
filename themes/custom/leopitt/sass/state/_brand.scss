@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Brand.
+ */
+
+.brand {
+  @include tablet {
+    &:focus {
+      color: black;
+    }
+  }
+}

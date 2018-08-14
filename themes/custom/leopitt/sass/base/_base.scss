@@ -98,6 +98,10 @@ a {
       background-color: transparent;
     }
   }
+
+  &:focus {
+    color: $color-pink;
+  }
 }
 
 img {

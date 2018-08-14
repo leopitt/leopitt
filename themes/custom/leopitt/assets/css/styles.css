@@ -1877,6 +1877,8 @@ a {
     background-color: #bd1857; }
   a:hover::after {
     background-color: transparent; }
+  a:focus {
+    color: #bd1857; }
 
 img {
   max-width: 100%; }
@@ -2552,14 +2554,21 @@ html.cssmask .page-nav-wrapper {
 
 /**
  * @file
+ * Brand.
+ */
+@media screen and (min-width: 768px), print {
+  .brand:focus {
+    color: black; } }
+
+/**
+ * @file
  * Nav.
  */
 .nav-main a {
   text-shadow: 4px 4px black;
   transition: text-shadow .25s ease-in-out, transform .25s ease-in-out; }
-  .nav-main a:hover, .nav-main a.active {
-    text-shadow: 6px 6px black;
-    transform: translate(-2px, -2px); }
+  .nav-main a.is-active {
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.2); }
 
 /**
  * @file
