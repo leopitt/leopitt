@@ -10,6 +10,7 @@ module:
   cdn: 0
   cdn_ui: 0
   ckeditor: 0
+  codesnippet: 0
   comment: 0
   config: 0
   ctools: 0
