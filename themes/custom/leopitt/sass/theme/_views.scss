@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Views.
+ */
+
+#view-blog {
+  .view-header + .view-rows {
+    margin-top: -$gap;
+  }
+}

@@ -6,3 +6,7 @@
 .region {
   margin-bottom: -$gap;
 }
+
+#region-main + #region-postscript {
+  margin-top: -($gap * 2);
+}

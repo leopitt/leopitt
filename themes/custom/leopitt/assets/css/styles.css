@@ -2469,6 +2469,9 @@ html.cssmask .page-nav-wrapper {
 .region {
   margin-bottom: -27.5px; }
 
+#region-main + #region-postscript {
+  margin-top: -55px; }
+
 /**
  * @file
  * Toolbar menu.
@@ -2525,6 +2528,13 @@ html.cssmask .page-nav-wrapper {
     text-decoration: none; }
   .field-type-text-with-summary a::after {
     content: none; }
+
+/**
+ * @file
+ * Views.
+ */
+#view-blog .view-header + .view-rows {
+  margin-top: -27.5px; }
 
 /* State. */
 /**

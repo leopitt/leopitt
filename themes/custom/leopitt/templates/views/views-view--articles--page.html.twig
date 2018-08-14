@@ -35,7 +35,7 @@
     dom_id ? 'js-view-dom-id-' ~ dom_id,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
+<div{{ attributes.setAttribute('id', 'view-blog').addClass(classes) }}>
 
   <div class="page container">
 
@@ -46,14 +46,14 @@
     <h1 class="hidden">Blog</h1>
 
     {% if header %}
-    <div class="container columns is-centered text-center">
+    <div class="view-header container columns is-centered text-center">
       <header class="column is-two-thirds-tablet is-half-desktop lead">
         {{ header }}
       </header>
     </div>
     {% endif %}
 
-    <div class="container columns is-centered text-center">
+    <div class="view-rows container columns is-centered text-center">
       <div class="column is-two-thirds-tablet is-half-desktop">
         {{ exposed }}
         {{ attachment_before }}
