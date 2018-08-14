@@ -1,5 +1,5 @@
 langcode: en
-status: false
+status: true
 mapping:
   type: simple
   domain: d3kkcjqltugr75.cloudfront.net
