@@ -6,9 +6,6 @@ dependencies:
     - block_class
   theme:
     - leopitt
-third_party_settings:
-  block_class:
-    classes: ''
 id: tabs
 theme: leopitt
 region: preface

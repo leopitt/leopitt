@@ -1,0 +1,23 @@
+uuid: f7d56b92-9128-4592-aa39-5ac27b23deac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_skillset_depth_experience
+    - node.type.skillset
+id: node.skillset.field_skillset_depth_experience
+field_name: field_skillset_depth_experience
+entity_type: node
+bundle: skillset
+label: 'Depth of experience'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

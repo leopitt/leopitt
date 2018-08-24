@@ -1,0 +1,18 @@
+uuid: 2117aa80-f1e3-4049-b51e-137407c160e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.skillset
+  module:
+    - user
+id: node.skillset.teaser
+targetEntityType: node
+bundle: skillset
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,10 @@
+uuid: 372b8ebb-0489-4af8-97bd-9133076d7c65
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.skillset_chart
+label: 'Skillset chart'
+targetEntityType: node
+cache: true

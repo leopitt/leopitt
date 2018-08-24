@@ -1,0 +1,19 @@
+uuid: 68fd8808-df0f-4e3a-a534-5d2ddb757772
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_skillset_experience_summar
+    - node.type.skillset
+id: node.skillset.field_skillset_experience_summar
+field_name: field_skillset_experience_summar
+entity_type: node
+bundle: skillset
+label: 'Experience summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,17 @@
+uuid: 8a8d1c5a-05ae-4832-83d5-fe0dd84585d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Skillset
+type: skillset
+description: 'A skillset.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false
