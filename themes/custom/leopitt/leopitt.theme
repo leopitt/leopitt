@@ -16,3 +16,39 @@ function leopitt_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = 'is-front';
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function leopitt_preprocess_skillset_chart(&$variables) {
+  /* Prepare experience data for the template. */
+  $length = $variables['content']['#node']->field_skillset_length_experience->value;
+  $depth = $variables['content']['#node']->field_skillset_depth_experience->value;
+
+  /* Get maximum value for the field across all content. */
+  $max_length = 0;
+  $max_depth = 0;
+
+  $all_skillsets = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['type' => 'skillset']);
+  if ($all_skillsets) {
+    foreach ($all_skillsets as $key => $skillset) {
+      if (intval($skillset->field_skillset_length_experience->value) > $max_length) {
+        $max_length = intval($skillset->field_skillset_length_experience->value);
+      }
+
+      if (intval($skillset->field_skillset_depth_experience->value) > $max_depth) {
+        $max_depth = intval($skillset->field_skillset_depth_experience->value);
+      }
+    }
+  }
+
+  /* Pass the values to the template. */
+  $variables['length'] = $length;
+  $variables['length_css'] = ($length / $max_length) * 100 . '%';
+  $variables['length_unit_css'] = ((($length / $max_length) * 100) / $length) . '%';
+  $variables['depth'] = $depth;
+  $variables['depth_css'] = ($depth / $max_depth) * 100 . '%';
+  $variables['depth_unit_css'] = ((($depth / $max_depth) * 100) / $depth) . '%';
+  $variables['max_length'] = $max_length;
+  $variables['max_depth'] = $max_depth;
+}

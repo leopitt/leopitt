@@ -1850,7 +1850,8 @@ h2 {
 
 h3 {
   font-family: "museo-sans", sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-weight: normal; }
   h3 > a {
     text-decoration: underline;
     text-decoration-skip-ink: none; }
@@ -2500,12 +2501,71 @@ html.cssmask .page-nav-wrapper {
 
 .ripple {
   transform: translate(-50%, -50%);
-  background-color: red;
+  background-color: #ff0000;
   border-radius: 50%;
   display: block;
   animation-name: ripple;
   animation-duration: 2s;
   animation-timing-function: ease-out; }
+
+/**
+ * @file
+ * Skillsets.
+ */
+.skillset {
+  position: relative;
+  margin-bottom: 1px; }
+  .skillset-copy {
+    padding: 15px 0;
+    position: relative;
+    z-index: 2; }
+    .skillset-copy h3 {
+      margin: 0; }
+  .skillset-values {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .skillset-value {
+    float: left;
+    height: 100%;
+    width: 50%;
+    position: relative; }
+    .skillset-value-unit {
+      height: 100%;
+      overflow: hidden;
+      text-indent: -999em;
+      text-align: left;
+      min-height: 70px;
+      position: relative; }
+      .skillset-value-unit::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 1px; }
+    .skillset-value:first-child .skillset-value-unit {
+      float: right;
+      background-color: #cd0000; }
+      .skillset-value:first-child .skillset-value-unit::after {
+        left: 0;
+        background-color: #e60000; }
+    .skillset-value:last-child::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      left: 0;
+      background-color: #de2483;
+      z-index: 1; }
+    .skillset-value:last-child .skillset-value-unit {
+      float: left;
+      background-color: #bd1857; }
+      .skillset-value:last-child .skillset-value-unit::after {
+        right: 0;
+        background-color: #de2483; }
 
 /**
  * @file

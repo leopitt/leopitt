@@ -63,3 +63,13 @@ page_columns_1_centered:
       label: Main content
     secondary:
       label: Secondary content
+skillset_chart:
+  label: 'Skillset chart'
+  category: 'Custom Layouts'
+  template: templates/layout/custom/skillset-chart
+  default_region: title
+  regions:
+    title:
+      label: Title
+    summary:
+      label: Summary

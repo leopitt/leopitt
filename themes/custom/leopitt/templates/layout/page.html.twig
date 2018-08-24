@@ -94,10 +94,8 @@
 
       {% block postscript %}
       {% if page.postscript|render|striptags|trim %}
-      <div id="region-postscript" class="region container columns is-centered">
-        <div class="column is-two-thirds-tablet is-half-desktop">
-          {{ page.postscript }}
-        </div>
+      <div id="region-postscript" class="region container">
+        {{ page.postscript }}
       </div>
       {% endif %}
       {% endblock %}
