@@ -15,4 +15,7 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_skillset_depth_experience: true
+  field_skillset_experience_summar: true
+  field_skillset_length_experience: true
