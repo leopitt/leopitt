@@ -3,7 +3,11 @@ status: true
 mapping:
   type: simple
   domain: d3kkcjqltugr75.cloudfront.net
-  conditions: {  }
+  conditions:
+    not:
+      extensions:
+        - css
+        - js
 farfuture:
   status: true
 _core:
