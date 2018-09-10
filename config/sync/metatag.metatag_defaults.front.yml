@@ -1,0 +1,13 @@
+uuid: 571857f7-cbae-46f6-a4c7-8ad7401612a6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  title: 'Freelance Drupal, Wordpress, Front-end Developer in Bristol UK'
+  canonical_url: '[site:url]'
+  description: 'I''m a freelance website developer based in Bristol, UK. I''ve been making websites since 1999 and spend most of my time working with Drupal and Wordpress.'
+  shortlink: '[site:url]'
