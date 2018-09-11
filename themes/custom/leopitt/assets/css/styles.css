@@ -2501,7 +2501,7 @@ html.cssmask .page-nav-wrapper {
 
 .ripple {
   transform: translate(-50%, -50%);
-  background-color: #ff0000;
+  background-color: #f00;
   border-radius: 50%;
   display: block;
   animation-name: ripple;
@@ -2516,7 +2516,7 @@ html.cssmask .page-nav-wrapper {
   position: relative;
   margin-bottom: 1px; }
   .skillset-copy {
-    padding: 15px 0;
+    padding: 10px 0;
     position: relative;
     z-index: 2; }
     .skillset-copy h3 {
@@ -2537,7 +2537,6 @@ html.cssmask .page-nav-wrapper {
       overflow: hidden;
       text-indent: -999em;
       text-align: left;
-      min-height: 70px;
       position: relative; }
       .skillset-value-unit::after {
         content: '';

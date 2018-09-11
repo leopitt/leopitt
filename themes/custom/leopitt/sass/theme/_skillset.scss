@@ -8,7 +8,7 @@
   margin-bottom: 1px;
 
   &-copy {
-    padding: $layout-vpad-xsmall 0;
+    padding: $layout-vpad-xxsmall 0;
     position: relative;
     z-index: 2;
 
@@ -17,7 +17,7 @@
     }
   }
 
-  &-values{
+  &-values {
     position: absolute;
     top: 0;
     left: 0;
@@ -36,7 +36,6 @@
       overflow: hidden;
       text-indent: -999em;
       text-align: left;
-      min-height: 70px;
       position: relative;
 
       &::after {
