@@ -234,7 +234,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel risus a leo cursus commodo. Duis vel sem sapien. Suspendisse ultricies ante nec erat sollicitudin iaculis.'
+            value: 'Writings on development, Drupal, Wordpress, project management and the business side of being a freelance developer.'
             format: basic_html
           plugin_id: text
       empty:
