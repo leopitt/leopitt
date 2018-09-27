@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.webform.body
+    - field.field.node.webform.field_webform_metatags
     - field.field.node.webform.field_webform_preface
     - field.field.node.webform.webform
     - node.type.webform
   module:
+    - metatag
     - path
     - text
     - webform
@@ -32,6 +34,12 @@ content:
     weight: 5
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_webform_metatags:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_webform_preface:
     weight: 1
