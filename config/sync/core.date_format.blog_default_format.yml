@@ -5,4 +5,4 @@ dependencies: {  }
 id: blog_default_format
 label: 'Blog default format'
 locked: false
-pattern: 'dS F Y'
+pattern: 'jS F Y'
