@@ -36,11 +36,13 @@ module:
   menu_link_attributes: 0
   menu_ui: 0
   metatag: 0
+  metatag_views: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
   rdf: 0
+  redirect: 0
   rest: 0
   search: 0
   serialization: 0

@@ -168,7 +168,11 @@ display:
     display_title: 'Latest Posts Block'
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            title: 'Blog | Leo Pitt'
+            description: 'Writings on development, Drupal, Wordpress, project management and the business side of being a freelance developer.'
       display_description: ''
       css_class: ''
       defaults:
