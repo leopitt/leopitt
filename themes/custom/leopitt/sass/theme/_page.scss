@@ -21,6 +21,7 @@
     }
   }
 
+  /* Hide nav by default. */
   &-nav-wrapper {
     display: none;
     background-color: $color-pink;
@@ -28,6 +29,7 @@
 }
 
 html.cssmask {
+  /* Show nav wrapper if the browser has CSS mask support. */
   .page-nav-wrapper {
     display: block;
     clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);

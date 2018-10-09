@@ -2450,30 +2450,32 @@ h1.secondary {
  * @file
  * Page styles.
  */
-.page-title {
-  text-align: center; }
+.page {
+  /* Hide nav by default. */ }
+  .page-title {
+    text-align: center; }
+  .page-preface {
+    text-align: center;
+    font-size: 0.65rem; }
+    .page-preface .field {
+      margin: 5px 0; }
+    @media screen and (min-width: 768px), print {
+      .page-preface {
+        font-size: 0.75rem; } }
+  .page-nav-wrapper {
+    display: none;
+    background-color: #bd1857; }
 
-.page-preface {
-  text-align: center;
-  font-size: 0.65rem; }
-  .page-preface .field {
-    margin: 5px 0; }
-  @media screen and (min-width: 768px), print {
-    .page-preface {
-      font-size: 0.75rem; } }
-
-.page-nav-wrapper {
-  display: none;
-  background-color: #bd1857; }
-
-html.cssmask .page-nav-wrapper {
-  display: block;
-  -webkit-clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%); }
-  @media screen and (min-width: 1024px) {
-    html.cssmask .page-nav-wrapper {
-      -webkit-clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
-      clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%); } }
+html.cssmask {
+  /* Show nav wrapper if the browser has CSS mask support. */ }
+  html.cssmask .page-nav-wrapper {
+    display: block;
+    -webkit-clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%); }
+    @media screen and (min-width: 1024px) {
+      html.cssmask .page-nav-wrapper {
+        -webkit-clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 9.89% 0%, 16.51% 100%, 0% 100%); } }
 
 /**
  * @file
@@ -2657,13 +2659,23 @@ html.cssmask .page-nav-wrapper {
  * @file
  * Nav.
  */
-.nav-main a {
-  text-shadow: 4px 4px black;
-  transition: text-shadow .25s ease-in-out, transform .25s ease-in-out; }
-  .nav-main a:hover {
-    color: #ca4679; }
-  .nav-main a.is-active {
-    text-shadow: 4px 4px rgba(0, 0, 0, 0.2); }
+.nav-main {
+  /* Hide by default. */
+  display: none; }
+  .nav-main a {
+    text-shadow: 4px 4px black;
+    transition: text-shadow .25s ease-in-out, transform .25s ease-in-out; }
+    .nav-main a:hover {
+      color: #ca4679; }
+    .nav-main a.is-active {
+      text-shadow: 4px 4px rgba(0, 0, 0, 0.2); }
+
+.page-nav-wrapper.visible .nav-main {
+  /*
+   * Reveal when parent wrapper is active. Important to prevent masked nav items
+   * from being clickable when in mobile.
+   */
+  display: block; }
 
 /**
  * @file
@@ -2686,4 +2698,5 @@ html.cssmask .page-nav-wrapper {
 .page-nav-wrapper {
   pointer-events: none; }
   .page-nav-wrapper.visible {
+    display: block;
     pointer-events: all; }
