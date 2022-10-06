@@ -6,15 +6,10 @@ function App() {
   return (
       <div className="l-container">
         <div className="l-columns">
-          <div className="l-grid">
-            <header className="l-grid l-grid-item-span-full">
-              <h1 className="l-grid l-grid-item-span-full"><span className="c-title__primary t-heading-1 t-uppercase">Leo Pitt </span><span className="t-heading-2 t-uppercase">Curriculum Vitae</span></h1>
-            </header>
-          </div>
+          <h1 className="l-grid l-grid-item-span-full"><span className="c-title__primary t-heading-1 t-uppercase">Leo Pitt </span><span className="t-heading-2 t-uppercase">Curriculum Vitae</span></h1>
         </div>
 
         <div className="l-columns">
-
           <div className="l-grid">
             <section className="l-grid-item-second">
               <dl className="l-grid l-grid--secondary">
@@ -37,14 +32,17 @@ function App() {
                 <dd><a href="https://www.drupal.org/u/leo-pitt">drupal.org/u/leo-pitt</a></dd>
               </dl>
             </section>
+          </div>
 
-            <section className="l-grid l-grid-item-span-full">
-              <h2 className="l-grid-item-second t-heading-3 t-uppercase">In a nutshell</h2>
-
-              <p className="l-grid-item-second">Experienced developer with Drupal (Acquia accredited) specialism, working professionally since
+          <div className="l-grid">
+            <section className="l-grid-item-second">
+              <h2 className="t-heading-3 t-uppercase">In a nutshell</h2>
+              <p>Experienced developer with Drupal (Acquia accredited) specialism, working professionally since
                 2001 for varied direct clients and agencies.</p>
             </section>
+          </div>
 
+          <div className="l-grid">
             <section className="l-grid l-grid-item-span-full">
               <h2 className="l-grid-item-second t-heading-3 t-uppercase">Skills</h2>
 
@@ -89,7 +87,9 @@ function App() {
                 <p>Git, LESS, SASS, Unix-like command-line, Photoshop, InDesign, node / npm usage, etc.</p>
               </Row>
             </section>
+          </div>
 
+          <div className="l-grid">
             <section className="l-grid l-grid-item-span-full">
               <h2 className="l-grid-item-second t-heading-3 t-uppercase">Recent Projects and experience</h2>
 
@@ -129,7 +129,9 @@ function App() {
                 </div>
               </Row>
             </section>
+          </div>
 
+          <div className="l-grid">
             <section className="l-grid l-grid-item-span-full">
               <h2 className="l-grid-item-second t-heading-3 t-uppercase">Testimonials</h2>
 
