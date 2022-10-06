@@ -10,6 +10,6 @@ Inside `/docroot/app`, you can run several commands:
 We suggest that you begin by typing:
 
 ```bash
-cd leopitt
+cd app
 npm start
 ```
