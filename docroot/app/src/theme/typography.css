@@ -1,0 +1,54 @@
+.t-heading-1 {
+  color: var(--brand-primary);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1640px) {
+  .t-heading-1 {
+    font-size: 2.4rem;
+  }
+}
+
+.t-heading-2 {
+  color: var(--brand-secondary);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1640px) {
+  .t-heading-2 {
+    font-size: 2.4rem;
+  }
+}
+
+.t-heading-3 {
+  color: var(--brand-primary);
+  font-size: 1.28rem;
+  font-weight: bold;
+}
+
+.t-heading-4 {
+  color: var(--brand-secondary);
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.t-heading-5 {
+  color: var(--brand-text-light);
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.t-heading-6 {
+  color: var(--brand-text-light);
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.t-uppercase {
+  text-transform: uppercase;
+}

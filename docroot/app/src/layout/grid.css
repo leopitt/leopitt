@@ -1,0 +1,27 @@
+@media only screen and (min-width: 768px) {
+  .l-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+}
+
+.l-grid--gap {
+  gap: 0 1rem;
+}
+
+.l-grid--secondary {
+  grid-template-columns: 100px auto;
+}
+
+.l-grid-item-span-full,
+.l-grid-item-span {
+  grid-column: 1 / -1;
+}
+
+.l-grid-item-first {
+  grid-column: 2;
+}
+
+.l-grid-item-second {
+  grid-column: 2;
+}

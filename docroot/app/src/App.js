@@ -1,4 +1,10 @@
+import './settings/color.css';
+import './base/base.css';
+import './theme/typography.css';
 import './App.css';
+import './layout/grid.css';
+import './layout/columns.css';
+import './layout/container.css';
 import Row from './components/Row/Row';
 import TestimonialRow from './components/TestimonialRow/TestimonialRow';
 import Section from './components/Section/Section';
@@ -7,17 +13,14 @@ function App() {
   return (
       <div className="l-container">
         <div className="l-columns">
-          <div className="l-grid">
-            <h1 className="l-grid l-grid-item-span-full">
-              <Row>
-                <span className="c-title__primary t-heading-1 t-uppercase">Leo Pitt </span><span className="t-heading-2 t-uppercase">Curriculum Vitae</span>
-              </Row>
-            </h1>
-          </div>
+          <Section>
+            <Row element="h1">
+              <span className="c-title__primary t-heading-1 t-uppercase">Leo Pitt </span><span className="t-heading-2 t-uppercase">Curriculum Vitae</span>
+            </Row>
+          </Section>
         </div>
 
         <div className="l-columns">
-
           <Section>
             <Row>
               <div className="l-grid-item-second">
@@ -110,7 +113,7 @@ function App() {
               <h3 className="c-row__label c-row__label--offset t-heading-6 t-uppercase">Contract<br />
                 2022</h3>
               <div className="c-row__content">
-                <p className="t-heading-4 t-uppercase">CTI Digital</p>
+                <p className="t-heading-4"><a href="https://www.ctidigital.com/">CTI Digital</a></p>
                 <p>Drupal 9/10 front and back-end development</p>
               </div>
             </Row>
@@ -119,7 +122,7 @@ function App() {
               <h3 className="c-row__label c-row__label--offset t-heading-6 t-uppercase">Contract<br />
                 2022</h3>
               <div className="c-row__content">
-                <p className="t-heading-4 t-uppercase">Collective London</p>
+                <p className="t-heading-4"><a href="https://ldn-collective.com/">Collective London</a></p>
                 <p>Drupal 8/9 back-end development</p>
               </div>
             </Row>
@@ -128,7 +131,7 @@ function App() {
               <h3 className="c-row__label c-row__label--offset t-heading-6 t-uppercase">Contract<br />
                 2021</h3>
               <div className="c-row__content">
-                <p className="t-heading-4 t-uppercase">Net Efficiency</p>
+                <p className="t-heading-4"><a href="https://www.netefficiency.co.uk/">Net Efficiency</a></p>
                 <p>Drupal 8/9/10 back-end development</p>
               </div>
             </Row>
@@ -137,7 +140,7 @@ function App() {
               <h3 className="c-row__label c-row__label--offset t-heading-6 t-uppercase">Contract<br />
                 2019, 2020, 2021</h3>
               <div className="c-row__content">
-                <p className="t-heading-4 t-uppercase">Aerian Studios</p>
+                <p className="t-heading-4"><a href="https://www.aerian.com/">Aerian Studios</a></p>
                 <p>Drupal 7, 8 and 9, front-end, back-end and headless</p>
               </div>
             </Row>
