@@ -1,8 +1,0 @@
-uuid: 95f48464-6573-40c8-a2b2-857757033c3a
-langcode: en
-status: true
-dependencies: {  }
-id: blog_default_format
-label: 'Blog default format'
-locked: false
-pattern: 'jS F Y'
