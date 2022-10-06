@@ -19,6 +19,8 @@ blockquote {
 }
 
 p,
+h1,
+h2,
 h3,
 figure {
   margin: 0 0 1rem;
@@ -30,6 +32,7 @@ h2 {
 
 section {
   break-inside: avoid;
+  margin: 0 0 2rem;
 }
 
 .c-skill {
@@ -44,6 +47,7 @@ section {
 
 .l-container {
   max-width: 1400px;
+  padding: 2rem;
   margin: auto;
 }
 
@@ -125,4 +129,8 @@ section {
 
 .t-uppercase {
   text-transform: uppercase;
+}
+
+.c-row {
+  margin: 0 0 .5rem;
 }

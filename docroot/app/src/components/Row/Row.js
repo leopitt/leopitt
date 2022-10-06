@@ -3,7 +3,7 @@ import React from "react";
 import './Row.css';
 
 const Row = ({ children, label }) => (
-    <div className="l-grid l-grid-item-span-full c-row">
+    <div className="l-grid l-grid-item-span-full l-grid--gap c-row">
       {children}
     </div>
 )
