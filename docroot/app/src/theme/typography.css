@@ -56,3 +56,7 @@
 .t-uppercase {
   text-transform: uppercase;
 }
+
+.t-small {
+  font-size: .8rem;
+}
