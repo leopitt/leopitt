@@ -1,6 +1,8 @@
 import './settings/color.css';
+import './settings/spacing.css';
 import './base/base.css';
 import './theme/typography.css';
+import './theme/spacing.css';
 import './App.css';
 import './layout/grid.css';
 import './layout/columns.css';
@@ -11,6 +13,7 @@ import TitleRow from './components/TitleRow/TitleRow';
 import ContentRow from './components/ContentRow/ContentRow';
 import TestimonialRow from './components/TestimonialRow/TestimonialRow';
 import Section from './components/Section/Section';
+import ProfileImage from "./components/ProfileImage/ProfileImage";
 
 function App() {
   return (
@@ -27,8 +30,9 @@ function App() {
       <div className="l-columns">
         <Section>
           <Row>
+            <ProfileImage />
             <div className="l-grid-item-second">
-              <dl className="l-grid l-grid--secondary">
+              <dl className="l-grid l-grid--secondary t-margin-bottom-2">
                 <dt className="t-heading-5">Tel</dt>
                 <dd>07712 622 397</dd>
 
@@ -47,17 +51,11 @@ function App() {
                 <dt className="t-heading-5">Drupal</dt>
                 <dd><a href="https://www.drupal.org/u/leo-pitt">drupal.org/u/leo-pitt</a></dd>
               </dl>
+
+              <h2 className="t-heading-3 t-uppercase">In a nutshell</h2>
+
+              <p>Experienced developer with Drupal (Acquia accredited) specialism, working professionally since 2001 for varied direct clients and agencies.</p>
             </div>
-          </Row>
-        </Section>
-
-        <Section>
-          <TitleRow>In a nutshell</TitleRow>
-
-          <Row>
-            <p className="l-grid-item-second">Experienced developer with Drupal (Acquia accredited) specialism,
-              working professionally since
-              2001 for varied direct clients and agencies.</p>
           </Row>
         </Section>
 

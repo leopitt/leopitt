@@ -1,6 +1,6 @@
 .l-container {
   box-sizing: border-box;
-  padding: 2rem;
+  padding: var(--page-margin);
   margin: auto;
 }
 
