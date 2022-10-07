@@ -1,3 +1,18 @@
+// React and 3rd party packages.
+import React from 'react'
+import { Helmet } from 'react-helmet'
+
+// Components.
+import ContentRow from './components/ContentRow/ContentRow'
+import Footer from './components/Footer/Footer'
+import ProfileImage from './components/ProfileImage/ProfileImage'
+import Row from './components/Row/Row'
+import Section from './components/Section/Section'
+import TestimonialRow from './components/TestimonialRow/TestimonialRow'
+import Title from './components/Title/Title'
+import TitleRow from './components/TitleRow/TitleRow'
+
+// Styles.
 import './base/base.css'
 import './layout/columns.css'
 import './layout/container.css'
@@ -6,15 +21,6 @@ import './settings/color.css'
 import './settings/spacing.css'
 import './theme/spacing.css'
 import './theme/typography.css'
-import ContentRow from './components/ContentRow/ContentRow'
-import ProfileImage from './components/ProfileImage/ProfileImage'
-import React from 'react'
-import Row from './components/Row/Row'
-import Section from './components/Section/Section'
-import TestimonialRow from './components/TestimonialRow/TestimonialRow'
-import Title from './components/Title/Title'
-import TitleRow from './components/TitleRow/TitleRow'
-import { Helmet } from 'react-helmet'
 
 function App () {
   return (
@@ -24,9 +30,10 @@ function App () {
         <title>Leo Pitt - Curriculum Vitae</title>
         <meta name="description" content={'Curriculum Vitae of Leo Pitt. Experienced full-stack web developer with Drupal specialism, based in Bristol (UK).'}/>
       </Helmet>
+
       <div className="l-container">
         <div className="l-columns">
-          <Section>
+          <Section element={'header'}>
             <Row>
               <Title level="1" type="primary">Leo Pitt</Title>
               <Title level="2">Curriculum Vitae</Title>
@@ -44,19 +51,19 @@ function App () {
                   <dd>07712 622 397</dd>
 
                   <dt className="t-heading-5">Email</dt>
-                  <dd><a href="mailto:leopitt@function-design.co.uk">leopitt@function-design.co.uk</a></dd>
+                  <dd><a href="mailto:leopitt@function-design.co.uk" title={'Send me an email'}>hello@leopitt.co.uk</a></dd>
 
                   <dt className="t-heading-5">Web</dt>
-                  <dd><a href="https://function-design.co.uk">function-design.co.uk</a></dd>
+                  <dd><a href="https://leopitt.co.uk" title={'Visit my website (this one)'}>leopitt.co.uk</a></dd>
 
                   <dt className="t-heading-5">LinkedIn</dt>
-                  <dd><a href="https://www.linkedin.com/in/leo-pitt/">linkedin.com/in/leo-pitt</a></dd>
+                  <dd><a href="https://www.linkedin.com/in/leo-pitt/" title={'View my LinkedIn profile'}>linkedin.com/in/leo-pitt</a></dd>
 
                   <dt className="t-heading-5">Github</dt>
-                  <dd><a href="https://github.com/leopitt">github.com/leopitt</a></dd>
+                  <dd><a href="https://github.com/leopitt" title={'Visit my github.com profile'}>github.com/leopitt</a></dd>
 
                   <dt className="t-heading-5">Drupal</dt>
-                  <dd><a href="https://www.drupal.org/u/leo-pitt">drupal.org/u/leo-pitt</a></dd>
+                  <dd><a href="https://www.drupal.org/u/leo-pitt" title={'Visit my Drupal.org profile'}>drupal.org/u/leo-pitt</a></dd>
                 </dl>
 
                 <h2 className="t-heading-3 t-uppercase">In a nutshell</h2>
@@ -76,7 +83,7 @@ function App () {
 
             <ContentRow
                 label={'Drupal'}
-                content={<p><a href={'https://certification.acquia.com/user/7651'}>Acquia Accredited developer</a>. Intensive user of Drupal since 2009. Experienced across Drupal
+                content={<p><a href={'https://certification.acquia.com/user/7651'} title={'View my Acquia certifications'}>Acquia Accredited developer</a>. Intensive user of Drupal since 2009. Experienced across Drupal
                   6, 7, 8, 9+. “Headless” Drupal experience.</p>}
             />
 
@@ -119,7 +126,7 @@ function App () {
               label={2022}
               labelLevel={6}
               content={<>
-                <p className="t-heading-4"><a href="https://www.ctidigital.com/">CTI Digital</a></p>
+                <p className="t-heading-4"><a href="https://www.ctidigital.com/" title={'Visit ctidigital.com'}>CTI Digital</a></p>
                 <p>Drupal 9/10 front and back-end development</p>
               </>}
             />
@@ -128,7 +135,7 @@ function App () {
                 label={2022}
                 labelLevel={6}
                 content={<>
-                  <p className="t-heading-4"><a href="https://www.ctidigital.com/">Collective London</a></p>
+                  <p className="t-heading-4"><a href="https://ldn-collective.com/" title={'Visit ldn-collective.com'}>Collective London</a></p>
                   <p>Drupal 8/9 back-end development</p>
                 </>}
             />
@@ -137,7 +144,7 @@ function App () {
                 label={2021}
                 labelLevel={6}
                 content={<>
-                  <p className="t-heading-4"><a href="https://www.ctidigital.com/">Net Efficiency</a></p>
+                  <p className="t-heading-4"><a href="https://www.netefficiency.co.uk/" title={'Visit netefficiency.co.uk'}>Net Efficiency</a></p>
                   <p>Drupal 8/9/10 back-end development</p>
                 </>}
             />
@@ -146,7 +153,7 @@ function App () {
                 label={'2019, 2020, 2021'}
                 labelLevel={6}
                 content={<>
-                  <p className="t-heading-4"><a href="https://www.ctidigital.com/">Aerian Studios</a></p>
+                  <p className="t-heading-4"><a href="https://www.aerian.com/" title={'Visit aerian.com'}>Aerian Studios</a></p>
                   <p>Drupal 7, 8 and 9, front-end, back-end and headless</p>
                 </>}
             />
@@ -158,7 +165,7 @@ function App () {
             <TestimonialRow
               type="Contract"
               dates="2019, 2020, 2021"
-              client={<a href='https://www.ctidigital.com/'>Aerian Studios</a>}
+              client={<a href='https://www.ctidigital.com/' title='Visit aerian.com'>Aerian Studios</a>}
               summary='Drupal 7, 8 and 9, front-end, back-end and headless'
               quote='Leo is brilliant; he’s very quick at thinking things through and coming up with solutions to problems. He is a very clear and capable coder, can comfortably create custom modules for Drupal, and work on large scale, complex integrations.'
               author='Karen Velasquez, Project Manager'
@@ -176,13 +183,18 @@ function App () {
             <TestimonialRow
               type="Contract"
               dates="2018"
-              client={<a href={'https://halostudio.love/'}>Halo</a>}
+              client={<a href={'https://halostudio.love/'} title={'Visit halostudio.love'}>Halo</a>}
               summary="Drupal 7 and 8, front-end development"
               quote="Leo is the best contractor we’ve ever had in my time at Halo."
               author="Alex Martin, Technical Director"
             />
           </Section>
         </div>
+
+        <Footer>
+          <a href={'mailto:hello@leopitt.co.uk'} title={'Send me an email'}>hello@leopitt.co.uk</a><br/>
+          updated: 07/10/2022
+        </Footer>
       </div>
     </>
   )

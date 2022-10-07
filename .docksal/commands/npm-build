@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+## Run npm build.
+##
+## Usage: fin npm-build
+
+PWD=$(pwd)
+cd ${PROJECT_ROOT}/${SRCROOT}
+fin exec npm run build
+cd ${PWD}

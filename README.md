@@ -13,3 +13,19 @@ We suggest that you begin by typing:
 cd app
 npm start
 ```
+
+## Docksal
+
+Ideally this should all be run via a Docksal machine.
+
+But `npm start` must be run directly on a local machine, because ... it doesn't work via Docksal.
+
+The following do work:
+* `fin exec npm run build`: Build the app.
+* `fin exec npx stylelint ./src/**/*.css`: Run CSS Linting.
+
+## Code standards.
+
+The project is configured with ESLint (which watches for changes while running the development server - see `npm start` avove).
+
+I am also using stylelint to lint CSS files. Run this using `npx stylelint ./src/**/*.css` (also see above).
