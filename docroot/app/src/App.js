@@ -71,7 +71,7 @@ function App() {
 
           <ContentRow
               label={"Drupal"}
-              content={<p>Acquia Accredited developer. Intensive user of Drupal since 2009. Experienced across Drupal
+              content={<p><a href={"https://certification.acquia.com/user/7651"}>Acquia Accredited developer</a>. Intensive user of Drupal since 2009. Experienced across Drupal
                 6, 7, 8, 9+. “Headless” Drupal experience.</p>}
           />
 
@@ -153,7 +153,7 @@ function App() {
           <TestimonialRow
             type="Contract"
             dates="2019, 2020, 2021"
-            client="Aerian Studios"
+            client={<a href="https://www.ctidigital.com/">Aerian Studios</a>}
             summary="Drupal 7, 8 and 9, front-end, back-end and headless"
             quote="Leo is brilliant; he’s very quick at thinking things through and coming up with solutions to problems. He is a very clear and capable coder, can comfortably create custom modules for Drupal, and work on large scale, complex integrations."
             author="Karen Velasquez, Project Manager"
@@ -162,7 +162,7 @@ function App() {
           <TestimonialRow
             type="Contract"
             dates="2017, 2018, 2020"
-            client="Microserve"
+            client={<a href="https://www.investisdigital.com/company/contact/bristol" title={"Investis Digital (formerly Microserve)"}>Microserve</a>}
             summary="Drupal 8, front-end development"
             quote="Easily the best of the contractors we’ve had in, smashed through the tasks we gave him and added quite a lot of extra value along the way."
             author="Dan McNamara, Managing Director"
@@ -171,7 +171,7 @@ function App() {
           <TestimonialRow
             type="Contract"
             dates="2018"
-            client="Halo"
+            client={<a href={"https://halostudio.love/"}>Halo</a>}
             summary="Drupal 7 and 8, front-end development"
             quote="Leo is the best contractor we’ve ever had in my time at Halo."
             author="Alex Martin, Technical Director"
