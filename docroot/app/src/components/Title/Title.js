@@ -1,16 +1,26 @@
-import PropTypes from "prop-types";
 import React from "react";
 import './Title.css';
 
-const Title = ({ primary, secondary }) => (
-  <h1>
-    <span className="c-title__primary t-heading-1 t-uppercase">{primary} </span><span className="t-heading-2 t-uppercase">{secondary}</span>
-  </h1>
-)
+class Title extends React.Component {
+  render() {
+    let CustomTag = 'h1';
+    let className = 'c-title';
 
-Title.propTypes = {
-  primary: PropTypes.string,
-  secondary: PropTypes.string,
+    if (this.props.type !== undefined) {
+      className += ` c-title__${this.props.type}`;
+    }
+
+    if (this.props.level !== undefined) {
+      CustomTag = `h${this.props.level}`;
+      className += ` t-heading-${this.props.level}`;
+    }
+
+    className += ' t-uppercase';
+
+    return <CustomTag className={className}>
+      {this.props.children}
+    </CustomTag>;
+  }
 }
 
 export default Title

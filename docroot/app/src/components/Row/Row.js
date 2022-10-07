@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 import './Row.css';
 
@@ -14,10 +13,6 @@ class Row extends React.Component {
       {this.props.children}
     </CustomTag>;
   }
-}
-
-Row.propTypes = {
-  element: PropTypes.string,
 }
 
 export default Row

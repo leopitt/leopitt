@@ -1,0 +1,5 @@
+@media only screen and (min-width: 768px) {
+  .c-title__primary {
+    text-align: right;
+  }
+}
