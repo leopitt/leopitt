@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  color: var(--brand-text-base);
+}
+
+dd,
+blockquote {
+  margin: 0;
+}
+
+blockquote {
+  margin: .5rem 0;
+}
+
+p,
+h2,
+h3,
+figure,
+dl {
+  margin: 0 0 1rem;
+}
+
+h2 {
+  margin: 0 0 .75rem;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: underline var(--brand-text-lighter) dotted;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

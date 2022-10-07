@@ -1,0 +1,31 @@
+@media only screen and (max-width: 767px) {
+  .c-profile-image {
+    margin: 0 calc(var(--page-margin) * -1) 1rem 1rem;
+  }
+
+  .c-profile-image__image {
+    max-width: 45%;
+    margin: 0 0 1rem 1rem;
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .c-profile-image {
+    position: relative;
+    margin: 0 1rem 0 0;
+  }
+
+  .c-profile-image__inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1028px) {
+  .c-profile-image__inner {
+    aspect-ratio: 1 / 1;
+  }
+}

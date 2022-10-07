@@ -1,0 +1,29 @@
+.l-container {
+  box-sizing: border-box;
+  padding: var(--page-margin);
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .l-container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1028px) {
+  .l-container {
+    max-width: 1028px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .l-container {
+    max-width: 1280px;
+  }
+}
+
+@media only screen and (min-width: 1640px) {
+  .l-container {
+    max-width: 1400px;
+  }
+}

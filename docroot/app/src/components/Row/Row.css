@@ -1,0 +1,9 @@
+.c-row {
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .c-row__label.c-row__label--offset {
+    text-align: right;
+  }
+}

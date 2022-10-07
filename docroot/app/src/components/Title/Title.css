@@ -1,0 +1,13 @@
+@media only screen and (min-width: 768px) {
+  .c-title__primary {
+    display: flex;
+    justify-content: right;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .c-title__primary {
+    margin-right: 1rem;
+    white-space: nowrap;
+  }
+}
