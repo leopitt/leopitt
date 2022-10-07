@@ -1,4 +1,3 @@
-import './App.css'
 import './base/base.css'
 import './layout/columns.css'
 import './layout/container.css'
