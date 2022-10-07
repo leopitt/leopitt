@@ -1,18 +1,24 @@
-import React from "react";
-import './Row.css';
+import React from 'react'
+import PropTypes from 'prop-types'
+import './Row.css'
 
 class Row extends React.Component {
-  render() {
-    let CustomTag = 'div';
+  render () {
+    let CustomTag = 'div'
 
     if (this.props.element !== undefined) {
-      CustomTag = `${this.props.element}`;
+      CustomTag = `${this.props.element}`
     }
 
-    return <CustomTag className="l-grid l-grid-item-span-full l-grid--gap c-row">
+    return <CustomTag className='l-grid l-grid-item-span-full l-grid--gap c-row'>
       {this.props.children}
-    </CustomTag>;
+    </CustomTag>
   }
+}
+
+Row.propTypes = {
+  element: PropTypes.string,
+  children: PropTypes.string
 }
 
 export default Row
