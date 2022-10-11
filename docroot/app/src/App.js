@@ -5,11 +5,11 @@ import { Helmet } from 'react-helmet'
 // Components.
 import ContentRow from './components/ContentRow/ContentRow'
 import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
 import ProfileImage from './components/ProfileImage/ProfileImage'
 import Row from './components/Row/Row'
 import Section from './components/Section/Section'
 import TestimonialRow from './components/TestimonialRow/TestimonialRow'
-import Title from './components/Title/Title'
 import TitleRow from './components/TitleRow/TitleRow'
 
 // Styles.
@@ -32,14 +32,10 @@ function App () {
       </Helmet>
 
       <div className="l-container">
-        <div className="l-columns">
-          <Section element={'header'}>
-            <Row>
-              <Title level="1" type="primary">Leo Pitt</Title>
-              <Title level="2">Curriculum Vitae</Title>
-            </Row>
-          </Section>
-        </div>
+        <Header
+            title1={'Leo Pitt'}
+            title2={'Curriculum Vitae'}
+        />
 
         <div className="l-columns">
           <Section>

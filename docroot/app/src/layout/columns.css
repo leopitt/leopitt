@@ -8,3 +8,7 @@
     column-gap: 2rem;
   }
 }
+
+.l-columns--2 {
+  columns: 2;
+}

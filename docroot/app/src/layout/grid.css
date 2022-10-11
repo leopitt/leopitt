@@ -5,7 +5,7 @@
 @media only screen and (min-width: 768px) {
   .l-grid {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 192px auto;
   }
 }
 
