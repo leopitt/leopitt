@@ -7,7 +7,7 @@ const TestimonialRow = ({ type, dates, client, summary, quote, author }) => (
         label={dates}
         labelLevel={6}
         content={<>
-          <p className='t-heading-4'>{client}</p>
+          <h4 className='t-heading-4'>{client}</h4>
           <p className='t-heading-5'>{summary}</p>
           <figure>
             <blockquote>&ldquo;{quote}&rdquo;

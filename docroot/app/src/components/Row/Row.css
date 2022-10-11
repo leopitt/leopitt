@@ -1,5 +1,9 @@
 .c-row {
-  margin: 0;
+  margin: 0 0 1rem;
+}
+
+.c-row :last-child {
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 768px) {

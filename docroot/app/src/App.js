@@ -17,6 +17,7 @@ import './base/base.css'
 import './layout/columns.css'
 import './layout/container.css'
 import './layout/grid.css'
+import './layout/section.css'
 import './settings/color.css'
 import './settings/spacing.css'
 import './theme/spacing.css'
@@ -41,7 +42,7 @@ function App () {
           <Section>
             <Row>
               <ProfileImage />
-              <div className="l-grid-item-second">
+              <div className="l-grid-item--second">
                 <dl className="l-grid l-grid--secondary t-margin-bottom-2">
                   <dt className="t-heading-5">Tel</dt>
                   <dd>07712 622 397</dd>
@@ -122,7 +123,7 @@ function App () {
               label={2022}
               labelLevel={6}
               content={<>
-                <p className="t-heading-4"><a href="https://www.ctidigital.com/" title={'Visit ctidigital.com'}>CTI Digital</a></p>
+                <h4 className="t-heading-4"><a href="https://www.ctidigital.com/" title={'Visit ctidigital.com'}>CTI Digital</a></h4>
                 <p>Drupal 9/10 front and back-end development</p>
               </>}
             />
@@ -131,7 +132,7 @@ function App () {
                 label={2022}
                 labelLevel={6}
                 content={<>
-                  <p className="t-heading-4"><a href="https://ldn-collective.com/" title={'Visit ldn-collective.com'}>Collective London</a></p>
+                  <h4 className="t-heading-4"><a href="https://ldn-collective.com/" title={'Visit ldn-collective.com'}>Collective London</a></h4>
                   <p>Drupal 8/9 back-end development</p>
                 </>}
             />
@@ -140,7 +141,7 @@ function App () {
                 label={2021}
                 labelLevel={6}
                 content={<>
-                  <p className="t-heading-4"><a href="https://www.netefficiency.co.uk/" title={'Visit netefficiency.co.uk'}>Net Efficiency</a></p>
+                  <h4 className="t-heading-4"><a href="https://www.netefficiency.co.uk/" title={'Visit netefficiency.co.uk'}>Net Efficiency</a></h4>
                   <p>Drupal 8/9/10 back-end development</p>
                 </>}
             />
@@ -149,7 +150,7 @@ function App () {
                 label={'2019, 2020, 2021'}
                 labelLevel={6}
                 content={<>
-                  <p className="t-heading-4"><a href="https://www.aerian.com/" title={'Visit aerian.com'}>Aerian Studios</a></p>
+                  <h4 className="t-heading-4"><a href="https://www.aerian.com/" title={'Visit aerian.com'}>Aerian Studios</a></h4>
                   <p>Drupal 7, 8 and 9, front-end, back-end and headless</p>
                 </>}
             />

@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './Section.css'
 
 class Section extends React.Component {
   render () {
@@ -10,8 +9,8 @@ class Section extends React.Component {
       CustomTag = `${this.props.element}`
     }
 
-    return <div className='l-grid c-section'>
-      <CustomTag className='l-grid l-grid-item-span-full'>
+    return <div className='l-grid l-section'>
+      <CustomTag className='l-grid l-grid-item--span-full'>
         {this.props.children}
       </CustomTag>
     </div>
