@@ -4,9 +4,11 @@ import Title from '../Title/Title'
 
 class Header extends React.Component {
   render () {
-    return <header className={'l-section l-grid l-grid--gap'}>
-      <Title level="1" type="primary">{this.props.title1}</Title>
-      <Title level="2">{this.props.title2}</Title>
+    return <header className={'l-section'}>
+      <Title
+          title1={this.props.title1}
+          title2={this.props.title2}
+      />
     </header>
   }
 }

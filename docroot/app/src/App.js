@@ -4,13 +4,16 @@ import { Helmet } from 'react-helmet'
 
 // Components.
 import ContentRow from './components/ContentRow/ContentRow'
+import ExternalLink from './components/ExternalLink/ExternalLink'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import ProfileImage from './components/ProfileImage/ProfileImage'
 import Row from './components/Row/Row'
 import Section from './components/Section/Section'
 import TestimonialRow from './components/TestimonialRow/TestimonialRow'
+import Title from './components/Title/Title'
 import TitleRow from './components/TitleRow/TitleRow'
+import MailMe from './components/MailMe/MailMe'
 
 // Styles.
 import './base/base.css'
@@ -48,19 +51,19 @@ function App () {
                   <dd>07712 622 397</dd>
 
                   <dt className="t-heading-5">Email</dt>
-                  <dd><a href="mailto:leopitt@function-design.co.uk" title={'Send me an email'}>hello@leopitt.co.uk</a></dd>
+                  <dd><MailMe /></dd>
 
                   <dt className="t-heading-5">Web</dt>
-                  <dd><a href="https://leopitt.co.uk" title={'Visit my website (this one)'}>leopitt.co.uk</a></dd>
+                  <dd><ExternalLink href={'https://leopitt.co.uk'}>leopitt.co.uk</ExternalLink></dd>
 
                   <dt className="t-heading-5">LinkedIn</dt>
-                  <dd><a href="https://www.linkedin.com/in/leo-pitt/" title={'View my LinkedIn profile'}>linkedin.com/in/leo-pitt</a></dd>
+                  <dd><ExternalLink href="https://www.linkedin.com/in/leo-pitt/" >linkedin.com/in/leo-pitt</ExternalLink></dd>
 
                   <dt className="t-heading-5">Github</dt>
-                  <dd><a href="https://github.com/leopitt" title={'Visit my github.com profile'}>github.com/leopitt</a></dd>
+                  <dd><ExternalLink href="https://github.com/leopitt">github.com/leopitt</ExternalLink></dd>
 
                   <dt className="t-heading-5">Drupal</dt>
-                  <dd><a href="https://www.drupal.org/u/leo-pitt" title={'Visit my Drupal.org profile'}>drupal.org/u/leo-pitt</a></dd>
+                  <dd><ExternalLink href="https://www.drupal.org/u/leo-pitt">drupal.org/u/leo-pitt</ExternalLink></dd>
                 </dl>
 
                 <h2 className="t-heading-3 t-uppercase">In a nutshell</h2>
@@ -80,7 +83,7 @@ function App () {
 
             <ContentRow
                 label={'Drupal'}
-                content={<p><a href={'https://certification.acquia.com/user/7651'} title={'View my Acquia certifications'}>Acquia Accredited developer</a>. Intensive user of Drupal since 2009. Experienced across Drupal
+                content={<p><ExternalLink href={'https://certification.acquia.com/user/7651'}>Acquia Accredited developer</ExternalLink>. Intensive user of Drupal since 2009. Experienced across Drupal
                   6, 7, 8, 9+. “Headless” Drupal experience.</p>}
             />
 
@@ -123,7 +126,7 @@ function App () {
               label={2022}
               labelLevel={6}
               content={<>
-                <h4 className="t-heading-4"><a href="https://www.ctidigital.com/" title={'Visit ctidigital.com'}>CTI Digital</a></h4>
+                <h4 className="t-heading-4"><ExternalLink href="https://www.ctidigital.com/">CTI Digital</ExternalLink></h4>
                 <p>Drupal 9/10 front and back-end development</p>
               </>}
             />
@@ -132,7 +135,7 @@ function App () {
                 label={2022}
                 labelLevel={6}
                 content={<>
-                  <h4 className="t-heading-4"><a href="https://ldn-collective.com/" title={'Visit ldn-collective.com'}>Collective London</a></h4>
+                  <h4 className="t-heading-4"><ExternalLink href="https://ldn-collective.com/">Collective London</ExternalLink></h4>
                   <p>Drupal 8/9 back-end development</p>
                 </>}
             />
@@ -141,7 +144,7 @@ function App () {
                 label={2021}
                 labelLevel={6}
                 content={<>
-                  <h4 className="t-heading-4"><a href="https://www.netefficiency.co.uk/" title={'Visit netefficiency.co.uk'}>Net Efficiency</a></h4>
+                  <h4 className="t-heading-4"><ExternalLink href="https://www.netefficiency.co.uk/">Net Efficiency</ExternalLink></h4>
                   <p>Drupal 8/9/10 back-end development</p>
                 </>}
             />
@@ -150,7 +153,7 @@ function App () {
                 label={'2019, 2020, 2021'}
                 labelLevel={6}
                 content={<>
-                  <h4 className="t-heading-4"><a href="https://www.aerian.com/" title={'Visit aerian.com'}>Aerian Studios</a></h4>
+                  <h4 className="t-heading-4"><ExternalLink href="https://www.aerian.com/">Aerian Studios</ExternalLink></h4>
                   <p>Drupal 7, 8 and 9, front-end, back-end and headless</p>
                 </>}
             />
@@ -162,7 +165,7 @@ function App () {
             <TestimonialRow
               type="Contract"
               dates="2019, 2020, 2021"
-              client={<a href='https://www.ctidigital.com/' title='Visit aerian.com'>Aerian Studios</a>}
+              client={<ExternalLink href='https://www.ctidigital.com/'>Aerian Studios</ExternalLink>}
               summary='Drupal 7, 8 and 9, front-end, back-end and headless'
               quote='Leo is brilliant; he’s very quick at thinking things through and coming up with solutions to problems. He is a very clear and capable coder, can comfortably create custom modules for Drupal, and work on large scale, complex integrations.'
               author='Karen Velasquez, Project Manager'
@@ -171,7 +174,7 @@ function App () {
             <TestimonialRow
               type='Contract'
               dates='2017, 2018, 2020'
-              client={<a href='https://www.investisdigital.com/company/contact/bristol' title={'Investis Digital (formerly Microserve)'}>Microserve</a>}
+              client={<ExternalLink href='https://www.investisdigital.com/company/contact/bristol'>Microserve</ExternalLink>}
               summary='Drupal 8, front-end development'
               quote='Easily the best of the contractors we’ve had in, smashed through the tasks we gave him and added quite a lot of extra value along the way.'
               author="Dan McNamara, Managing Director"
@@ -180,7 +183,7 @@ function App () {
             <TestimonialRow
               type="Contract"
               dates="2018"
-              client={<a href={'https://halostudio.love/'} title={'Visit halostudio.love'}>Halo</a>}
+              client={<ExternalLink href={'https://halostudio.love/'}>Halo</ExternalLink>}
               summary="Drupal 7 and 8, front-end development"
               quote="Leo is the best contractor we’ve ever had in my time at Halo."
               author="Alex Martin, Technical Director"
@@ -188,8 +191,56 @@ function App () {
           </Section>
         </div>
 
+        <Title level={2} title1={'Experience'}/>
+
+        <div className="l-columns">
+          <Section>
+            <ContentRow
+                label={'2022'}
+                labelLevel={6}
+                content={<>
+                  <h4 className="t-heading-4"><ExternalLink href={'https://numiko.com/'}>Numiko</ExternalLink></h4>
+                  <p>Drupal 9 and 10 front-end development.</p>
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>Oxford University</li>
+                    <li>Salix Finance</li>
+                  </ul>
+                </>}
+            />
+
+            <ContentRow
+                label={'March - August 2022'}
+                labelLevel={6}
+                content={<>
+                  <h4 className="t-heading-4"><ExternalLink href={'https://numiko.com/'}>CTI Digital</ExternalLink></h4>
+                  <p>Drupal 8 and 9 Front-end development.</p>
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>Manchester Metropolitan University</li>
+                    <li>University of West London</li>
+                    <li>BASF</li>
+                  </ul>
+                </>}
+            />
+
+            <ContentRow
+                label={'January - March 2022'}
+                labelLevel={6}
+                content={<>
+                  <h4 className="t-heading-4"><ExternalLink href={'https://numiko.com/'}>Collective London</ExternalLink></h4>
+                  <p>Drupal 8 and 9 back-end development.</p>
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>One Web</li>
+                  </ul>
+                </>}
+            />
+          </Section>
+        </div>
+
         <Footer>
-          <a href={'mailto:hello@leopitt.co.uk'} title={'Send me an email'}>hello@leopitt.co.uk</a><br/>
+          <MailMe /><br/>
           updated: 07/10/2022
         </Footer>
       </div>
