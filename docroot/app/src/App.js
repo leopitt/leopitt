@@ -3,6 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 // Components.
+import AgencyLink from './components/AgencyLink/AgencyLink'
 import ContentRow from './components/ContentRow/ContentRow'
 import ExternalLink from './components/ExternalLink/ExternalLink'
 import Footer from './components/Footer/Footer'
@@ -126,7 +127,7 @@ function App () {
               label={2022}
               labelLevel={6}
               content={<>
-                <h4 className="t-heading-4"><ExternalLink href="https://www.ctidigital.com/">CTI Digital</ExternalLink></h4>
+                <h4 className="t-heading-4"><AgencyLink id={'cti'}/></h4>
                 <p>Drupal 9/10 front and back-end development</p>
               </>}
             />
@@ -135,7 +136,7 @@ function App () {
                 label={2022}
                 labelLevel={6}
                 content={<>
-                  <h4 className="t-heading-4"><ExternalLink href="https://ldn-collective.com/">Collective London</ExternalLink></h4>
+                  <h4 className="t-heading-4"><AgencyLink id={'collective'}/></h4>
                   <p>Drupal 8/9 back-end development</p>
                 </>}
             />
@@ -144,7 +145,7 @@ function App () {
                 label={2021}
                 labelLevel={6}
                 content={<>
-                  <h4 className="t-heading-4"><ExternalLink href="https://www.netefficiency.co.uk/">Net Efficiency</ExternalLink></h4>
+                  <h4 className="t-heading-4"><AgencyLink id={'netefficiency'}/></h4>
                   <p>Drupal 8/9/10 back-end development</p>
                 </>}
             />
@@ -153,7 +154,7 @@ function App () {
                 label={'2019, 2020, 2021'}
                 labelLevel={6}
                 content={<>
-                  <h4 className="t-heading-4"><ExternalLink href="https://www.aerian.com/">Aerian Studios</ExternalLink></h4>
+                  <h4 className="t-heading-4"><AgencyLink id={'aerian'}/></h4>
                   <p>Drupal 7, 8 and 9, front-end, back-end and headless</p>
                 </>}
             />
@@ -165,7 +166,7 @@ function App () {
             <TestimonialRow
               type="Contract"
               dates="2019, 2020, 2021"
-              client={<ExternalLink href='https://www.ctidigital.com/'>Aerian Studios</ExternalLink>}
+              client={<AgencyLink id={'aerian'}/>}
               summary='Drupal 7, 8 and 9, front-end, back-end and headless'
               quote='Leo is brilliant; he’s very quick at thinking things through and coming up with solutions to problems. He is a very clear and capable coder, can comfortably create custom modules for Drupal, and work on large scale, complex integrations.'
               author='Karen Velasquez, Project Manager'
@@ -174,7 +175,7 @@ function App () {
             <TestimonialRow
               type='Contract'
               dates='2017, 2018, 2020'
-              client={<ExternalLink href='https://www.investisdigital.com/company/contact/bristol'>Microserve</ExternalLink>}
+              client={<AgencyLink id={'microserve'}/>}
               summary='Drupal 8, front-end development'
               quote='Easily the best of the contractors we’ve had in, smashed through the tasks we gave him and added quite a lot of extra value along the way.'
               author="Dan McNamara, Managing Director"
@@ -183,7 +184,7 @@ function App () {
             <TestimonialRow
               type="Contract"
               dates="2018"
-              client={<ExternalLink href={'https://halostudio.love/'}>Halo</ExternalLink>}
+              client={<AgencyLink id={'halo'}/>}
               summary="Drupal 7 and 8, front-end development"
               quote="Leo is the best contractor we’ve ever had in my time at Halo."
               author="Alex Martin, Technical Director"
@@ -191,7 +192,9 @@ function App () {
           </Section>
         </div>
 
-        <Title level={2} title1={'Experience'}/>
+        <Title level={2} title2={'Other Experience'}/>
+
+        <TitleRow>2022</TitleRow>
 
         <div className="l-columns">
           <Section>
@@ -199,40 +202,172 @@ function App () {
                 label={'2022'}
                 labelLevel={6}
                 content={<>
-                  <h4 className="t-heading-4"><ExternalLink href={'https://numiko.com/'}>Numiko</ExternalLink></h4>
-                  <p>Drupal 9 and 10 front-end development.</p>
-                  <h5>Projects</h5>
-                  <ul>
-                    <li>Oxford University</li>
-                    <li>Salix Finance</li>
-                  </ul>
-                </>}
-            />
-
-            <ContentRow
-                label={'March - August 2022'}
-                labelLevel={6}
-                content={<>
-                  <h4 className="t-heading-4"><ExternalLink href={'https://numiko.com/'}>CTI Digital</ExternalLink></h4>
-                  <p>Drupal 8 and 9 Front-end development.</p>
+                  <h4 className="t-heading-4"><AgencyLink id={'cti'}/></h4>
+                  <p>Drupal 8 and 9 front and back-end development.</p>
                   <h5>Projects</h5>
                   <ul>
                     <li>Manchester Metropolitan University</li>
                     <li>University of West London</li>
-                    <li>BASF</li>
+                    <li>Staffing Industry Analysts</li>
                   </ul>
                 </>}
             />
-
+          </Section>
+          <Section>
             <ContentRow
-                label={'January - March 2022'}
+                label={'2022'}
                 labelLevel={6}
                 content={<>
-                  <h4 className="t-heading-4"><ExternalLink href={'https://numiko.com/'}>Collective London</ExternalLink></h4>
+                  <h4 className="t-heading-4"><AgencyLink id={'collective'}/></h4>
                   <p>Drupal 8 and 9 back-end development.</p>
                   <h5>Projects</h5>
                   <ul>
                     <li>One Web</li>
+                  </ul>
+                </>}
+            />
+          </Section>
+          <Section>
+            <ContentRow
+                label={'2021, 2022'}
+                labelLevel={6}
+                content={<>
+                  <h4 className="t-heading-4"><AgencyLink id={'netefficiency'}/></h4>
+                  <p>Drupal 8 and 9 front and back-end development.</p>
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>Royal Marsden Hospital</li>
+                    <li>Carglass NL</li>
+                  </ul>
+                </>}
+            />
+          </Section>
+        </div>
+
+        <TitleRow>2021</TitleRow>
+
+        <div className="l-columns">
+          <Section>
+            <ContentRow
+                label={'2019, 2020, 2021'}
+                labelLevel={6}
+                content={<>
+                  <h4 className="t-heading-4"><AgencyLink id={'aerian'}/></h4>
+                  <p>Drupal 7, 8 and 9 back-end development. Headless CMS setup.</p>
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>Diabetes UK</li>
+                    <li>Diabetes Learning Zone</li>
+                    <li>Breast Cancer Now</li>
+                    <li>Dogs Trust</li>
+                    <li>Historic Royal Palaces</li>
+                    <li>Radioplayer</li>
+                    <li>RUSI</li>
+                    <li>Conciliation Resources</li>
+                    <li>SOS Children&apos;s Villages</li>
+                    <li>Muscular Dystrophy UK</li>
+                  </ul>
+                </>}
+            />
+          </Section>
+        </div>
+
+        <TitleRow>2020</TitleRow>
+
+        <div className="l-columns">
+          <Section>
+            <ContentRow
+                label={'2020'}
+                labelLevel={6}
+                content={<>
+                  <h4 className="t-heading-4"><AgencyLink id={'nudge'}/></h4>
+                  <p>Drupal 8 front-end development. Working with the gov.uk front-end framework.</p>
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>Fire England</li>
+                  </ul>
+                </>}
+            />
+          </Section>
+          <Section>
+            <ContentRow
+                label={'2020'}
+                labelLevel={6}
+                content={<>
+                  <h4 className="t-heading-4"><AgencyLink id={'plume'}/></h4>
+                  <p>Drupal 8 front-end development.</p>
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>School Online</li>
+                  </ul>
+                </>}
+            />
+          </Section>
+          <Section>
+            <ContentRow
+                label={'2017, 2018, 2020'}
+                labelLevel={6}
+                content={<>
+                  <h4 className="t-heading-4"><AgencyLink id={'microserve'}/></h4>
+                  <p>Drupal 7 and 8 front-end development.</p>
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>Cheshire Financial Advice</li>
+                    <li>Outdoor Lads</li>
+                    <li>Bath and North East Somerset Council</li>
+                  </ul>
+                </>}
+            />
+          </Section>
+          <Section>
+            <ContentRow
+                label={'2019, 2020'}
+                labelLevel={6}
+                content={<>
+                  <h4 className="t-heading-4"><AgencyLink id={'fiora'}/></h4>
+                  <p>Drupal 8 front and back-end development.</p>
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>Relyon</li>
+                    <li>Slumberland</li>
+                  </ul>
+                </>}
+            />
+          </Section>
+        </div>
+
+        <TitleRow>2019</TitleRow>
+
+        <div className="l-columns">
+          <Section>
+            <ContentRow
+                label={'2019'}
+                labelLevel={6}
+                content={<>
+                  <h4 className="t-heading-4"><AgencyLink id={'motherlode'}/></h4>
+                  <p>Drupal 8 front-end development.</p>
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>UNICEF</li>
+                  </ul>
+                </>}
+            />
+          </Section>
+        </div>
+
+        <TitleRow>2018</TitleRow>
+
+        <div className="l-columns">
+          <Section>
+            <ContentRow
+                label={'2016, 2018'}
+                labelLevel={6}
+                content={<>
+                  <h4 className="t-heading-4"><AgencyLink id={'halo'}/></h4>
+                  <p>Drupal 8 front-end development.</p>
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>Cranswick PLC</li>
                   </ul>
                 </>}
             />
