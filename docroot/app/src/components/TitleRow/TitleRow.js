@@ -4,7 +4,7 @@ import Row from '../Row/Row'
 
 class TitleRow extends React.Component {
   render () {
-    return <Row>
+    return <Row className={'t-margin-0'}>
       <h2 className='l-grid-item--second t-heading-3 t-uppercase'>{this.props.children}</h2>
     </Row>
   }
