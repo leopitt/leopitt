@@ -2,7 +2,7 @@
   margin: 0 0 1rem;
 }
 
-.c-row :last-child {
+.c-row__content :last-child {
   margin-bottom: 0;
 }
 
