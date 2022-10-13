@@ -13,6 +13,9 @@ html {
 body {
   font-family: 'PT Sans', sans-serif;
   color: var(--brand-text-base);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 dd,
@@ -28,7 +31,8 @@ p,
 h2,
 h3,
 figure,
-dl {
+dl,
+ul {
   margin: 0 0 1rem;
 }
 
@@ -49,4 +53,11 @@ a:hover {
 img {
   width: 100%;
   height: auto;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }

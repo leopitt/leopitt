@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-## Run npm build.
+## Start and watch project with browsersync.
+## This does not currently work with Docksal!
 ##
 ## Usage: fin npm-build
 

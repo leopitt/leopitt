@@ -5,7 +5,7 @@
 @media only screen and (min-width: 768px) {
   .l-grid {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 192px auto;
   }
 }
 
@@ -17,15 +17,10 @@
   grid-template-columns: 100px auto;
 }
 
-.l-grid-item-span-full,
-.l-grid-item-span {
+.l-grid-item--span-full {
   grid-column: 1 / -1;
 }
 
-.l-grid-item-first {
-  grid-column: 2;
-}
-
-.l-grid-item-second {
+.l-grid-item--second {
   grid-column: 2;
 }

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## Run npm build.
+## Run linting tests.
 ##
 ## Usage: fin npm-build
 

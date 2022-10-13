@@ -29,3 +29,9 @@ The following do work:
 The project is configured with ESLint (which watches for changes while running the development server - see `npm start` avove).
 
 I am also using stylelint to lint CSS files. Run this using `npx stylelint ./src/**/*.css` (also see above).
+
+# Todo
+
+* Add experience - date descending order, grouped by Year. List the agency name, and then within that the sites worked on. Provide overview of type of organisation (e.g. charity, 
+corporate, government, etc).
+* Tidy up structure of page. Could do with a more rational setup with one component for a page "row", for instance.
