@@ -1,20 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './ProjectList.css'
 
 class ProjectList extends React.Component {
   render () {
     const itemList = []
 
     this.props.projects.forEach(item => {
-      itemList.push(<li>{item}</li>)
+      itemList.push(<li className={'c-project-list__item'}>{item}</li>)
     })
 
-    return <>
-      <h5 className={'t-heading-6'}>Projects</h5>
-      <ul>
+    return <div className={'c-project-list'}>
+      <h5 className={'t-heading-6 t-small'}>Projects include...</h5>
+      <ul className={'c-project-list__list t-small'}>
         {itemList}
       </ul>
-    </>
+    </div>
   }
 }
 

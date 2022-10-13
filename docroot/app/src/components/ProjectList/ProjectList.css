@@ -1,0 +1,20 @@
+.c-project-list {
+  margin-top: -.5rem;
+}
+.c-project-list__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.c-project-list__item {
+  white-space: nowrap;
+}
+
+.c-project-list__item::after {
+  content: ';\0000a0';
+}
+
+.c-project-list__item:last-child::after {
+  content: '.';
+}
