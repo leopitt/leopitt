@@ -1,3 +1,5 @@
-.l-width-2\/3 {
-  width: 66%;
+@media only screen and (min-width: 1280px) {
+  .l-width-2\/3 {
+    width: 66%;
+  }
 }

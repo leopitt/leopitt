@@ -185,7 +185,8 @@ function Experience () {
           <div className={'l-width-2/3'}>
             <p>My web design and development business.</p>
             <p>I handle development, information architecture and project management; working as a supplier to marketing, design and SEO partners and also direct to client. Since 2009 the majority of this work has been via Drupal.</p>
-            <p>In this role I’ve worked on many projects and built strong relationships with many clients. Here are a few examples:</p>
+            <p>In this role I’ve worked on a wide variety of projects, large and small, and built strong relationships with many clients.</p>
+            <p>Here are a few of the more recent examples:</p>
           </div>
         </div>
       </div>
