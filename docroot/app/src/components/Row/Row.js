@@ -10,7 +10,7 @@ class Row extends React.Component {
       CustomTag = `${this.props.element}`
     }
 
-    return <CustomTag className='l-grid l-grid-item--span-full l-grid--gap c-row'>
+    return <CustomTag className='c-row l-grid l-grid-item--span-full l-grid--gap'>
       {this.props.children}
     </CustomTag>
   }

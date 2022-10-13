@@ -4,12 +4,16 @@ import PropTypes from 'prop-types'
 class Section extends React.Component {
   render () {
     let CustomTag = 'section'
+    const classes = [
+      'l-grid',
+      'l-section'
+    ]
 
     if (this.props.element !== undefined) {
       CustomTag = `${this.props.element}`
     }
 
-    return <div className='l-grid l-section'>
+    return <div className={classes.join(' ')}>
       <CustomTag className='l-grid l-grid-item--span-full'>
         {this.props.children}
       </CustomTag>
