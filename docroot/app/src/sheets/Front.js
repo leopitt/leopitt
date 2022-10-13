@@ -38,7 +38,7 @@ function Front () {
               </dl>
 
               <h2 className="t-heading-3 t-uppercase">Summary</h2>
-              <p>Experienced web developer with Drupal (Acquia accredited) specialism, working professionally since 2001 for varied direct clients and agencies.</p>
+              <p>Experienced web developer with Drupal (<ExternalLink href={'https://certification.acquia.com/user/7651'}>Acquia accredited</ExternalLink>) specialism, working professionally since 2001 for varied direct clients and agencies.</p>
             </div>
           </Row>
         </Section>

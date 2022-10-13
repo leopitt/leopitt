@@ -5,6 +5,7 @@ import ProjectList from '../components/ProjectList/ProjectList'
 import Section from '../components/Section/Section'
 import Title from '../components/Title/Title'
 import TitleRow from '../components/TitleRow/TitleRow'
+import ExternalLink from '../components/ExternalLink/ExternalLink'
 
 function Experience () {
   return (
@@ -183,9 +184,9 @@ function Experience () {
       <div className={'l-section l-grid l-grid-item--span-full l-grid--gap'}>
         <div className={'l-grid-item--second'}>
           <div className={'l-width-2/3'}>
-            <p>My web design and development business.</p>
-            <p>I handle development, information architecture and project management; working as a supplier to marketing, design and SEO partners and also direct to client. Since 2009 the majority of this work has been via Drupal.</p>
-            <p>In this role I have worked on a wide variety of projects large and small and built strong relationships with many clients. Here are a few of the more recent examples:</p>
+            <p>Under the banner of <ExternalLink href={'https://function-design.co.uk'}>Function Design</ExternalLink> I worked as a supplier to marketing, design and SEO partners and also &lsquo;direct to client&rsquo;.</p>
+            <p>In addition to the billable web development, information architecture, project and account management I handled sales, marketing, sub-contracting and day-to-day business operations.</p>
+            <p>In this role I worked on a wide variety of projects large and small and built strong relationships with many clients. Here are a few of the more recent examples:</p>
           </div>
         </div>
       </div>

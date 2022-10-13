@@ -38,7 +38,7 @@ class AgencyLink extends React.Component {
         url: 'https://plume.co.uk/',
         name: 'Plume'
       },
-      motherload: {
+      motherlode: {
         url: 'https://motherlodemedia.com/',
         name: 'Motherlode Media'
       },
