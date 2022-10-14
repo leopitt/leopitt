@@ -9,7 +9,7 @@ class TestimonialRow extends React.Component {
       labelLevel={6}
       content={<>
         <h4 className='t-heading-4'>{this.props.client}</h4>
-        <p className='t-heading-5'>{this.props.summary}</p>
+        <h5 className='t-heading-5'>{this.props.summary}</h5>
         <figure>
           <blockquote>&ldquo;{this.props.quote}&rdquo;
           </blockquote>
