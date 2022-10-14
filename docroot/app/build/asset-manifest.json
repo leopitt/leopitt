@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ca317ce.css",
-    "main.js": "/static/js/main.b24199cf.js",
+    "main.css": "/static/css/main.c6797425.css",
+    "main.js": "/static/js/main.b1c24cb3.js",
     "static/js/787.c1112931.chunk.js": "/static/js/787.c1112931.chunk.js",
+    "static/media/itc_officina_sans_book_regular-webfont.woff": "/static/media/itc_officina_sans_book_regular-webfont.f33be1f39b2c3cbcdc46.woff",
+    "static/media/itc_officina_sans_bold-webfont.woff": "/static/media/itc_officina_sans_bold-webfont.976a3e08a0da0fe04bef.woff",
+    "static/media/itc_officina_sans_book_regular-webfont.woff2": "/static/media/itc_officina_sans_book_regular-webfont.c9708538b58239ad63b9.woff2",
+    "static/media/itc_officina_sans_bold-webfont.woff2": "/static/media/itc_officina_sans_bold-webfont.e54e7e22d287f7159c44.woff2",
     "index.html": "/index.html",
-    "main.0ca317ce.css.map": "/static/css/main.0ca317ce.css.map",
-    "main.b24199cf.js.map": "/static/js/main.b24199cf.js.map",
+    "main.c6797425.css.map": "/static/css/main.c6797425.css.map",
+    "main.b1c24cb3.js.map": "/static/js/main.b1c24cb3.js.map",
     "787.c1112931.chunk.js.map": "/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ca317ce.css",
-    "static/js/main.b24199cf.js"
+    "static/css/main.c6797425.css",
+    "static/js/main.b1c24cb3.js"
   ]
 }
