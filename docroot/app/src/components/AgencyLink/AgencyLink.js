@@ -19,7 +19,7 @@ class AgencyLink extends React.Component {
         name: 'CTI Digital'
       },
       collective: {
-        url: 'https://ldn-collective.com/',
+        url: 'https://www.collectiveworld.com/',
         name: 'Collective London'
       },
       netefficiency: {
