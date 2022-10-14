@@ -196,8 +196,8 @@ function Experience () {
           <ContentRow
             content={<>
               <h4 className={'t-heading-4'}>RSPCA</h4>
-              <h5 className={'t-heading-5'}>Drupal 8, HTML, CSS, SASS, Webpack</h5>
-              <p>Drupal build, development and maintenance for a joint RSPCA and Kennel Club &ldquo;Puppy Contract&rdquo; service campaign. Designs were supplied by the RSPCA’s in-house designer.</p>
+              <h5 className={'t-heading-5'}>Drupal build, development and maintenance</h5>
+              <p>Build and maintenance for a joint RSPCA and Kennel Club &ldquo;Puppy Contract&rdquo; service campaign. Designs were supplied by the RSPCA’s in-house designer.</p>
             </>}
           />
         </Section>
@@ -205,8 +205,8 @@ function Experience () {
           <ContentRow
             content={<>
               <h4 className={'t-heading-4'}>Animal Welfare Foundation</h4>
-              <h5 className={'t-heading-5'}>Wordpress, HTML, CSS, SASS, Gulp</h5>
-              <p>Drupal build, development and maintenance with later migration to Wordpress. Managed the redesign and development for a national Veterinary Association.</p>
+              <h5 className={'t-heading-5'}>Drupal and Wordpress development and maintenance</h5>
+              <p>Originally built with Drupal 7. Subsequently I managed a redesigned and Wordpress migration for this National Veterinary Association.</p>
             </>}
           />
         </Section>
@@ -214,8 +214,8 @@ function Experience () {
           <ContentRow
             content={<>
               <h4 className={'t-heading-4'}>Bowood House and Gardens</h4>
-              <h5 className={'t-heading-5'}>Wordpress, Woocommerce, HTML, CSS, SASS, Gulp</h5>
-              <p>Wordpress configuration, woocommerce, theming and maintenance. Built and maintained a new website for this popular South-West destination.</p>
+              <h5 className={'t-heading-5'}>Wordpress + Woocommerce, theming, development and maintenance</h5>
+              <p>Build and maintenance of a new website for this popular South-West destination.</p>
             </>}
           />
         </Section>
@@ -223,8 +223,8 @@ function Experience () {
           <ContentRow
             content={<>
               <h4 className={'t-heading-4'}>The Animal Welfare, Science, Ethics and Law Veterinary Association</h4>
-              <h5 className={'t-heading-5'}>Drupal, Commerce, Ubercart, HTML, CSS, SASS</h5>
-              <p>Drupal configuration, theming and maintenance. Original build in Drupal 7. Oversaw migration to Drupal 8 and a redesign.</p>
+              <h5 className={'t-heading-5'}>Drupal configuration, theming and maintenance</h5>
+              <p>Original build in Drupal 7. Ubercart (later Commerce) used for the sale of memberships and conference attendance. Oversaw migration to Drupal 8 and a site redesign.</p>
             </>}
           />
         </Section>
