@@ -15,6 +15,7 @@ function App () {
         <meta charSet="utf-8"/>
         <title>Leo Pitt - Curriculum Vitae</title>
         <meta name="description" content={'Curriculum Vitae of Leo Pitt. Experienced full-stack web developer with Drupal specialism, based in Bristol (UK).'}/>
+        <link rel="canonical" href="https://www.leopitt.co.uk/"/>
       </Helmet>
 
       <div className="l-container">
@@ -28,7 +29,7 @@ function App () {
 
         <Footer>
           <MailMe/><br/>
-          updated: 17/10/2022
+          updated: 19/10/2022
         </Footer>
       </div>
     </>
