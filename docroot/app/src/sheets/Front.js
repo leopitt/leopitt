@@ -25,7 +25,7 @@ function Front () {
                 <dd><MailMe /></dd>
 
                 <dt className="t-heading-5">Web</dt>
-                <dd><ExternalLink href={'https://leopitt.co.uk'}>leopitt.co.uk</ExternalLink></dd>
+                <dd><ExternalLink href={'https://www.leopitt.co.uk'}>leopitt.co.uk</ExternalLink></dd>
 
                 <dt className="t-heading-5">LinkedIn</dt>
                 <dd><ExternalLink href="https://www.linkedin.com/in/leo-pitt/" >linkedin.com/in/leo-pitt</ExternalLink></dd>
