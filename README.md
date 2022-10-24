@@ -1,5 +1,4 @@
-# leopitt
-
+fin 
 Inside `/docroot/app`, you can run several commands:
 
 * `npm start`: Starts the development server.
@@ -23,6 +22,12 @@ But `npm start` must be run directly on a local machine, because ... it doesn't 
 The following do work:
 * `fin exec npm run build`: Build the app.
 * `fin exec npx stylelint ./src/**/*.css`: Run CSS Linting.
+
+### Docksal commands
+
+* `fin npm-build`: Build the app.
+* `fin npm-lint`: Run all lLinting (JS ES6, CSS).
+* `fin npm-start`: Start and watch with browsersync.
 
 ## Code standards.
 
