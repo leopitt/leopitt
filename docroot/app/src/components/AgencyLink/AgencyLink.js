@@ -53,6 +53,10 @@ class AgencyLink extends React.Component {
       sift: {
         url: 'https://www.sift.co.uk/',
         name: 'Sift'
+      },
+      proctors: {
+        url: 'https://www.proctors.co.uk/',
+        name: 'Proctor & Stevenson'
       }
     }
   }

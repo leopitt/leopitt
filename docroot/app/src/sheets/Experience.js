@@ -178,6 +178,26 @@ function Experience () {
             </>}
           />
         </Section>
+        <Section>
+          <ContentRow
+            label={'2010'}
+            labelLevel={6}
+            content={<>
+              <h4 className="t-heading-4"><AgencyLink id={'gibe'}/></h4>
+              <p>Drupal 6 theming and development.</p>
+            </>}
+          />
+        </Section>
+        <Section>
+          <ContentRow
+            label={'2009'}
+            labelLevel={6}
+            content={<>
+              <h4 className="t-heading-4"><AgencyLink id={'proctors'}/></h4>
+              <p>Drupal 6 theming and development.</p>
+            </>}
+          />
+        </Section>
       </div>
 
       <TitleRow>Self-employed (2001 - 2021)</TitleRow>
