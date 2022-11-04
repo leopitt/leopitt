@@ -244,7 +244,7 @@ function Experience () {
             content={<>
               <h4 className={'t-heading-4'}>Animal Welfare Foundation</h4>
               <h5 className={'t-heading-5'}>Drupal and Wordpress development and maintenance</h5>
-              <p>Originally built with Drupal 7. Subsequently I managed a redesigned and Wordpress migration for this National Veterinary Association.</p>
+              <p>Originally built with Drupal 7. Subsequently I managed a redesign and Wordpress migration for this National Veterinary Association.</p>
             </>}
           />
         </Section>
