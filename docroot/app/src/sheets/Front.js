@@ -93,6 +93,15 @@ function Front () {
           <TitleRow>Recent Projects and experience</TitleRow>
 
           <ContentRow
+            label={2022}
+            labelLevel={6}
+            content={<>
+              <h4 className="t-heading-4"><AgencyLink id={'numiko'}/></h4>
+              <p>Drupal 8/9/10 front-end development</p>
+            </>}
+          />
+
+          <ContentRow
               label={2022}
               labelLevel={6}
               content={<>
@@ -107,15 +116,6 @@ function Front () {
               content={<>
                 <h4 className="t-heading-4"><AgencyLink id={'collective'}/></h4>
                 <p>Drupal 8/9 back-end development</p>
-              </>}
-          />
-
-          <ContentRow
-              label={2021}
-              labelLevel={6}
-              content={<>
-                <h4 className="t-heading-4"><AgencyLink id={'netefficiency'}/></h4>
-                <p>Drupal 8/9/10 back-end development</p>
               </>}
           />
 
