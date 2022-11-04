@@ -57,6 +57,10 @@ class AgencyLink extends React.Component {
       proctors: {
         url: 'https://www.proctors.co.uk/',
         name: 'Proctor & Stevenson'
+      },
+      numiko: {
+        url: 'https://numiko.com/',
+        name: 'Numiko'
       }
     }
   }
