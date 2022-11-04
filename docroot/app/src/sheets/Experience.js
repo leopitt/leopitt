@@ -224,7 +224,7 @@ function Experience () {
           <div className={'l-width-2/3'}>
             <p>Under the banner of <ExternalLink href={'https://function-design.co.uk'}>Function Design</ExternalLink> I worked as a supplier to marketing, design and SEO partners and also &lsquo;direct to client&rsquo;.</p>
             <p>In addition to the billable web development, information architecture, project and account management I handled sales, marketing, sub-contracting and day-to-day business operations.</p>
-            <p>In this role I worked on a wide variety of projects large and small and built strong relationships with many clients. Here are a few of the more recent examples:</p>
+            <p>In this role I worked on a wide variety of projects large and small and built strong relationships with many clients. Here are a few examples:</p>
           </div>
         </div>
       </div>
