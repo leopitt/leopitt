@@ -18,6 +18,14 @@ function Experience () {
             label={'2022'}
             labelLevel={6}
             content={<>
+              <h4 className="t-heading-4"><AgencyLink id={'fullfatthings'}/></h4>
+              <p>Drupal development.</p>
+            </>}
+          />
+          <ContentRow
+            label={'2022'}
+            labelLevel={6}
+            content={<>
               <h4 className="t-heading-4"><AgencyLink id={'numiko'}/></h4>
               <p>Drupal 8 and 9 front-end development.</p>
               <ProjectList
