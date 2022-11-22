@@ -61,6 +61,10 @@ class AgencyLink extends React.Component {
       numiko: {
         url: 'https://numiko.com/',
         name: 'Numiko'
+      },
+      fullfatthings: {
+        url: 'https://www.fullfatthings.com/',
+        name: 'Full Fat Things'
       }
     }
   }
