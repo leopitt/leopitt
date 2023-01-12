@@ -24,7 +24,8 @@ function Experience () {
                 projects={[
                   'BBC',
                   'Freesat',
-                  'HD Upgrade'
+                  'HD Upgrade',
+                  'The Official Charts'
                 ]}
               />
             </>}
