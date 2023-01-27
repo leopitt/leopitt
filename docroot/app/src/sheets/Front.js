@@ -47,7 +47,7 @@ function Front () {
           <ContentRow
             label={'Drupal'}
             content={<p><ExternalLink href={'https://certification.acquia.com/user/7651'}>Acquia Accredited developer</ExternalLink>. Intensive user of Drupal since 2009. Experienced across Drupal
-              6, 7, 8, 9+. “Headless” Drupal experience.</p>}
+              6, 7, 8, 9+. “Headless” Drupal experience with Gatsby and Nuxt / Lupus.</p>}
           />
           <ContentRow
             label={'Wordpress'}
@@ -68,7 +68,7 @@ function Front () {
           />
           <ContentRow
             label={'JS'}
-            content={<p>Native JS, jQuery. Basic Vue.js and React.</p>}
+            content={<p>Native JS, jQuery. Basic Vue.js, Nuxt and React.</p>}
           />
           <ContentRow
             label={'Other'}
@@ -111,6 +111,15 @@ function Front () {
           <TitleRow>Recent Projects and experience</TitleRow>
 
           <ContentRow
+            label={'2022'}
+            labelLevel={6}
+            content={<>
+              <h4 className="t-heading-4"><AgencyLink id={'fullfatthings'}/></h4>
+              <p>Drupal 9 and 10, front-end, back-end and headless</p>
+            </>}
+          />
+
+          <ContentRow
             label={2022}
             labelLevel={6}
             content={<>
@@ -134,15 +143,6 @@ function Front () {
             content={<>
               <h4 className="t-heading-4"><AgencyLink id={'collective'}/></h4>
               <p>Drupal 8/9 back-end development</p>
-            </>}
-          />
-
-          <ContentRow
-            label={'2019, 2020, 2021'}
-            labelLevel={6}
-            content={<>
-              <h4 className="t-heading-4"><AgencyLink id={'aerian'}/></h4>
-              <p>Drupal 7, 8 and 9, front-end, back-end and headless</p>
             </>}
           />
         </Section>

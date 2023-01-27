@@ -25,7 +25,8 @@ function Experience () {
                   'BBC',
                   'Freesat',
                   'HD Upgrade',
-                  'The Official Charts'
+                  'The Official Charts',
+                  'Capital Economics'
                 ]}
               />
             </>}
