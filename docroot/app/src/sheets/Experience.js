@@ -19,18 +19,21 @@ function Experience () {
             labelLevel={6}
             content={<>
               <h4 className="t-heading-4"><AgencyLink id={'fullfatthings'}/></h4>
-              <p>Drupal 8 and 9 development.</p>
+              <p>Drupal 8, 9 and 10 development. Nuxt and Vue.js.</p>
               <ProjectList
                 projects={[
                   'BBC',
                   'Freesat',
                   'HD Upgrade',
                   'The Official Charts',
-                  'Capital Economics'
+                  'Capital Economics',
+                  'Capital Belting'
                 ]}
               />
             </>}
           />
+        </Section>
+        <Section>
           <ContentRow
             label={'2022'}
             labelLevel={6}
