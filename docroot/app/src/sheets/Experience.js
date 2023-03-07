@@ -19,9 +19,22 @@ function Experience () {
             labelLevel={6}
             content={<>
               <h4 className="t-heading-4"><AgencyLink id={'fullfatthings'}/></h4>
-              <p>Drupal development.</p>
+              <p>Drupal 8, 9 and 10 development. Nuxt and Vue.js.</p>
+              <ProjectList
+                projects={[
+                  'BBC',
+                  'Freesat',
+                  'HD Upgrade',
+                  'The Official Charts Company',
+                  'Capital Economics',
+                  'Capital Belting',
+                  'Laser Systems Europe'
+                ]}
+              />
             </>}
           />
+        </Section>
+        <Section>
           <ContentRow
             label={'2022'}
             labelLevel={6}
@@ -32,7 +45,7 @@ function Experience () {
                 projects={[
                   'Oxford University',
                   'Guildhall School of Music & Drama',
-                  'Electoral Commission',
+                  'The Electoral Commission',
                   'Salix Finance'
                 ]}
               />
@@ -229,7 +242,7 @@ function Experience () {
       <TitleRow>Self-employed (2001 - 2021)</TitleRow>
       <div className={'l-section l-grid l-grid-item--span-full l-grid--gap'}>
         <div className={'l-grid-item--second'}>
-          <div className={'l-width-2/3'}>
+          <div className={'l-width-3/4'}>
             <p>Under the banner of <ExternalLink href={'https://function-design.co.uk'}>Function Design</ExternalLink> I worked as a supplier to marketing, design and SEO partners and also &lsquo;direct to client&rsquo;.</p>
             <p>In addition to the billable web development, information architecture, project and account management I handled sales, marketing, sub-contracting and day-to-day business operations.</p>
             <p>In this role I worked on a wide variety of projects large and small and built strong relationships with many clients. Here are a few examples:</p>
