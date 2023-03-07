@@ -25,9 +25,10 @@ function Experience () {
                   'BBC',
                   'Freesat',
                   'HD Upgrade',
-                  'The Official Charts',
+                  'The Official Charts Company',
                   'Capital Economics',
-                  'Capital Belting'
+                  'Capital Belting',
+                  'Laser Systems Europe'
                 ]}
               />
             </>}
@@ -44,7 +45,7 @@ function Experience () {
                 projects={[
                   'Oxford University',
                   'Guildhall School of Music & Drama',
-                  'Electoral Commission',
+                  'The Electoral Commission',
                   'Salix Finance'
                 ]}
               />
