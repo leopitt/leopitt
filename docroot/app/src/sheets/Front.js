@@ -41,34 +41,34 @@ function Front () {
         <Section>
           <TitleRow>Skills</TitleRow>
           <ContentRow
-            label={'Front-end, HTML and CSS'}
-            content={<p>Browser testing, responsiveness, custom grid frameworks, Bootstrap, Tailwind, etc.</p>}
-          />
-          <ContentRow
             label={'Drupal'}
             content={<p><ExternalLink href={'https://certification.acquia.com/user/7651'}>Acquia Accredited developer</ExternalLink>. Intensive user of Drupal since 2009. Experienced across Drupal
               6, 7, 8, 9+. “Headless” Drupal experience with Gatsby and Nuxt / Lupus.</p>}
-          />
-          <ContentRow
-            label={'Wordpress'}
-            content={<p>Since 2016. Configuration, theming and maintenance. ACF, Woocommerce, Gravity Forms.</p>}
           />
           <ContentRow
             label={'PHP & MySQL'}
             content={<p>Experienced OOP coder.</p>}
           />
           <ContentRow
-            label={'Workflow'}
-            content={<p>Working solo or as part of a team; providing and acting upon code reviews, Jenkins,
-              etc.</p>}
+            label={'Front-end, HTML and CSS'}
+            content={<p>Browser testing, responsiveness, custom grid frameworks, Bootstrap, Tailwind, etc.</p>}
+          />
+          <ContentRow
+            label={'JS'}
+            content={<p>Native JS, jQuery. Basic Vue.js, Nuxt and React.</p>}
           />
           <ContentRow
             label={'Task-runners'}
             content={<p>Gulp, Bower, Webpack.</p>}
           />
           <ContentRow
-            label={'JS'}
-            content={<p>Native JS, jQuery. Basic Vue.js, Nuxt and React.</p>}
+            label={'Wordpress'}
+            content={<p>Since 2016. Configuration, theming and maintenance. ACF, Woocommerce, Gravity Forms.</p>}
+          />
+          <ContentRow
+            label={'Workflow'}
+            content={<p>Working solo or as part of a team; providing and acting upon code reviews, Jenkins,
+              etc.</p>}
           />
           <ContentRow
             label={'Other'}
