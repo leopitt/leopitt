@@ -11,7 +11,7 @@ class ProjectList extends React.Component {
     })
 
     return <div className={'c-project-list'}>
-      <h5 className={'t-heading-6 t-small'}>Projects include...</h5>
+      <h5 className={'t-heading-6 t-small'}>Projects include:</h5>
       <ul className={'c-project-list__list t-small'}>
         {itemList}
       </ul>
