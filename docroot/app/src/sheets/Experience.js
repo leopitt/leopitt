@@ -15,7 +15,7 @@ function Experience () {
       <div className="l-columns">
         <Section>
           <ContentRow
-            label={'2022'}
+            label={'2022, 2023'}
             labelLevel={6}
             content={<>
               <h4 className="t-heading-4"><AgencyLink id={'fullfatthings'}/></h4>
