@@ -1,10 +1,10 @@
 .c-project-list {
   margin-top: -.5rem;
 }
+
 .c-project-list__list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .c-project-list__item {

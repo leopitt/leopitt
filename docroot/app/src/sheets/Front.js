@@ -81,6 +81,15 @@ function Front () {
 
           <TestimonialRow
             type="Contract"
+            dates="2022, 2023"
+            client={<AgencyLink id={'fullfatthings'}/>}
+            summary='Drupal 7, 8, 9, 10, front-end and back-end'
+            quote="Leo worked with us on a project that required a ton of Drupal migration without very detailed requirements from the customer and he jumped into the fray to get the detail out straight away. A great team player who slotted into our ways quickly."
+            author='Stewart Robinson, CEO'
+          />
+
+          <TestimonialRow
+            type="Contract"
             dates="2019, 2020, 2021"
             client={<AgencyLink id={'aerian'}/>}
             summary='Drupal 7, 8 and 9, front-end, back-end and headless'
@@ -111,11 +120,11 @@ function Front () {
           <TitleRow>Recent Projects and experience</TitleRow>
 
           <ContentRow
-            label={'2022'}
+            label={'2023'}
             labelLevel={6}
             content={<>
               <h4 className="t-heading-4"><AgencyLink id={'fullfatthings'}/></h4>
-              <p>Drupal 9 and 10, front-end, back-end and headless</p>
+              <p>Drupal 7/9/10. Front-end, back-end and headless</p>
             </>}
           />
 
