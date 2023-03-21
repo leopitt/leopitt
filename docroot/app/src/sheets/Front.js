@@ -115,46 +115,6 @@ function Front () {
             author="Alex Martin, Technical Director"
           />
         </Section>
-
-        <Section>
-          <TitleRow>Recent Projects and experience</TitleRow>
-
-          <ContentRow
-            label={'2023'}
-            labelLevel={6}
-            content={<>
-              <h4 className="t-heading-4"><AgencyLink id={'fullfatthings'}/></h4>
-              <p>Drupal 7/9/10. Front-end, back-end and headless</p>
-            </>}
-          />
-
-          <ContentRow
-            label={2022}
-            labelLevel={6}
-            content={<>
-              <h4 className="t-heading-4"><AgencyLink id={'numiko'}/></h4>
-              <p>Drupal 8/9/10 front-end development</p>
-            </>}
-          />
-
-          <ContentRow
-            label={2022}
-            labelLevel={6}
-            content={<>
-              <h4 className="t-heading-4"><AgencyLink id={'cti'}/></h4>
-              <p>Drupal 9/10 front and back-end development</p>
-            </>}
-          />
-
-          <ContentRow
-            label={2022}
-            labelLevel={6}
-            content={<>
-              <h4 className="t-heading-4"><AgencyLink id={'collective'}/></h4>
-              <p>Drupal 8/9 back-end development</p>
-            </>}
-          />
-        </Section>
       </div>
     </>
   )

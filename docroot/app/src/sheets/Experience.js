@@ -10,7 +10,7 @@ import ExternalLink from '../components/ExternalLink/ExternalLink'
 function Experience () {
   return (
     <>
-      <Title level={2} title2={'Other Experience'}/>
+      <Title level={2} title2={'Experience'}/>
       <TitleRow>Agency Experience (2006 - Present)</TitleRow>
       <div className="l-columns">
         <Section>
