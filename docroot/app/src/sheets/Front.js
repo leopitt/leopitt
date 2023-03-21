@@ -41,34 +41,34 @@ function Front () {
         <Section>
           <TitleRow>Skills</TitleRow>
           <ContentRow
-            label={'Front-end, HTML and CSS'}
-            content={<p>Browser testing, responsiveness, custom grid frameworks, Bootstrap, Tailwind, etc.</p>}
-          />
-          <ContentRow
             label={'Drupal'}
             content={<p><ExternalLink href={'https://certification.acquia.com/user/7651'}>Acquia Accredited developer</ExternalLink>. Intensive user of Drupal since 2009. Experienced across Drupal
               6, 7, 8, 9+. “Headless” Drupal experience with Gatsby and Nuxt / Lupus.</p>}
-          />
-          <ContentRow
-            label={'Wordpress'}
-            content={<p>Since 2016. Configuration, theming and maintenance. ACF, Woocommerce, Gravity Forms.</p>}
           />
           <ContentRow
             label={'PHP & MySQL'}
             content={<p>Experienced OOP coder.</p>}
           />
           <ContentRow
-            label={'Workflow'}
-            content={<p>Working solo or as part of a team; providing and acting upon code reviews, Jenkins,
-              etc.</p>}
+            label={'Front-end, HTML and CSS'}
+            content={<p>Browser testing, responsiveness, custom grid frameworks, Bootstrap, Tailwind, etc.</p>}
+          />
+          <ContentRow
+            label={'JS'}
+            content={<p>Native JS, jQuery. Basic Vue.js, Nuxt and React.</p>}
           />
           <ContentRow
             label={'Task-runners'}
             content={<p>Gulp, Bower, Webpack.</p>}
           />
           <ContentRow
-            label={'JS'}
-            content={<p>Native JS, jQuery. Basic Vue.js, Nuxt and React.</p>}
+            label={'Wordpress'}
+            content={<p>Since 2016. Configuration, theming and maintenance. ACF, Woocommerce, Gravity Forms.</p>}
+          />
+          <ContentRow
+            label={'Workflow'}
+            content={<p>Working solo or as part of a team; providing and acting upon code reviews, Jenkins,
+              etc.</p>}
           />
           <ContentRow
             label={'Other'}
@@ -113,46 +113,6 @@ function Front () {
             summary="Drupal 7 and 8, front-end development"
             quote="Leo is the best contractor we’ve ever had in my time at Halo."
             author="Alex Martin, Technical Director"
-          />
-        </Section>
-
-        <Section>
-          <TitleRow>Recent Projects and experience</TitleRow>
-
-          <ContentRow
-            label={'2023'}
-            labelLevel={6}
-            content={<>
-              <h4 className="t-heading-4"><AgencyLink id={'fullfatthings'}/></h4>
-              <p>Drupal 7/9/10. Front-end, back-end and headless</p>
-            </>}
-          />
-
-          <ContentRow
-            label={2022}
-            labelLevel={6}
-            content={<>
-              <h4 className="t-heading-4"><AgencyLink id={'numiko'}/></h4>
-              <p>Drupal 8/9/10 front-end development</p>
-            </>}
-          />
-
-          <ContentRow
-            label={2022}
-            labelLevel={6}
-            content={<>
-              <h4 className="t-heading-4"><AgencyLink id={'cti'}/></h4>
-              <p>Drupal 9/10 front and back-end development</p>
-            </>}
-          />
-
-          <ContentRow
-            label={2022}
-            labelLevel={6}
-            content={<>
-              <h4 className="t-heading-4"><AgencyLink id={'collective'}/></h4>
-              <p>Drupal 8/9 back-end development</p>
-            </>}
           />
         </Section>
       </div>
