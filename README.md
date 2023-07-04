@@ -1,4 +1,3 @@
-fin 
 Inside `/docroot/app`, you can run several commands:
 
 * `npm start`: Starts the development server.
