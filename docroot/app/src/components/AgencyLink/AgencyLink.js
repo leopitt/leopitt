@@ -65,6 +65,10 @@ class AgencyLink extends React.Component {
       fullfatthings: {
         url: 'https://www.fullfatthings.com/',
         name: 'Full Fat Things'
+      },
+      adaptive: {
+        url: 'https://www.adaptive.co.uk/',
+        name: 'Adaptive Web'
       }
     }
   }
