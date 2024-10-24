@@ -29,7 +29,7 @@ function App () {
 
         <Footer>
           <MailMe/><br/>
-          updated: 08/09/2023
+          updated: 24/10/2024
         </Footer>
       </div>
     </>

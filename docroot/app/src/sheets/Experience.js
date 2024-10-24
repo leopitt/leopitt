@@ -5,7 +5,6 @@ import ProjectList from '../components/ProjectList/ProjectList'
 import Section from '../components/Section/Section'
 import Title from '../components/Title/Title'
 import TitleRow from '../components/TitleRow/TitleRow'
-import ExternalLink from '../components/ExternalLink/ExternalLink'
 
 function Experience () {
   return (
@@ -13,6 +12,23 @@ function Experience () {
       <Title level={2} title2={'Experience'}/>
       <TitleRow>Agency Experience (2006 - Present)</TitleRow>
       <div className="l-columns">
+        <Section>
+          <ContentRow
+            label={'2023 - present'}
+            labelLevel={6}
+            content={<>
+              <h4 className="t-heading-4"><AgencyLink id={'systemseed'}/></h4>
+              <p>Tech Lead. Drupal 9, 10, 11 development.</p>
+              <ProjectList
+                projects={[
+                  'Concern Worldwide',
+                  'Knowledge Transfer Network',
+                  'Globethics'
+                ]}
+              />
+            </>}
+          />
+        </Section>
         <Section>
           <ContentRow
             label={'2023'}
@@ -258,7 +274,7 @@ function Experience () {
       <div className={'l-section l-grid l-grid-item--span-full l-grid--gap'}>
         <div className={'l-grid-item--second'}>
           <div className={'l-width-3-4'}>
-            <p>Under the banner of <ExternalLink href={'https://function-design.co.uk'}>Function Design</ExternalLink> I worked as a supplier to marketing, design and SEO partners and also &lsquo;direct to client&rsquo;.</p>
+            <p>Under the banner of Function Design Ltd I worked as a supplier to marketing, design and SEO partners and also &lsquo;direct to client&rsquo;.</p>
             <p>In addition to the billable web development, information architecture, project and account management I handled sales, marketing, sub-contracting and day-to-day business operations.</p>
             <p>In this role I worked on a wide variety of projects large and small and built strong relationships with many clients. Here are a few examples:</p>
           </div>

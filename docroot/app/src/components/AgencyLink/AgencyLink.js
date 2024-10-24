@@ -69,6 +69,10 @@ class AgencyLink extends React.Component {
       adaptive: {
         url: 'https://www.adaptive.co.uk/',
         name: 'Adaptive Web'
+      },
+      systemseed: {
+        url: 'https://systemseed.com/',
+        name: 'Systemseed'
       }
     }
   }
